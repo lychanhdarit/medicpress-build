@@ -1,0 +1,327 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Share_san_khoa_Main" %>
+
+<%@ Register Src="~/Share/san-khoa/pluginHeader.ascx" TagPrefix="uc1" TagName="pluginHeader" %>
+<%@ Register Src="~/Share/san-khoa/googleAnalytics.ascx" TagPrefix="uc1" TagName="googleAnalytics" %>
+<%@ Register Src="~/Share/san-khoa/metaGeoTags.ascx" TagPrefix="uc1" TagName="metaGeoTags" %>
+<%@ Register Src="~/Share/san-khoa/pluginFooter.ascx" TagPrefix="uc1" TagName="pluginFooter" %>
+<%@ Register Src="~/Share/san-khoa/Navigation.ascx" TagPrefix="uc1" TagName="Navigation" %>
+<%@ Register Src="~/Share/san-khoa/LiveChat.ascx" TagPrefix="uc1" TagName="LiveChat" %>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" class="no-js">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><%: Page.Title %></title>
+    <meta content="<%: Page.MetaDescription  %>" name="description" />
+    <meta content="<%: Page.MetaKeywords  %>" name="keywords" />
+
+    <asp:Literal ID="ltCanonical" runat="server"></asp:Literal>
+
+    <asp:Literal ID="ltHeader" runat="server"></asp:Literal>
+
+
+    <uc1:metaGeoTags runat="server" ID="metaGeoTags" />
+    <uc1:pluginHeader runat="server" ID="pluginHeader" />
+    <uc1:googleAnalytics runat="server" ID="googleAnalytics" />
+    <uc1:LiveChat runat="server" ID="LiveChat" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fixed-header">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58057d0420c42dab"></script>
+    <form id="form1" runat="server">
+
+        <!-- Document Wrapper
+		============================================= -->
+        <div id="wrapper" class="clearfix">
+
+
+            <!-- Main banner
+		============================================= -->
+            <section class="slider-revolution clearfix" data-stellar-background-ratio="0.3">
+
+                <div class="slider-revolution-overlay"></div>
+
+
+                <!-- Header
+				============================================= -->
+                <header class="medicom-header">
+
+
+                    <div class="container">
+
+                        <!-- Primary Navigation
+						============================================= -->
+                        <nav class="navbar navbar-default" role="navigation">
+
+                            <!-- Brand and toggle get grouped for better mobile display
+							============================================= -->
+
+                            <div class="navbar-header">
+
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <a class="navbar-brand" href="/">
+
+                                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Share/san-khoa/images/logo2.png" AlternateText="" />
+                                </a>
+
+                            </div>
+
+
+                            <div class="collapse navbar-collapse navbar-right" id="primary-nav">
+                                <uc1:Navigation runat="server" ID="Navigation" />
+                            </div>
+
+                        </nav>
+
+                    </div>
+
+                    <div class="header-bottom-line"></div>
+
+                </header>
+                <asp:ContentPlaceHolder ID="Banner" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+                <div id="content-index" class="no-margin-top">
+                </div>
+            </section>
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="container" style="margin-bottom: 15px;">
+
+                <div class="row">
+                    <div class="col-md-3 edit-f" style="padding: 3px;">
+                        <div style="background: #e5a923; color: #fff; margin-bottom: 20px; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                            <div class="col-md-2" style="font-size: 3em; text-align: center;">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <small>Bác Sĩ tư vấn</small><br />
+                                <span style="font-size: 1.8em; font-weight: bold">0938 228 768</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-3 edit-f" style="padding: 3px;">
+                        <div style="background: #007793; color: #fff; margin-bottom: 20px; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                            <div class="col-md-2" style="font-size: 3em; text-align: center;">
+                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <small>Tư vấn Online</small><br />
+                                <span style="font-size: 1.5em;">
+                                    <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White" CssClass="cl-white" NavigateUrl="~/tu-van/">CÙNG BÁC SĨ</asp:HyperLink></span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 edit-f" style="padding: 3px;">
+
+                        <div style="background: #e5a923; color: #fff; margin-bottom: 20px; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                            <div class="col-md-2" style="font-size: 3em; text-align: center;">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <small>Đăng ký khám</small><br />
+                                <span style="font-size: 1.5em;">
+                                    <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="White" CssClass="cl-white" NavigateUrl="~/lien-he/">ĐẶT LỊCH HẸN</asp:HyperLink></span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 edit-f" style="padding: 3px;">
+                        <div style="background: #007793; color: #fff; margin-bottom: 20px; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                            <div class="col-md-2" style="font-size: 3em; text-align: center;">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <small>Hỗ trợ</small><br />
+                                <span style="font-size: 1.5em;">
+                                    <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="White" CssClass="cl-white" NavigateUrl="~/lien-he/">CHỈ ĐƯỜNG </asp:HyperLink>
+                                </span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colourfull-row"></div>
+
+            <!-- Footer
+	============================================= -->
+
+            <footer id="footer" class="light">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+
+                            <!-- Footer Widget
+					============================================= -->
+                            <div class="footer-widget">
+
+                                <h4><span>Danh Mục</span></h4>
+
+                                <ul class="footer-nav list-unstyled clearfix">
+                                    <asp:Repeater ID="rpCat" runat="server">
+                                        <ItemTemplate>
+                                            <li>
+                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/"+Eval("code")+".hxml" %>'><i class="fa fa-long-arrow-right"></i><%# Eval("name") %></asp:HyperLink>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <!-- Footer Widget============================================= -->
+                            <div class="footer-widget">
+
+                                <h4><span>Gọi lại cho tôi</span></h4>
+
+                                <div class="newsletter clearfix">
+
+                                    <i class="fa fa-phone"></i>
+                                    <p class="newsletter-text">
+                                        Nhập vào Họ tên & số điện thoại của bạn để chúng tôi để được tư vấn nhanh nhất.
+                                    </p>
+
+                                    <div class="success" id="message-news" style="display: none;">Thank you! You have successfully subscribed.</div>
+                                    <div id="newsletter_form">
+                                        <asp:TextBox ID="txt_name" runat="server" placeholder="Họ tên của bạn"></asp:TextBox>
+                                        <asp:TextBox ID="txt_phone" runat="server" placeholder="Số điện thoại"></asp:TextBox>
+                                        <asp:Button ID="btnGui" runat="server" Text="Gửi" class="btn btn-default btn-rounded" OnClick="btnGui_Click" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <!-- Footer Widget
+					============================================= -->
+                            <div class="footer-widget">
+
+                                <h4><span>Bài viết</span></h4>
+
+                                <div class="twitter-widget">
+                                    <asp:Repeater ID="rpBai" runat="server">
+                                        <ItemTemplate>
+                                            <div class="tweet">
+                                                <i class="fa fa-rss" aria-hidden="true"></i>
+                                                <p>
+                                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl='<%# "~/"+Eval("id_tt") %>'><%# Eval("Tieude") %></asp:HyperLink>
+                                                    <span>cập nhật mới nhất ...</span>
+                                                </p>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <!-- Footer Widget
+					============================================= -->
+                            <div class="footer-widget">
+
+                                <h4><span>Liên hệ</span></h4>
+                                <p>Trung tâm Y khoa chất lượng cao Diamond</p>
+
+                                <div class="contact-widget">
+                                    <i class="fa fa-home"></i>
+                                    <p>Số 9, Trần Quốc Thảo, P.6, Quận 3</p>
+                                    <i class="fa fa-globe"></i>
+                                    <p><a href="/">ykhoadiamond.com</a></p>
+                                    <i class="fa fa-mobile"></i>
+                                    <p class="phone-number">(08) 3930 75 75 -   0904 72 06 72</p>
+									<a href="http://www.dmca.com/Protection/Status.aspx?ID=1e8ae3e7-5bed-4ccb-8ee7-03895a6e1238" title="DMCA.com Protection Status" class="dmca-badge"> <img src="//images.dmca.com/Badges/dmca-badge-w250-1x1-01.png?ID=1e8ae3e7-5bed-4ccb-8ee7-03895a6e1238" alt="DMCA.com Protection Status"></a> <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                                </div>
+
+                               
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Copyright
+		============================================= -->
+                <p class="copyright text-center">Copyright &copy; <%= DateTime.Now.Year %>  Y Khoa Diamond. All right reserved.</p>
+
+
+                <!-- Footer Bottom
+		============================================= -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="/">
+
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/Share/san-khoa/images/footer-logo.png" AlternateText="" />
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="footer-bottom-text">Chăm sóc khách hàng như người thân của mình” chính là phương châm gắn kết, đồng hành và chia sẻ giữa chúng tôi với khách hàng nhằm san sẻ và giải quyết nỗi lo về sức khỏe vì một cuộc sống trọn vẹn.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+
+
+            <!-- back to top -->
+            <a href="#." class="back-to-top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+        </div>
+        <!--end #wrapper-->
+
+        <uc1:pluginFooter runat="server" ID="pluginFooter" />
+
+        <asp:ContentPlaceHolder ID="contentJS" runat="server">
+        </asp:ContentPlaceHolder>
+        <a href="tel:0904720672">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Share/san-khoa/images/phone-f.png" CssClass="f-img" AlternateText="" />
+        </a>
+        
+    </form>
+</body>
+</html>

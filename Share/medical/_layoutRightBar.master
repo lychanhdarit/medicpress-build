@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Share/medical/_layout.master" AutoEventWireup="true" CodeFile="_layoutRightBar.master.cs" Inherits="Share_medical_layoutRightBar" %>
+
+<%@ Register Src="~/Share/medical/rightMenu.ascx" TagPrefix="uc1" TagName="rightMenu" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
+    
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contentWrapper" runat="Server">
+    <!-- Main Content Top -->
+
+
+    <asp:ContentPlaceHolder ID="ptTitle" runat="server"></asp:ContentPlaceHolder>
+    <!-- End Main Content Top -->
+
+    <!-- End Main Content Top -->
+    <div class="main-wrapper">
+        <div class="content_wrapper">
+            <div class="row">
+                <div class="large-8 columns">
+                    <asp:ContentPlaceHolder ID="contentLeft" runat="server"></asp:ContentPlaceHolder>
+                    <div class="form-dh">
+                        <div class="large-12 columns ">
+                            <h3 style="background: #016f8a; color: #fff; padding: 10px; margin-top: 10px; margin-bottom: 30px; border-radius: 5px;"><i class="icon-calendar"></i>ĐẶT HẸN VÌ LỢI ÍCH CỦA BẠN</h3>
+                        </div>
+                        <div class="large-3 columns ">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Share/images/doktorka.jpg" Width="100%" />
+                        </div>
+                        <div class="large-9 columns">
+                            <div id="appointment-contact-form">
+                                <asp:Literal ID="ltError" runat="server"></asp:Literal>
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <asp:TextBox ID="txtFullname" runat="server" placeholder="Họ & tên"></asp:TextBox>
+                                        <asp:TextBox ID="txtSDT" runat="server" placeholder="Số điện thoại"></asp:TextBox>
+                                    </div>
+                                    <div class="large-6 columns">
+                                        <asp:TextBox ID="txtEmail" runat="server" placeholder="Địa chỉ email"></asp:TextBox>
+                                        <asp:TextBox ID="txtNgay" runat="server" class="datepicker" placeholder="Chọn ngày đặt hẹn"></asp:TextBox>
+
+                                    </div>
+                                    <div class="large-6 columns">
+                                        <asp:TextBox ID="txtMsg" runat="server" TextMode="MultiLine" Rows="15" Columns="10" placeholder="Nội dung tin nhắn"></asp:TextBox>
+                                    </div>
+                                    <div class="large-6 columns">
+                                        <asp:Button ID="btnDH" runat="server" CssClass="blue button radius" Text="Gửi đặt hẹn" OnClick="btnDH_Click" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <aside class="large-4 columns">
+                    <div class="widgets">
+                        
+                        <uc1:rightMenu runat="server" ID="rightMenu" />
+                    </div>
+                    <div class="widgets">
+                        <a href="../tu-van/">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Share/images/dat-hen-ykhoa.jpg" Width="100%" AlternateText="Dat hen tai y khoa Diamond" />
+                        </a>
+                        <img src="../Share/images/shadow-foot.png" style="width: 100%; height: 30px" />
+                    </div>
+                   
+                    <div class="widgets">
+                        <div class="section-container tabs" data-section="tabs">
+                            <section class="section">
+                                <p class="title"><a href="#"><i class="icon-rss-sign"></i> Bài Mới</a></p>
+                                <div class="content">
+                                    <ul class="widget-post-list">
+
+                                        <asp:Repeater ID="rpPost" runat="server">
+                                            <ItemTemplate>
+                                                <li>
+                                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/" + Eval("id_tt") %>' AlternateText='<%# Eval("Title") %>' ImageUrl='<%# "~/UploadFile/postImages/"+Eval("HinhAnh") %>'> <%# Eval("Title") %></asp:HyperLink>
+                                                    <p>
+                                                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/" + Eval("id_tt")  %>'> <%# Eval("Title") %></asp:HyperLink>
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="section">
+                                <p class="title"><a href="#"><i class="icon-tags"></i> Tags</a></p>
+                                <div class="content">
+                                    <ul id="tags">
+                            <asp:Repeater ID="rpTags" runat="server">
+                                <ItemTemplate>
+                                    <li>
+                                        <h6><a href='<%# BaseView.UrlServer() +"/tags/"+  Eval("id").ToString() + "-" + BaseView.convertStringLinks(Eval("keywords").ToString()) %>' class="button small"><i class="icon-tag"></i><%# Eval("keywords").ToString()  %></a>
+                                        </h6>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                   
+
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+   
+  
+</asp:Content>
+

@@ -1,0 +1,362 @@
+﻿<%@ Page Title='<%: Page.Title %>' MetaDescription='<%: Page.MetaDescription  %>' MetaKeywords='<%: Page.MetaKeywords  %>' Language="C#" MasterPageFile="~/peter-hung/main.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="peter_hung_ad_Default" %>
+
+<%@ Register Src="~/peter-hung/SliderController.ascx" TagPrefix="uc1" TagName="SliderController" %>
+<%@ Register Src="~/Controller/CommentBoostrap.ascx" TagPrefix="uc1" TagName="CommentBoostrap" %>
+
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contentPage" runat="Server">
+    <uc1:SliderController runat="server" ID="SliderController" />
+
+    <section class="bg-hv">
+        <div class="container bg-white i-home">
+
+            <!-- Marketing Icons Section -->
+            <div class="box-title">
+                <h2 class="center-title color-title">DỊCH VỤ CỦA BẠN - ƯU ĐÃI TRONG THÁNG </h2>
+                <div class="amd-dich-vu-tabs">
+                    <ul>
+                        <li>
+                            <a href="#" class="current">TẤT CẢ</a>
+                        </li>
+                        <li>
+                            <a href="#">ÂM ĐẠO</a>
+                        </li>
+                        <li>
+                            <a href="#">VÙNG KÍN</a>
+                        </li>
+                        <li>
+                            <a href="#">TẦNG SINH MÔN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row two-item-home">
+                <div class="col-md-4">
+                    <div class="product-item wow fadeInLeft" data-wow-delay=".25s">
+                        <div class="img-item">
+                            <img src="../peter-hung/images/amdao/b2.jpg" style="width: 100%" />
+                        </div>
+
+                        <div class="title-item">
+                            <div>
+                                <a href="#">Trẻ Hóa Âm Đạo</a>
+                                <a href="#"><i class="fa fa-check"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="action-item">
+                            <a href="#">
+                                <img src="../peter-hung/images/amdao/bt1.png" />
+                            </a>
+                            <a href="#" class="cat">ÂM ĐẠO</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item wow  fadeInLeft" data-wow-delay=".35s">
+                        <div class="img-item">
+                            <img src="../peter-hung/images/amdao/b3.jpg" style="width: 100%" />
+                        </div>
+
+                        <div class="title-item">
+                            <div>
+                                <a href="#">Trẻ Hóa Âm Đạo</a>
+                                <a href="#"><i class="fa fa-check"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="action-item">
+                            <a href="#">
+                                <img src="../peter-hung/images/amdao/bt1.png" />
+                            </a>
+                            <a href="#" class="cat">ÂM ĐẠO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item wow fadeInLeft" data-wow-delay=".45s">
+                        <div class="img-item">
+                            <img src="../peter-hung/images/amdao/b4.jpg" style="width: 100%" />
+                        </div>
+
+                        <div class="title-item">
+                            <div>
+                                <a href="#">Trẻ Hóa Âm Đạo</a>
+                                <a href="#"><i class="fa fa-check"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="action-item">
+                            <a href="#">
+                                <img src="../peter-hung/images/amdao/bt1.png" />
+                            </a>
+                            <a href="#" class="cat">ÂM ĐẠO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item wow fadeInRight" data-wow-delay=".55s">
+                        <div class="img-item">
+                            <img src="../peter-hung/images/amdao/b5.jpg" style="width: 100%" />
+                        </div>
+
+                        <div class="title-item">
+                            <div>
+                                <a href="#">Trẻ Hóa Âm Đạo</a>
+                                <a href="#"><i class="fa fa-check"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="action-item">
+                            <a href="#">
+                                <img src="../peter-hung/images/amdao/bt1.png" />
+                            </a>
+                            <a href="#" class="cat">ÂM ĐẠO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item  wow fadeInRight" data-wow-delay=".45s">
+                        <div class="img-item">
+                            <img src="../peter-hung/images/amdao/b6.jpg" style="width: 100%" />
+                        </div>
+
+                        <div class="title-item">
+                            <div>
+                                <a href="#">Trẻ Hóa Âm Đạo</a>
+                                <a href="#"><i class="fa fa-check"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="action-item">
+                            <a href="#">
+                                <img src="../peter-hung/images/amdao/bt1.png" />
+                            </a>
+                            <a href="#" class="cat">ÂM ĐẠO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item  wow fadeInRight" data-wow-delay=".35s">
+                        <div class="img-item">
+                            <img src="../peter-hung/images/amdao/b7.jpg" style="width: 100%" />
+                        </div>
+
+                        <div class="title-item">
+                            <div>
+                                <a href="#">Trẻ Hóa Âm Đạo</a>
+                                <a href="#"><i class="fa fa-check"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="action-item">
+                            <a href="#">
+                                <img src="../peter-hung/images/amdao/bt1.png" />
+                            </a>
+                            <a href="#" class="cat">ÂM ĐẠO</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
+    <section class="bg-yellow-dark">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div style="text-align: left; margin-bottom: 40px; margin-top: 45px">
+                        <h3 style="color: #fff" class="wow fadeInLeft" data-wow-delay=".35s">NHỮNG CON SỐ BIẾT NÓI VỀ TRUNG TÂM THẨM MỸ DIAMOND </h3>
+
+                    </div>
+                    <a href="#">
+                        <img src="../peter-hung/images/amdao/bt4.png" />
+                    </a>
+
+                </div>
+                <div class="col-md-6 fact-counter">
+                    <div class="row">
+                        <article class="col-md-4 col-sm-4 col-xs-12 column wow fadeIn animated counted" data-wow-duration="0ms">
+                            <div class="icon-style text-center">
+                                <a href="#"><i class="icon icon-bg icon-gray icon-lg style-round white fa fa-trophy"></i></a>
+                                <div class="count-outer">Top <span class="count-text" data-speed="2000" data-stop="10">10</span></div>
+                                <h4><a class="title" href="#">Thẩm mỹ và Spa uy tín tại Việt</a></h4>
+                            </div>
+
+                        </article>
+                        <article class="col-md-4 col-sm-4 col-xs-12 column wow fadeIn animated counted" data-wow-duration="0ms" style="visibility: visible; animation-duration: 0ms; animation-name: fadeIn;">
+                            <div class="icon-style text-center">
+                                <a href="#"><i class="icon icon-bg icon-gray icon-lg style-round white fa fa-users"></i></a>
+                                <div class="count-outer"><span class="count-text" data-speed="1800" data-stop="350000">350000</span></div>
+                                <h4><a class="title" href="#">Đón chào hơn 350.000 khách hàng mỗi năm</a></h4>
+                            </div>
+                        </article>
+                        <article class="col-md-4 col-sm-4 col-xs-12 column wow fadeIn animated counted" data-wow-duration="0ms" style="visibility: visible; animation-duration: 0ms; animation-name: fadeIn;">
+                            <div class="icon-style text-center">
+                                <a href="#"><i class="icon icon-bg icon-gray icon-lg style-round white fa fa-user"></i></a>
+                                <div class="count-outer"><span class="count-text" data-speed="1600" data-stop="100">100</span>%</div>
+                                <h4><a class="title" href="#">Bác sĩ hàng đầu các bệnh viện</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gioithieu">
+        <div class="after">
+            <div class="container">
+
+                <!-- Marketing Icons Section -->
+                <div class="box-title">
+                    <h2 class="center-title text-white wow fadeInRight" data-wow-delay=".45s">GIỚI THIỆU THẨM MỸ DIAMOND </h2>
+                    <div class="amd-line wow fadeInRight" data-wow-delay=".55s">
+                        <p style="color: #fbcd80;">'WHERE YOU BELIEVE - NƠI BẠN ĐẶT NIỀM TIN'</p>
+                    </div>
+                </div>
+                <div class="amd-content">
+                    <p>
+                        Ra đời dựa trên những tiêu chuẩn của một thẩm mỹ viện cao cấp, Thẩm mỹ Công nghệ cao Diamond luôn cam kết mang đến một chất lượng dịch vụ hoàn hảo, trao gửi niềm tin cho hàng ngàn khách hàng trong suốt nhiều năm qua. Mỗi một dịch vụ chúng tôi cung cấp đến đều dựa trên tiêu chí sự hài lòng của khách hàng. Đến với Diamond khách hàng không chỉ hài lòng về dịch vụ mà còn cảm nhận sự thay đổi vì một cuộc sống tốt đẹp hơn.
+                    </p>
+                </div>
+
+                <!-- /.row -->
+            </div>
+        </div>
+
+    </section>
+    <section class="bg-bottom-gt">
+        <div class="container">
+
+            <!-- Marketing Icons Section -->
+
+
+            <div class="row two-item-home">
+                <div class="col-md-3">
+                    <div class="product-item wow fadeInRight" data-wow-delay=".35s">
+                        <div class="img-item2">
+                            <img src="../peter-hung/images/amdao/b8.jpg" style="width: 100%" />
+                        </div>
+                        <div class="gt-title">
+                            <a href="#">Đội ngũ bác sĩ hàng đầu</a>
+
+                        </div>
+                        <div class="gt-content">
+                            <p>
+                                Đội ngũ bác sĩ hàng đầu chuyên khoa Da Liễu, Phẫu thuật thẩm mỹ từ các bệnh viện như: Da Liễu, Đại Học Y Dược, Từ Dũ, 115, Tai Mũi Họng, Ung Bướu, Chợ Rẫy...
+                            </p>
+                            <a href="#">Xem thêm</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End itemm -->
+                <div class="col-md-3">
+                    <div class="product-item wow fadeInRight" data-wow-delay=".45s">
+                        <div class="img-item2">
+                            <img src="../peter-hung/images/amdao/b9.jpg" style="width: 100%" />
+                        </div>
+                        <div class="gt-title">
+                            <a href="#">Công nghệ An Toàn – Hiện Đại</a>
+
+                        </div>
+                        <div class="gt-content">
+                            <p>
+                                Được chuyển giao công nghệ làm đẹp trực tiếp từ Hoa Kỳ, Nhật Bản, Hàn Quốc...đạt chứng nhận FDA (Hoa Kỳ, CE (Châu Âu)...
+                            </p>
+                            <a href="#">Xem thêm</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End itemm -->
+                <div class="col-md-3">
+                    <div class="product-item wow fadeInLeft" data-wow-delay=".65s">
+                        <div class="img-item2">
+                            <img src="../peter-hung/images/amdao/b10.jpg" style="width: 100%" />
+                        </div>
+                        <div class="gt-title">
+                            <a href="#">Làm đẹp theo phác đồ riêng</a>
+
+                        </div>
+                        <div class="gt-content">
+                            <p>
+                                Dựa trên nhu cầu, cơ địa và điều kiện kinh tế mà mỗi khách hàng sẽ có một phác đồ làm chuyên biệt, cho hiệu quả tối ưu nhất.
+                            </p>
+                            <a href="#">Xem thêm</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End itemm -->
+                <div class="col-md-3">
+                    <div class="product-item wow fadeInLeft" data-wow-delay=".55s">
+                        <div class="img-item2">
+                            <img src="../peter-hung/images/amdao/b11.jpg" style="width: 100%" />
+                        </div>
+                        <div class="gt-title">
+                            <a href="#">Ưu đãi lớn</a>
+
+                        </div>
+                        <div class="gt-content">
+                            <p>
+                                Luôn có các ưu đãi, trợ giá dịch vụ, tặng Voucher làm đẹp, tặng dịch vụ đi kèm...giúp bạn làm đẹp thả ga không lo về giá.
+                            </p>
+                            <a href="#">Xem thêm</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End itemm -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
+
+
+    <section class="bg-comment">
+        <div class="com">
+
+            <div class="container">
+
+                <!-- Marketing Icons Section -->
+                <div class="box-title">
+                    <h2 class="center-title text-white">KHÁCH HÀNG NÓI GÌ VỀ THẨM MỸ DIAMOND </h2>
+                    <p class="text-center" style="color:#fbcd80;text-transform:uppercase">
+                        <b style="font-size:3em">1000+</b> Khách Hàng Đã Đến Và Cảm Nhận
+                    </p>
+                </div>
+                <!-- /.row -->
+            </div>
+            <uc1:CommentBoostrap runat="server" ID="CommentBoostrap" />
+
+        </div>
+
+    </section>
+
+    <%-- <section class="bg">
+        <div class="container">
+            <div class="box-title">
+                <h2 class="center-title">HÌNH ẢNH TRƯỚC SAU</h2>
+
+            </div>
+
+            <div class="col-md-12">
+                <iframe width="100%" height="440px" allowtransparency="true" scrolling="no" src="../peter-hung/media/" style="border: none"></iframe>
+            </div>
+        </div>
+    </section>--%>
+    <!-- /.container -->
+</asp:Content>
+

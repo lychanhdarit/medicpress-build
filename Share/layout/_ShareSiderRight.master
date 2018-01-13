@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Share/layout/_Share.master" AutoEventWireup="true" CodeFile="_ShareSiderRight.master.cs" Inherits="Share_layout_ShareSiderRight" %>
+
+<%@ Register Src="~/Share/layout/Register.ascx" TagPrefix="uc1" TagName="Register" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="headRight" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceholder" runat="Server">
+    <div class="grid-row">
+        <div class="grid-col grid-col-9 left-col">
+            <asp:ContentPlaceHolder ID="contentRightBar" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="grid-col grid-col-3">
+            <!-- departments -->
+
+            <div class="widget widget-departments window">
+                <div class="widget-title">Cẩm nang Y Khoa</div>
+                <asp:Label ID="lbChuyenKhoa" runat="server" Text="Label"></asp:Label>
+            </div>
+            <div class="widget widget-departments">
+                <div class="widget-title">Mới nhất</div>
+                <asp:Label ID="lbBaiMoi" runat="server" Text=""></asp:Label>
+            </div>
+            <div class="widget widget-departments window">
+                <div class="img-right">
+                    <asp:HyperLink ID="HyperLink1" NavigateUrl="#" runat="server" ImageUrl="~/Share/images/dat-hen-ykhoa.jpg"  ></asp:HyperLink>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+    <uc1:Register runat="server" ID="Register" />
+</asp:Content>
+

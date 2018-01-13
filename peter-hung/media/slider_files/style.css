@@ -1,0 +1,4745 @@
+/* line 65, scss/module/_variables.scss */
+#intro-header, #intro-header h3, #intro-header p strong, .block-title h3, #gallery .page-title, #gallery .page-title-mb {
+  font-family: "latoregular", arial, Helvetica, sans-serif; }
+
+/* line 68, scss/module/_variables.scss */
+#news-detail #news-post p {
+  font-family: "latolight", arial, Helvetica, sans-serif; }
+
+/* line 71, scss/module/_variables.scss */
+.carousel-title .comic-title, .video-lists .video-block .video-info h4 {
+  font-family: "latoblack", arial, Helvetica, sans-serif; }
+
+/* line 74, scss/module/_variables.scss */
+.chiase-slogan h3 span {
+  font-family: "CenturyGothic-Bold", arial, Helvetica, sans-serif; }
+
+/* line 77, scss/module/_variables.scss */
+#social-project .project-list .title-wrapper a, .news-related h4 {
+  font-family: "latobold", arial, Helvetica, sans-serif; }
+
+/* line 80, scss/module/_variables.scss */
+.chiase-slogan p, #gallery .filter .search input, #gallery .filter .select-wrp .selector, #gallery .filter .select-wrp .selector span, #gallery .filter .select-wrp .week-filter, #gallery .filter .select-wrp .date-filter {
+  font-family: "latoitalic", arial, Helvetica, sans-serif; }
+
+/* line 83, scss/module/_variables.scss */
+.chiase-slogan h3 {
+  font-family: "latoheavy", arial, Helvetica, sans-serif; }
+
+/* line 86, scss/module/_variables.scss */
+#video-section .video-wrap h3, #news-detail .post-title, #news-sidebar h3 {
+  font-family: "Georgia", arial, Helvetica, sans-serif; }
+
+/* line 89, scss/module/_variables.scss */
+#intro-header p.pink-color, .chiase-slogan h3 span {
+  color: #e2328c; }
+
+/* line 138, scss/module/_mixin.scss */
+.chiase-slogan, #video-section .video-wrap h3, #video-section .video-wrap .play-icon, #news-header .customNavigation a, .video-lists .video-block .video-play-icon, #gallery {
+  text-align: center; }
+
+/* line 150, scss/module/_mixin.scss */
+#video-section .video-wrap a, #video-section .video-wrap .play-icon {
+  display: block; }
+
+/* line 2, scss/module/_reset.scss */
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  outline: none;
+  text-decoration: none; }
+
+/* line 6, scss/module/_reset.scss */
+.left {
+  float: left; }
+
+/* line 7, scss/module/_reset.scss */
+.right {
+  float: right; }
+
+/* line 8, scss/module/_reset.scss */
+.wr-page {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 11, scss/module/_reset.scss */
+strong {
+  font-family: "latobold"; }
+
+/* line 12, scss/module/_reset.scss */
+em {
+  font-family: "latoitalic"; }
+
+/* line 14, scss/module/_reset.scss */
+input, textarea, * {
+  outline: none; }
+
+/* line 2, scss/module/_header.scss */
+body {
+  color: #333;
+  overflow-x: hidden;
+  font-size: 14px;
+  font-family: "latoregular"; }
+
+/* line 10, scss/module/_header.scss */
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 45px;
+  font-size: 14px; }
+  /* line 15, scss/module/_header.scss */
+  .header.fixed {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    -webkit-box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3);
+    -moz-box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3);
+    box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3); }
+  /* line 23, scss/module/_header.scss */
+  .header .logo {
+    float: left;
+    position: relative;
+    width: 169px; }
+    /* line 28, scss/module/_header.scss */
+    .header .logo img {
+      width: 100%;
+      position: absolute;
+      top: 11px;
+      left: 0;
+      z-index: 2; }
+  /* line 33, scss/module/_header.scss */
+  .header .head-nav {
+    width: 65.26315789473684%;
+    height: 45px;
+    float: right; }
+    /* line 37, scss/module/_header.scss */
+    .header .head-nav ul {
+      height: 100%; }
+    /* line 41, scss/module/_header.scss */
+    .header .head-nav ul li {
+      display: table;
+      height: 100%;
+      float: left;
+      margin-right: 1.7%; }
+      /* line 47, scss/module/_header.scss */
+      .header .head-nav ul li:last-child {
+        margin-right: 0; }
+      /* line 49, scss/module/_header.scss */
+      .header .head-nav ul li a {
+        display: table-cell;
+        vertical-align: middle;
+        font-family: "latolight";
+        font-size: 1.143em;
+        color: #666;
+        -o-transition: color 0.2s ease-out;
+        -ms-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -webkit-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out; }
+      /* line 55, scss/module/_header.scss */
+      .header .head-nav ul li.active a, .header .head-nav ul li:hover a {
+        color: #df4092; }
+  /* line 68, scss/module/_header.scss */
+  .header .log-regis, .header .log-regis-mb {
+    width: 17.54385964912281%;
+    height: 32px;
+    display: table;
+    float: right;
+    position: relative;
+    padding-left: 47px;
+    margin-top: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+    border-radius: 4px; }
+    /* line 75, scss/module/_header.scss */
+    .header .log-regis:before, .header .log-regis-mb:before {
+      width: 21px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      left: 13px;
+      top: 5px;
+      z-index: 1;
+      content: "";
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 82, scss/module/_header.scss */
+    .header .log-regis:hover, .header .log-regis-mb:hover {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #df4092;
+      border-radius: 4px; }
+    /* line 86, scss/module/_header.scss */
+    .header .log-regis a, .header .log-regis-mb a {
+      display: table-cell;
+      vertical-align: middle;
+      font-family: "open_sansregular";
+      color: #666;
+      -o-transition: color 0.2s ease-out;
+      -ms-transition: color 0.2s ease-out;
+      -moz-transition: color 0.2s ease-out;
+      -webkit-transition: color 0.2s ease-out;
+      transition: color 0.2s ease-out; }
+    /* line 92, scss/module/_header.scss */
+    .header .log-regis span, .header .log-regis-mb span {
+      display: table-cell;
+      vertical-align: middle;
+      font-family: "open_sansregular";
+      color: #666;
+      -o-transition: color 0.2s ease-out;
+      -ms-transition: color 0.2s ease-out;
+      -moz-transition: color 0.2s ease-out;
+      -webkit-transition: color 0.2s ease-out;
+      transition: color 0.2s ease-out; }
+    /* line 98, scss/module/_header.scss */
+    .header .log-regis a:hover, .header .log-regis-mb a:hover {
+      color: #df4092; }
+  /* line 103, scss/module/_header.scss */
+  .header .mb-menu-button {
+    display: none;
+    float: right;
+    margin: 7px 4px 0 0; }
+    /* line 108, scss/module/_header.scss */
+    .header .mb-menu-button button {
+      width: 32px;
+      height: 32px;
+      margin: 0;
+      padding: 0;
+      border: none; }
+      /* line 112, scss/module/_header.scss */
+      .header .mb-menu-button button.on {
+        background-color: transparent;
+        background-image: url("http://thammydiamond.vn/");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 0 0; }
+      /* line 115, scss/module/_header.scss */
+      .header .mb-menu-button button.off {
+        background-color: transparent;
+        background-image: url("http://thammydiamond.vn/");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 0 -32px; }
+  /* line 120, scss/module/_header.scss */
+  .header .head-nav-mb {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    z-index: 1;
+    padding: 0 10px; }
+    /* line 126, scss/module/_header.scss */
+    .header .head-nav-mb span.triangle {
+      display: inline-block;
+      width: 16px;
+      height: 12px;
+      position: absolute;
+      top: -10px;
+      right: 22px;
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+  /* line 133, scss/module/_header.scss */
+  .header .nav-mb {
+    padding-left: 28px;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0 0;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ee78a9;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(226, 50, 140, 0.32);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(226, 50, 140, 0.32);
+    box-shadow: 0px 0px 21px 0px rgba(226, 50, 140, 0.32); }
+    /* line 141, scss/module/_header.scss */
+    .header .nav-mb ul {
+      margin-top: 28px; }
+      /* line 144, scss/module/_header.scss */
+      .header .nav-mb ul li {
+        margin-bottom: 15px; }
+        /* line 147, scss/module/_header.scss */
+        .header .nav-mb ul li.active a {
+          color: #e52d7e; }
+        /* line 151, scss/module/_header.scss */
+        .header .nav-mb ul li a {
+          font-family: "latolight";
+          font-size: 1.286em;
+          color: #666;
+          -o-transition: color 0.2s ease-out;
+          -ms-transition: color 0.2s ease-out;
+          -moz-transition: color 0.2s ease-out;
+          -webkit-transition: color 0.2s ease-out;
+          transition: color 0.2s ease-out; }
+  /* line 160, scss/module/_header.scss */
+  .header .log-regis-mb {
+    width: 200px;
+    float: none;
+    margin: 48px 0 25px; }
+
+/* line 167, scss/module/_header.scss */
+.loged {
+  float: right;
+  padding-top: 7px;
+  width: 210px; }
+  /* line 171, scss/module/_header.scss */
+  .loged a.user-name {
+    font-family: "latobold";
+    color: #e14e8b;
+    line-height: 27px;
+    cursor: default;
+    float: left;
+    height: 27px; }
+    /* line 178, scss/module/_header.scss */
+    .loged a.user-name img {
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      overflow: hidden;
+      float: left;
+      margin-right: 9px;
+      margin-top: -2px;
+      float: left; }
+    /* line 188, scss/module/_header.scss */
+    .loged a.user-name span {
+      display: inline-block;
+      width: 40px;
+      overflow: hidden;
+      height: 100%; }
+  /* line 198, scss/module/_header.scss */
+  .loged a.logout {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #999;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 20px;
+    display: inline-block;
+    color: #999;
+    margin-left: 22px; }
+    /* line 207, scss/module/_header.scss */
+    .loged a.logout:hover {
+      border: 1px solid #e14e8b;
+      color: #e14e8b; }
+
+/* line 216, scss/module/_header.scss */
+.user-popup .fancybox-skin {
+  background: #fff url("http://thammydiamond.vn/") no-repeat left top;
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  background: none; }
+
+/* line 221, scss/module/_header.scss */
+.user-popup .fancybox-inner {
+  padding-bottom: 20px; }
+
+/* line 224, scss/module/_header.scss */
+.popup-form {
+  background: url(http://thammydiamond.vn/) right bottom no-repeat #fff;
+  width: 620px;
+  position: relative;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  overflow: hidden; }
+  /* line 230, scss/module/_header.scss */
+  .popup-form .cl-btnfcb {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background: url(http://thammydiamond.vn/) 0 0 no-repeat;
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+    /* line 238, scss/module/_header.scss */
+    .popup-form .cl-btnfcb:hover {
+      background-position: 0 -39px; }
+  /* line 242, scss/module/_header.scss */
+  .popup-form .bg-top {
+    background: url(http://thammydiamond.vn/) left top no-repeat; }
+    /* line 244, scss/module/_header.scss */
+    .popup-form .bg-top .pp-title {
+      height: 82px;
+      text-align: center;
+      line-height: 116px;
+      font-family: "latoblack";
+      font-size: 2em;
+      color: #e2328c;
+      text-transform: uppercase;
+      border-bottom: 1px solid #dfdfdf; }
+      /* line 253, scss/module/_header.scss */
+      .popup-form .bg-top .pp-title.no-bd {
+        border-bottom: none; }
+
+/* line 259, scss/module/_header.scss */
+.social-login {
+  padding: 0 55px 24px; }
+  /* line 261, scss/module/_header.scss */
+  .social-login p {
+    font-family: "latoitalic";
+    font-size: 1.071em;
+    color: #292929;
+    padding-top: 10px;
+    padding-bottom: 22px; }
+  /* line 268, scss/module/_header.scss */
+  .social-login a {
+    display: inline-block;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    overflow: hidden;
+    height: 49px;
+    line-height: 49px;
+    color: #fff;
+    font-size: 1.357em; }
+    /* line 276, scss/module/_header.scss */
+    .social-login a span {
+      display: inline-block;
+      padding: 0 50px; }
+    /* line 280, scss/module/_header.scss */
+    .social-login a.lg-fb {
+      background: #2c60ba;
+      float: left; }
+      /* line 283, scss/module/_header.scss */
+      .social-login a.lg-fb i {
+        background: #2655a6; }
+    /* line 287, scss/module/_header.scss */
+    .social-login a.lg-fb:hover {
+      background: #2655a6; }
+    /* line 290, scss/module/_header.scss */
+    .social-login a.lg-gg {
+      background: #da4c4c;
+      float: right; }
+      /* line 293, scss/module/_header.scss */
+      .social-login a.lg-gg i {
+        background: #cb4747; }
+    /* line 297, scss/module/_header.scss */
+    .social-login a.lg-gg:hover {
+      background: #cb4747; }
+    /* line 300, scss/module/_header.scss */
+    .social-login a i {
+      text-align: center;
+      display: inline-block;
+      width: 55px;
+      height: 49px;
+      line-height: 49px;
+      color: #fff;
+      font-size: 1.429em;
+      float: left; }
+
+/* line 312, scss/module/_header.scss */
+.form-user {
+  border-top: 1px solid #dfdfdf;
+  position: relative;
+  padding: 24px 50px 40px; }
+  /* line 316, scss/module/_header.scss */
+  .form-user.lgin {
+    padding-bottom: 0; }
+  /* line 319, scss/module/_header.scss */
+  .form-user .text-or {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    margin-left: -25px;
+    color: #030303;
+    font-size: 1.071em;
+    background: #fff;
+    padding: 0 10px; }
+
+/* line 330, scss/module/_header.scss */
+.not-acc {
+  margin-bottom: 15px;
+  color: #333;
+  border-top: 1px solid #dddddd;
+  margin-top: 8px;
+  padding: 11px 50px 22px; }
+  /* line 336, scss/module/_header.scss */
+  .not-acc a {
+    color: #009DF2; }
+    /* line 338, scss/module/_header.scss */
+    .not-acc a:hover {
+      color: #E2328C; }
+
+/* line 343, scss/module/_header.scss */
+.input {
+  padding: 0 17px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 12px;
+  background: #fff; }
+  /* line 349, scss/module/_header.scss */
+  .input input {
+    outline: none;
+    height: 40px;
+    line-height: 40px;
+    background: none;
+    border: none;
+    width: 100%; }
+
+/* line 358, scss/module/_header.scss */
+.check {
+  font-size: 1.071em;
+  font-family: "latoitalic";
+  color: #999999;
+  margin-top: 22px; }
+  /* line 363, scss/module/_header.scss */
+  .check div.checker {
+    width: 13px;
+    height: 13px;
+    float: left; }
+    /* line 367, scss/module/_header.scss */
+    .check div.checker span, .check div.checker.hover.active {
+      background: url(http://thammydiamond.vn/) 0 0 no-repeat;
+      width: 13px;
+      height: 13px; }
+      /* line 371, scss/module/_header.scss */
+      .check div.checker span.checked, .check div.checker.hover.active.checked {
+        background: url(http://thammydiamond.vn/) 0 -13px no-repeat; }
+  /* line 376, scss/module/_header.scss */
+  .check a {
+    color: #e2328c;
+    text-decoration: underline; }
+    /* line 379, scss/module/_header.scss */
+    .check a:hover {
+      color: #009df2; }
+  /* line 383, scss/module/_header.scss */
+  .check .forgetpass {
+    font-family: "latoregular"; }
+    /* line 385, scss/module/_header.scss */
+    .check .forgetpass a {
+      color: #009df2;
+      text-decoration: none; }
+      /* line 388, scss/module/_header.scss */
+      .check .forgetpass a:hover {
+        color: #e2328c; }
+
+/* line 394, scss/module/_header.scss */
+.btn-pink {
+  font-family: "latoregular" !important;
+  margin-top: 8px !important; }
+
+/* line 400, scss/module/_header.scss */
+.error_mes {
+  color: #ff0000;
+  font-style: italic; }
+
+@media (max-width: 700px) {
+  /* line 406, scss/module/_header.scss */
+  .popup-form {
+    width: 500px; }
+
+  /* line 411, scss/module/_header.scss */
+  .social-login a span {
+    display: inline-block;
+    padding: 0 20px; } }
+@media (max-width: 550px) {
+  /* line 419, scss/module/_header.scss */
+  .popup-form {
+    max-width: 500px;
+    width: 100%; }
+
+  /* line 425, scss/module/_header.scss */
+  .social-login a span {
+    display: inline-block;
+    padding: 0 20px; } }
+@media (max-width: 500px) {
+  /* line 433, scss/module/_header.scss */
+  .form-user {
+    padding: 24px 15px 40px; }
+
+  /* line 436, scss/module/_header.scss */
+  .popup-form {
+    max-width: 280px;
+    width: 100%; }
+    /* line 439, scss/module/_header.scss */
+    .popup-form .cl-btnfcb {
+      width: 20px;
+      height: 20px;
+      background: url(http://thammydiamond.vn/) 0 0 no-repeat; }
+      /* line 443, scss/module/_header.scss */
+      .popup-form .cl-btnfcb:hover {
+        background-position: 0 -20px; }
+    /* line 448, scss/module/_header.scss */
+    .popup-form .bg-top .pp-title {
+      font-size: 1.286em;
+      height: 65px;
+      line-height: 95px; }
+
+  /* line 455, scss/module/_header.scss */
+  .social-login {
+    text-align: center; }
+    /* line 458, scss/module/_header.scss */
+    .social-login a span {
+      display: inline-block;
+      padding: 0 10px; }
+    /* line 462, scss/module/_header.scss */
+    .social-login a.lg-fb {
+      float: none;
+      margin-bottom: 10px; }
+    /* line 466, scss/module/_header.scss */
+    .social-login a.lg-gg {
+      float: none; }
+
+  /* line 472, scss/module/_header.scss */
+  .check label {
+    display: inherit; }
+    /* line 474, scss/module/_header.scss */
+    .check label a {
+      display: block;
+      padding: 10px; }
+  /* line 479, scss/module/_header.scss */
+  .check .forgetpass.right {
+    float: left;
+    padding: 15px 0; }
+
+  /* line 484, scss/module/_header.scss */
+  .btn-pink {
+    padding: 10px 0 8px !important;
+    width: 100%;
+    text-align: center; } }
+/* line 492, scss/module/_header.scss */
+.thongbao {
+  text-align: center;
+  min-height: 500px; }
+  /* line 495, scss/module/_header.scss */
+  .thongbao .tb-title {
+    padding-top: 200px;
+    font-family: "Georgia";
+    color: #e2328c;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding-bottom: 20px; }
+  /* line 503, scss/module/_header.scss */
+  .thongbao .tb-text {
+    font-size: 1.143em;
+    line-height: 22px; }
+
+/* line 3, scss/module/_footer.scss */
+.footer {
+  width: 100%;
+  height: 61px;
+  padding-top: 15px;
+  background-color: #fff0f6;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
+  font-size: 14px;
+  font-size: 14px;
+  font-family: "open_sansregular", arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #e43e93; }
+  /* line 11, scss/module/_footer.scss */
+  .footer a, .footer p {
+    font-size: 1em;
+    -o-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
+  /* line 16, scss/module/_footer.scss */
+  .footer .copyright {
+    float: left;
+    padding-top: 8px; }
+    /* line 20, scss/module/_footer.scss */
+    .footer .copyright br {
+      display: none; }
+  /* line 24, scss/module/_footer.scss */
+  .footer .rules-fb {
+    float: right; }
+    /* line 27, scss/module/_footer.scss */
+    .footer .rules-fb a {
+      position: relative;
+      color: #e43e93; }
+    /* line 32, scss/module/_footer.scss */
+    .footer .rules-fb a:hover {
+      color: #c72147; }
+    /* line 36, scss/module/_footer.scss */
+    .footer .rules-fb .fb {
+      display: inline-block;
+      margin-right: 16px;
+      padding: 8px 20px 9px 0;
+      border-right: 1px solid #f2b1cb; }
+      /* line 46, scss/module/_footer.scss */
+      .footer .rules-fb .fb i {
+        position: absolute;
+        top: 0;
+        left: -22px;
+        font-size: 23px; }
+    /* line 51, scss/module/_footer.scss */
+    .footer .rules-fb .rules {
+      display: inline-block; }
+
+/* line 3, scss/module/_container.scss */
+.main-container {
+  font-size: 14px;
+  padding-top: 45px; }
+
+/* line 7, scss/module/_container.scss */
+.n-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 3, scss/module/_home.scss */
+.wr-home {
+  width: 100%;
+  font-size: 14px; }
+
+/* line 9, scss/module/_home.scss */
+.banner {
+  width: 100%;
+  position: relative; }
+  /* line 13, scss/module/_home.scss */
+  .banner img {
+    width: 100%;
+    display: block; }
+  /* line 18, scss/module/_home.scss */
+  .banner .wr-page {
+    height: 100%; }
+
+/* line 23, scss/module/_home.scss */
+.banner-pc {
+  height: 634px;
+  background-color: transparent;
+  background-image: url("http://thammydiamond.vn/");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center; }
+  /* line 27, scss/module/_home.scss */
+  .banner-pc .wr-page {
+    position: relative; }
+  /* line 31, scss/module/_home.scss */
+  .banner-pc .tt {
+    width: 826px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -552px;
+    opacity: 0; }
+  /* line 40, scss/module/_home.scss */
+  .banner-pc .tt-1 {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    margin-left: 131px; }
+    /* line 46, scss/module/_home.scss */
+    .banner-pc .tt-1 img {
+      position: relative;
+      top: 100px;
+      opacity: 0; }
+  /* line 53, scss/module/_home.scss */
+  .banner-pc .tt-2 {
+    width: 467px;
+    position: absolute;
+    left: 50%;
+    top: 163px;
+    margin-left: 19px; }
+    /* line 59, scss/module/_home.scss */
+    .banner-pc .tt-2 img {
+      position: relative;
+      top: 100px;
+      opacity: 0; }
+
+/* line 66, scss/module/_home.scss */
+.banner-tl {
+  display: none;
+  height: auto; }
+
+/* line 70, scss/module/_home.scss */
+.banner-mb {
+  display: none;
+  height: auto; }
+
+/* line 75, scss/module/_home.scss */
+.present {
+  width: 25.4386%;
+  position: absolute;
+  bottom: 62px;
+  right: 15%;
+  text-align: center; }
+  @media only screen and (max-width: 1920px) {
+    /* line 75, scss/module/_home.scss */
+    .present {
+      opacity: 0; } }
+  @media only screen and (max-width: 1024px) {
+    /* line 75, scss/module/_home.scss */
+    .present {
+      opacity: 1; } }
+  /* line 86, scss/module/_home.scss */
+  .present p {
+    line-height: 20px;
+    font-family: "latoitalic";
+    font-size: 1.071em; }
+  /* line 90, scss/module/_home.scss */
+  .present > span {
+    font-weight: 700; }
+
+/* line 95, scss/module/_home.scss */
+.discovery {
+  display: table;
+  margin: 12px auto 0; }
+  /* line 99, scss/module/_home.scss */
+  .discovery a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 11px 12px 9px;
+    font-family: "latobold";
+    font-size: 1.143em;
+    color: #df4092;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e2328c;
+    border-radius: 18px;
+    -o-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
+    /* line 107, scss/module/_home.scss */
+    .discovery a span {
+      margin-left: 4px;
+      position: relative; }
+      /* line 111, scss/module/_home.scss */
+      .discovery a span i {
+        font-size: 24px; }
+        /* line 114, scss/module/_home.scss */
+        .discovery a span i.fa {
+          line-height: 0; }
+    /* line 119, scss/module/_home.scss */
+    .discovery a:hover {
+      color: #fff;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #e2328c;
+      border-radius: 18px;
+      background-color: #e2328c;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+
+/* line 128, scss/module/_home.scss */
+.content {
+  width: 100%;
+  height: auto;
+  padding-top: 88px;
+  background-color: transparent;
+  background-image: url("http://thammydiamond.vn/");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top; }
+
+/* line 134, scss/module/_home.scss */
+.coddle-incredible {
+  min-height: 87px;
+  margin-bottom: 16px;
+  padding: 0 35px 0 30px;
+  background-color: #fff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 3px;
+  color: #333; }
+  /* line 142, scss/module/_home.scss */
+  .coddle-incredible .story {
+    float: left;
+    margin-top: 35px;
+    font-size: 1.714em;
+    font-family: "latoregular", arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase; }
+    /* line 148, scss/module/_home.scss */
+    .coddle-incredible .story br {
+      display: none; }
+  /* line 152, scss/module/_home.scss */
+  .coddle-incredible .quantity {
+    float: right;
+    margin: 17px 18px 0 0;
+    font-size: 1.143em;
+    font-family: "latoregular", arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right; }
+    /* line 159, scss/module/_home.scss */
+    .coddle-incredible .quantity span {
+      display: block;
+      margin-top: 2px;
+      font-size: 41.91px;
+      font-family: "latoblack", arial, Helvetica, sans-serif;
+      font-weight: 400;
+      color: #e2328c; }
+  /* line 166, scss/module/_home.scss */
+  .coddle-incredible .champion {
+    float: right;
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 2px solid #e2328c;
+    font-size: 1.286em;
+    font-family: "latolight", arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; }
+    /* line 173, scss/module/_home.scss */
+    .coddle-incredible .champion span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-family: "latoblack", arial, Helvetica, sans-serif;
+      font-weight: 400;
+      color: #e2328c; }
+
+/* line 182, scss/module/_home.scss */
+.square-img {
+  width: 100%; }
+  /* line 185, scss/module/_home.scss */
+  .square-img .block {
+    width: 100%; }
+    /* line 188, scss/module/_home.scss */
+    .square-img .block .item {
+      float: left;
+      width: 24.29824561403509%;
+      margin-right: 0.9356725146198833%;
+      margin-bottom: 10px;
+      background-color: #b498f4;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0;
+      cursor: pointer;
+      -webkit-box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3);
+      -moz-box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3);
+      box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3); }
+      /* line 199, scss/module/_home.scss */
+      .square-img .block .item img {
+        display: block;
+        width: 100%; }
+    /* line 205, scss/module/_home.scss */
+    .square-img .block .item.x2 {
+      width: 49.47368421052632%;
+      position: relative; }
+      /* line 209, scss/module/_home.scss */
+      .square-img .block .item.x2 .ur-pic {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        /* line 213, scss/module/_home.scss */
+        .square-img .block .item.x2 .ur-pic img {
+          width: 100%; }
+      /* line 220, scss/module/_home.scss */
+      .square-img .block .item.x2 .ur-status {
+        width: 45.13274336283186%;
+        height: 100%;
+        position: absolute;
+        right: 2.654867256637168%;
+        top: 0px;
+        text-align: center; }
+        /* line 224, scss/module/_home.scss */
+        .square-img .block .item.x2 .ur-status table {
+          height: 100%;
+          width: 100%; }
+          /* line 226, scss/module/_home.scss */
+          .square-img .block .item.x2 .ur-status table td {
+            vertical-align: middle; }
+        /* line 230, scss/module/_home.scss */
+        .square-img .block .item.x2 .ur-status p.status {
+          font-size: 1.286em;
+          font-family: "latomedium", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          line-height: 21px;
+          color: #043856; }
+        /* line 235, scss/module/_home.scss */
+        .square-img .block .item.x2 .ur-status span {
+          display: inline-block;
+          margin: 35px 0 21px;
+          width: 51px;
+          height: 1px;
+          background: #043856; }
+        /* line 241, scss/module/_home.scss */
+        .square-img .block .item.x2 .ur-status p.ur {
+          font-size: 1.714em;
+          font-family: "latoblack", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          color: #043856;
+          text-transform: uppercase; }
+    /* line 249, scss/module/_home.scss */
+    .square-img .block .item:nth-child(3),
+    .square-img .block .item:nth-child(7),
+    .square-img .block .item:last-child {
+      margin-right: 0px; }
+    /* line 255, scss/module/_home.scss */
+    .square-img .block .item.bg-1st {
+      background-color: #cff5ff;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 258, scss/module/_home.scss */
+    .square-img .block .item.bg-2nd {
+      background-color: #b498f4;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 261, scss/module/_home.scss */
+    .square-img .block .item.bg-3rd {
+      background-color: #d0f8f1;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 264, scss/module/_home.scss */
+    .square-img .block .item.bg-4th {
+      background-color: #d6c1fb;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 267, scss/module/_home.scss */
+    .square-img .block .item.bg-5th {
+      background-color: #cff5ff;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 270, scss/module/_home.scss */
+    .square-img .block .item.bg-6th {
+      background-color: #d6c1fb;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 273, scss/module/_home.scss */
+    .square-img .block .item.bg-7th {
+      background-color: #ffa7bc;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 276, scss/module/_home.scss */
+    .square-img .block .item.bg-8th {
+      background-color: #fffca0;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 279, scss/module/_home.scss */
+    .square-img .block .item.bg-9th {
+      background-color: #c8ebc8;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+    /* line 282, scss/module/_home.scss */
+    .square-img .block .item.bg-10th {
+      background-color: #c7ef80;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 0; }
+
+/* line 288, scss/module/_home.scss */
+.thousand-girl {
+  width: 100%;
+  margin-top: 78px;
+  padding-bottom: 79px;
+  text-align: center; }
+  /* line 293, scss/module/_home.scss */
+  .thousand-girl p {
+    margin: 0px 0 8px;
+    font-size: 1.714em;
+    font-family: "latoregular", arial, Helvetica, sans-serif;
+    font-weight: 400; }
+    /* line 297, scss/module/_home.scss */
+    .thousand-girl p br {
+      display: none; }
+  /* line 301, scss/module/_home.scss */
+  .thousand-girl span {
+    display: block;
+    font-size: 1.714em;
+    font-family: "latoblack", arial, Helvetica, sans-serif;
+    font-weight: 400; }
+
+/* line 306, scss/module/_home.scss */
+a.share, .btn-pink, .chiase-slogan .chiase-btn, #gallery .slide-wrp .chiase-btn, .pagi .pagi-ele, .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb, .game .btn-next a, .view-more-btn {
+  display: inline-block;
+  margin-top: 21px;
+  padding: 15px 73px 13px;
+  color: #e2328c;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #e2328c;
+  border-radius: 25px;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  font-size: 1.571em;
+  font-family: "latobold", arial, Helvetica, sans-serif;
+  font-weight: 400; }
+  /* line 332, scss/module/_home.scss */
+  a.share:hover, .btn-pink:hover, .chiase-slogan .chiase-btn:hover, #gallery .slide-wrp .chiase-btn:hover, .pagi .pagi-ele:hover, .game .wr-step-3 .step-3 .design .share .social .mail:hover, .game .wr-step-3 .step-3 .design .share .social .down:hover, .game .wr-step-3 .step-3 .design .share .social .fb:hover, .game .btn-next a:hover, .view-more-btn:hover {
+    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e2328c;
+    border-radius: 25px;
+    background-color: #e2328c;
+    background-image: url("../images/index.html");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center; }
+
+/* line 3, scss/module/_intro.scss */
+#intro-header {
+  background: url("http://thammydiamond.vn/") no-repeat center center;
+  width: 100%;
+  height: 525px;
+  padding: 0 55px 0 30px;
+  line-height: 1.5em; }
+  @media only screen and (max-width: 1220px) {
+    /* line 3, scss/module/_intro.scss */
+    #intro-header {
+      background-position: -380px 0; } }
+  @media only screen and (max-width: 1040px) {
+    /* line 3, scss/module/_intro.scss */
+    #intro-header {
+      background: url("http://thammydiamond.vn/") no-repeat bottom center;
+      height: auto;
+      padding: 0; } }
+  /* line 17, scss/module/_intro.scss */
+  #intro-header .hero-image {
+    display: none;
+    width: 100%; }
+    @media only screen and (max-width: 1040px) {
+      /* line 17, scss/module/_intro.scss */
+      #intro-header .hero-image {
+        display: inline-block;
+        max-width: 100%; } }
+  /* line 26, scss/module/_intro.scss */
+  #intro-header .copy-text {
+    float: right;
+    width: calc(100% - 830px);
+    height: 525px; }
+    @media only screen and (max-width: 1040px) {
+      /* line 26, scss/module/_intro.scss */
+      #intro-header .copy-text {
+        height: auto;
+        padding: 15px 18px;
+        text-align: center;
+        width: 100%; } }
+  /* line 37, scss/module/_intro.scss */
+  #intro-header h3 {
+    color: #e2328c;
+    font-size: 1.688em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2em;
+    letter-spacing: 0.8px; }
+  /* line 47, scss/module/_intro.scss */
+  #intro-header p {
+    padding: 0 15px;
+    margin-bottom: 8px;
+    font-size: 1.143em; }
+    /* line 54, scss/module/_intro.scss */
+    #intro-header p span {
+      font-style: italic; }
+
+@media (max-width: 1200px) {
+  /* line 63, scss/module/_intro.scss */
+  #intro-header .copy-text {
+    width: calc(100% - 689px);
+    margin-right: -60px; } }
+@media (max-width: 1040px) {
+  /* line 69, scss/module/_intro.scss */
+  #intro-header .copy-text {
+    width: 100%;
+    margin-right: 0; } }
+/* line 74, scss/module/_intro.scss */
+.chiase-slogan {
+  margin-top: 50px; }
+  /* line 77, scss/module/_intro.scss */
+  .chiase-slogan h3 {
+    margin-bottom: 15px;
+    font-size: 1.785em;
+    line-height: 1.2em; }
+    /* line 82, scss/module/_intro.scss */
+    .chiase-slogan h3 span {
+      font-size: 1.6em; }
+  /* line 88, scss/module/_intro.scss */
+  .chiase-slogan p {
+    font-size: 1.143em;
+    line-height: 1.375em;
+    margin-bottom: 15px; }
+  /* line 94, scss/module/_intro.scss */
+  .chiase-slogan .chiase-btn {
+    padding: 14px 73px 10px; }
+
+/* line 106, scss/module/_intro.scss */
+.intro-carousel {
+  margin-bottom: 70px; }
+  @media only screen and (max-width: 1040px) {
+    /* line 106, scss/module/_intro.scss */
+    .intro-carousel {
+      padding-bottom: 0px;
+      margin: 0 auto 0px;
+      width: 100% !important;
+      overflow: hidden;
+      padding-bottom: 71px; } }
+  @media (max-width: 430px) {
+    /* line 106, scss/module/_intro.scss */
+    .intro-carousel {
+      margin-bottom: 10px;
+      padding-bottom: 0; } }
+  /* line 119, scss/module/_intro.scss */
+  .intro-carousel .slides {
+    margin: 0 auto; }
+  /* line 122, scss/module/_intro.scss */
+  .intro-carousel .slideItem {
+    /*background: #fff;*/
+    /*-webkit-box-shadow: -1px 6px 10px rgba(251, 128, 186, 0.3);
+    -moz-box-shadow: -1px 6px 10px rgba(251, 128, 186, 0.3);
+    box-shadow: -1px 6px 10px rgba(251, 128, 186, 0.3);*/ 
+
+  }
+    @media only screen and (max-width: 850px) {
+      /* line 125, scss/module/_intro.scss */
+      .intro-carousel .slideItem[position="5"] {
+        display: none !important; } }
+    /* line 129, scss/module/_intro.scss */
+    .intro-carousel .slideItem[position="5"] img {
+      position: relative;
+      opacity: 0.9;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+      filter: alpha(opacity=90); }
+    /* line 133, scss/module/_intro.scss */
+    .intro-carousel .slideItem[position="5"] a {
+      position: relative; }
+      /* line 135, scss/module/_intro.scss */
+      .intro-carousel .slideItem[position="5"] a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 1040px) {
+      /* line 147, scss/module/_intro.scss */
+      .intro-carousel .slideItem[position="4"] {
+        display: none !important; } }
+    /* line 151, scss/module/_intro.scss */
+    .intro-carousel .slideItem[position="4"] img {
+      position: relative; }
+    /* line 154, scss/module/_intro.scss */
+    .intro-carousel .slideItem[position="4"] a {
+      position: relative;
+      display: block; }
+      /* line 157, scss/module/_intro.scss */
+      .intro-carousel .slideItem[position="4"] a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /*background: rgba(0, 0, 0, 0.2);*/ 
+
+      }
+    /* line 169, scss/module/_intro.scss */
+    .intro-carousel .slideItem img {
+      max-width: 100%;
+      /*border: 6px solid #fff !important;*/
+
+    }
+  /* line 174, scss/module/_intro.scss */
+  .intro-carousel .nextButton, .intro-carousel .prevButton {
+    width: 77px;
+    height: 77px;
+    background: url("../img/carousel_btn_normal.png") no-repeat;
+    transition: all .3s;
+    top: 50%;
+    margin-top: -30px;
+    z-index: 100; }
+  /* line 182, scss/module/_intro.scss */
+  .intro-carousel .nextButton {
+    background-position: -77px 0;
+    right: 50%;
+    margin-right: -27%; }
+    @media only screen and (max-width: 1024px) {
+      /* line 182, scss/module/_intro.scss */
+      .intro-carousel .nextButton {
+        margin-right: -23%; top: 35% } }
+    @media only screen and (max-width: 850px) {
+      /* line 182, scss/module/_intro.scss */
+      .intro-carousel .nextButton {
+        margin-right: -235px;
+        margin-top: -10px; } }
+    @media only screen and (max-width: 767px) {
+      /* line 182, scss/module/_intro.scss */
+      .intro-carousel .nextButton {
+        margin-right: -208px;
+        width: 40px;
+        height: 40px;
+        background: url("../img/carousel_btn_mb.png") no-repeat -40px 0; } }
+    /* line 199, scss/module/_intro.scss */
+    .intro-carousel .nextButton:hover {
+      background: url("../img/carousel_btn_hover.png") no-repeat;
+      background-position: -77px 0; }
+      @media only screen and (max-width: 767px) {
+        /* line 199, scss/module/_intro.scss */
+        .intro-carousel .nextButton:hover {
+          background: url("../img/carousel_btn_mb_hover.png") no-repeat -40px 0; } }
+  /* line 207, scss/module/_intro.scss */
+  .intro-carousel .prevButton {
+    left: 50%;
+    margin-left: -27%; }
+    @media only screen and (max-width: 1024px) {
+      /* line 207, scss/module/_intro.scss */
+      .intro-carousel .prevButton {
+        margin-left: -23%;top: 35%; } }
+    @media only screen and (max-width: 850px) {
+      /* line 207, scss/module/_intro.scss */
+      .intro-carousel .prevButton {
+        margin-left: -235px;
+        margin-top: -10px; } }
+    @media only screen and (max-width: 767px) {
+      /* line 207, scss/module/_intro.scss */
+      .intro-carousel .prevButton {
+        margin-left: -208px;
+        width: 40px;
+        height: 40px;
+        background: url("../img/carousel_btn_mb.png") no-repeat; } }
+    /* line 223, scss/module/_intro.scss */
+    .intro-carousel .prevButton:hover {
+      background: url("../img/carousel_btn_hover.png") no-repeat; }
+      @media only screen and (max-width: 767px) {
+        /* line 223, scss/module/_intro.scss */
+        .intro-carousel .prevButton:hover {
+          background: url("../img/carousel_btn_mb_hover.png") no-repeat; } }
+
+@media (max-width: 430px) {
+  /* line 231, scss/module/_intro.scss */
+  #intro-pc {
+    display: none; } }
+
+/* line 236, scss/module/_intro.scss */
+#intro-mobile {
+  display: none; }
+  @media (max-width: 430px) {
+    /* line 236, scss/module/_intro.scss */
+    #intro-mobile {
+      display: block; } }
+
+/* line 244, scss/module/_intro.scss */
+#video-section {
+  width: 100%;
+  height: 564px;
+  background: url("http://thammydiamond.vn/") no-repeat center 0; }
+  @media only screen and (max-width: 1040px) {
+    /* line 244, scss/module/_intro.scss */
+    #video-section {
+      height: auto;
+      padding: 0 18px;
+      overflow-x: hidden; } }
+  /* line 252, scss/module/_intro.scss */
+  #video-section .video-row {
+    margin-left: -19px;
+    margin-right: -19px; }
+    /* line 255, scss/module/_intro.scss */
+    #video-section .video-row:after {
+      display: block;
+      content: "";
+      clear: both; }
+  /* line 261, scss/module/_intro.scss */
+  #video-section .video-wrap {
+    float: left;
+    width: 50%;
+    padding: 0 15px; }
+    @media only screen and (max-width: 1040px) {
+      /* line 261, scss/module/_intro.scss */
+      #video-section .video-wrap {
+        width: 100%;
+        margin-bottom: 15px; } }
+    /* line 269, scss/module/_intro.scss */
+    #video-section .video-wrap a {
+      position: relative; }
+    /* line 273, scss/module/_intro.scss */
+    #video-section .video-wrap h3 {
+      font-family: "latoregular";
+      font-size: 1.714em;
+      margin-bottom: 30px;
+      padding-top: 50px; }
+    /* line 283, scss/module/_intro.scss */
+    #video-section .video-wrap a:hover .play-icon {
+      background: url("http://thammydiamond.vn/") no-repeat; }
+    /* line 287, scss/module/_intro.scss */
+    #video-section .video-wrap .play-icon {
+      width: 76px;
+      height: 76px;
+      background: url("http://thammydiamond.vn/") no-repeat;
+      position: absolute;
+      top: 50%;
+      margin-top: -38px;
+      left: 50%;
+      margin-left: -38px;
+      -o-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    /* line 299, scss/module/_intro.scss */
+    #video-section .video-wrap img {
+      display: block;
+      width: 100%; }
+
+/* line 309, scss/module/_intro.scss */
+.fancybox-close {
+  background: url("http://thammydiamond.vn/") no-repeat;
+  width: 39px;
+  height: 39px;
+  top: 2px;
+  right: 0; }
+
+@media only screen and (max-width: 1040px) {
+  /* line 317, scss/module/_intro.scss */
+  .slideItem[position="4"] {
+    display: none !important; }
+
+  /* line 320, scss/module/_intro.scss */
+  .container {
+    width: 100%; } }
+/* line 1, scss/module/_tc.scss */
+.tc-bg {
+  background: url(http://thammydiamond.vn/) center 0 no-repeat; }
+  /* line 3, scss/module/_tc.scss */
+  .tc-bg .tc-content {
+    padding: 3px;
+    padding-bottom: 130px;
+    margin-top: 60px;
+    background: #fff;
+    box-shadow: 0px -5px 5px 0px rgba(2, 2, 3, 0.15); }
+    /* line 10, scss/module/_tc.scss */
+    .tc-bg .tc-content .title-tc .tt {
+      color: #e2328c;
+      font-size: 32px;
+      border-bottom: 1px solid #dddddd;
+      font-family: "Georgia";
+      padding: 42px 27px 7px; }
+    /* line 17, scss/module/_tc.scss */
+    .tc-bg .tc-content .title-tc .desc {
+      font-size: 15px;
+      font-style: italic;
+      color: #999999;
+      padding: 4px 27px 30px; }
+    /* line 25, scss/module/_tc.scss */
+    .tc-bg .tc-content .ct-tc {
+      color: #333333;
+      font-size: 16px;
+      padding: 0 27px;
+      line-height: 23px; }
+
+/* line 34, scss/module/_tc.scss */
+.ct-tc h1 {
+  font-weight: bold;
+  font-family: "latoheavy";
+  margin: 10px 0; }
+/* line 39, scss/module/_tc.scss */
+.ct-tc p {
+  text-align: justify;
+  margin-bottom: 10px; }
+  /* line 42, scss/module/_tc.scss */
+  .ct-tc p.line1 {
+    padding-left: 20px;
+    font-family: "latobold"; }
+  /* line 46, scss/module/_tc.scss */
+  .ct-tc p.line2 {
+    padding-left: 40px; }
+  /* line 49, scss/module/_tc.scss */
+  .ct-tc p a {
+    color: #e2328c; }
+    /* line 51, scss/module/_tc.scss */
+    .ct-tc p a:hover {
+      text-decoration: underline; }
+
+@media (max-width: 640px) {
+  /* line 58, scss/module/_tc.scss */
+  .tc-bg {
+    background: url(http://thammydiamond.vn/) right 0 no-repeat; }
+    /* line 60, scss/module/_tc.scss */
+    .tc-bg .tc-content {
+      background: none;
+      -webkit-box-shadow: 0 0 0 0;
+      -moz-box-shadow: 0 0 0 0;
+      box-shadow: 0 0 0 0; }
+      /* line 64, scss/module/_tc.scss */
+      .tc-bg .tc-content .title-tc .tt {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 25px; }
+      /* line 69, scss/module/_tc.scss */
+      .tc-bg .tc-content .title-tc .desc {
+        font-size: 12px;
+        text-align: center; }
+      /* line 74, scss/module/_tc.scss */
+      .tc-bg .tc-content .ct-tc {
+        font-size: 14px; }
+
+  /* line 79, scss/module/_tc.scss */
+  .bg-mb-bt {
+    background: url(http://thammydiamond.vn/) left bottom no-repeat; } }
+@media (max-width: 480px) {
+  /* line 84, scss/module/_tc.scss */
+  .tc-bg {
+    background: url(http://thammydiamond.vn/) right 0 no-repeat; }
+    /* line 88, scss/module/_tc.scss */
+    .tc-bg .tc-content .title-tc .tt {
+      padding: 25px 10px 7px; }
+    /* line 91, scss/module/_tc.scss */
+    .tc-bg .tc-content .title-tc .desc {
+      padding: 4px 10px 7px; }
+    /* line 95, scss/module/_tc.scss */
+    .tc-bg .tc-content .ct-tc {
+      padding: 0 10px; } }
+/* line 3, scss/module/_popup.scss */
+.base-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("http://thammydiamond.vn/");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0 0; }
+  /* line 9, scss/module/_popup.scss */
+  .base-popup .wr-page {
+    position: relative; }
+
+/* line 13, scss/module/_popup.scss */
+.po-view-img {
+  margin: 0 auto 0;
+  padding: 21px 19px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0; }
+  /* line 20, scss/module/_popup.scss */
+  .po-view-img .test {
+    width: 100%;
+    position: relative; }
+  /* line 25, scss/module/_popup.scss */
+  .po-view-img .po-img {
+    float: left;
+    position: relative;
+    width: 62.18592964824121%; }
+    /* line 30, scss/module/_popup.scss */
+    .po-view-img .po-img img {
+      display: block;
+      width: 100%; }
+    /* line 35, scss/module/_popup.scss */
+    .po-view-img .po-img .customNavigation {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: -22px auto 0; }
+      /* line 40, scss/module/_popup.scss */
+      .po-view-img .po-img .customNavigation .home-po-prev,
+      .po-view-img .po-img .customNavigation .home-po-next {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 0 0;
+        border-width: 0;
+        border-style: solid;
+        border-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);
+        text-align: center; }
+        /* line 51, scss/module/_popup.scss */
+        .po-view-img .po-img .customNavigation .home-po-prev .fa,
+        .po-view-img .po-img .customNavigation .home-po-next .fa {
+          display: inline-block;
+          color: #333;
+          position: relative;
+          left: 3px; }
+        /* line 57, scss/module/_popup.scss */
+        .po-view-img .po-img .customNavigation .home-po-prev:hover .fa,
+        .po-view-img .po-img .customNavigation .home-po-next:hover .fa {
+          color: #e02a89; }
+      /* line 61, scss/module/_popup.scss */
+      .po-view-img .po-img .customNavigation .home-po-prev {
+        float: left;
+        margin-left: 12px; }
+        /* line 64, scss/module/_popup.scss */
+        .po-view-img .po-img .customNavigation .home-po-prev .fa {
+          position: relative;
+          left: auto;
+          right: 3px; }
+      /* line 70, scss/module/_popup.scss */
+      .po-view-img .po-img .customNavigation .home-po-next {
+        float: right;
+        margin-right: 12px; }
+  /* line 77, scss/module/_popup.scss */
+  .po-view-img .po-content {
+    float: right;
+    width: 33.91959798994975%; }
+    /* line 81, scss/module/_popup.scss */
+    .po-view-img .po-content h3 {
+      margin-top: 4px;
+      font-size: 1.429em;
+      font-family: "latoblack", arial, Helvetica, sans-serif;
+      font-weight: 400;
+      color: #e2328c; }
+    /* line 86, scss/module/_popup.scss */
+    .po-view-img .po-content p {
+      display: block;
+      margin-top: 15px;
+      font-size: 1.143em;
+      font-family: "latoregular", arial, Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 23px;
+      color: #333; }
+  /* line 96, scss/module/_popup.scss */
+  .po-view-img .social {
+    padding-bottom: 10px; }
+    /* line 100, scss/module/_popup.scss */
+    .po-view-img .social .social-like-fb,
+    .po-view-img .social .social-share-fb,
+    .po-view-img .social .social-pin-it {
+      display: table;
+      float: left;
+      margin-right: 18px;
+      margin-top: 12px; }
+      /* line 108, scss/module/_popup.scss */
+      .po-view-img .social .social-like-fb img,
+      .po-view-img .social .social-share-fb img,
+      .po-view-img .social .social-pin-it img {
+        margin-right: 6px;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%; }
+        /* line 112, scss/module/_popup.scss */
+        .po-view-img .social .social-like-fb img:hover,
+        .po-view-img .social .social-share-fb img:hover,
+        .po-view-img .social .social-pin-it img:hover {
+          position: relative;
+          top: 1px; }
+      /* line 117, scss/module/_popup.scss */
+      .po-view-img .social .social-like-fb span,
+      .po-view-img .social .social-share-fb span,
+      .po-view-img .social .social-pin-it span {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0px 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #c9c6c5;
+        border-radius: 2px;
+        font-size: 11px;
+        font-family: arial; }
+        /* line 125, scss/module/_popup.scss */
+        .po-view-img .social .social-like-fb span:before,
+        .po-view-img .social .social-share-fb span:before,
+        .po-view-img .social .social-pin-it span:before {
+          display: block;
+          content: "";
+          position: absolute;
+          left: -5px;
+          top: 7px;
+          width: 6px;
+          height: 8px;
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center; }
+    /* line 136, scss/module/_popup.scss */
+    .po-view-img .social .social-like-fb img {
+      width: 56px; }
+    /* line 141, scss/module/_popup.scss */
+    .po-view-img .social .social-share-fb img {
+      width: 65px; }
+    /* line 146, scss/module/_popup.scss */
+    .po-view-img .social .social-pin-it img {
+      width: 46px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #c9c6c5;
+      border-radius: 3px; }
+
+/* line 154, scss/module/_popup.scss */
+.fancybox-skin.popup-close a.fancybox-close {
+  width: 64px;
+  height: 64px;
+  background: transparent url("http://thammydiamond.vn/") no-repeat scroll 0% 0%;
+  position: absolute;
+  top: 0px;
+  right: -64px;
+  cursor: pointer; }
+  /* line 159, scss/module/_popup.scss */
+  .fancybox-skin.popup-close a.fancybox-close:hover {
+    opacity: 0.8; }
+
+/* line 163, scss/module/_popup.scss */
+.wrap_message {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 20px; }
+  /* line 168, scss/module/_popup.scss */
+  .wrap_message .thongbao_detail {
+    color: #df4092;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0; }
+  /* line 175, scss/module/_popup.scss */
+  .wrap_message .noidung_detail {
+    line-height: 20px; }
+
+/* line 181, scss/module/_popup.scss */
+.mCSB_scrollTools .mCSB_draggerRail,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px; }
+
+/* line 3, scss/module/_news.scss */
+.news-wrap .container {
+  width: 100%;
+  max-width: 1170px; }
+
+/* line 8, scss/module/_news.scss */
+#news-header {
+  background: #fff url("http://thammydiamond.vn/") no-repeat top center;
+  padding: 0 18px; }
+  /* line 12, scss/module/_news.scss */
+  #news-header .customNavigation a {
+    background: #fff;
+    color: #e2328c;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    line-height: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -webkit-box-shadow: 0 0 12px rgba(228, 66, 149, 0.2);
+    -moz-box-shadow: 0 0 12px rgba(228, 66, 149, 0.2);
+    box-shadow: 0 0 12px rgba(228, 66, 149, 0.2);
+    border: 4px solid rgba(228, 66, 149, 0.4);
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    @media screen and (max-width: 640px) {
+      /* line 12, scss/module/_news.scss */
+      #news-header .customNavigation a {
+        width: 30px;
+        height: 30px;
+        line-height: 20px;
+        margin-top: -15px; } }
+    /* line 32, scss/module/_news.scss */
+    #news-header .customNavigation a i {
+      margin-left: -4px; }
+      @media screen and (max-width: 640px) {
+        /* line 32, scss/module/_news.scss */
+        #news-header .customNavigation a i {
+          font-size: 14px; } }
+    /* line 38, scss/module/_news.scss */
+    #news-header .customNavigation a.home-po-next {
+      right: 25px; }
+      @media screen and (max-width: 640px) {
+        /* line 38, scss/module/_news.scss */
+        #news-header .customNavigation a.home-po-next {
+          right: -10px; } }
+      /* line 43, scss/module/_news.scss */
+      #news-header .customNavigation a.home-po-next i {
+        margin-left: 4px; }
+    /* line 47, scss/module/_news.scss */
+    #news-header .customNavigation a.home-po-prev {
+      left: 25px; }
+      @media screen and (max-width: 640px) {
+        /* line 47, scss/module/_news.scss */
+        #news-header .customNavigation a.home-po-prev {
+          left: -10px; } }
+    /* line 53, scss/module/_news.scss */
+    #news-header .customNavigation a:hover {
+      background: #e2328c;
+      color: #fff; }
+  /* line 59, scss/module/_news.scss */
+  #news-header .carousel-wrap {
+    margin-top: 65px;
+    position: relative; }
+  /* line 64, scss/module/_news.scss */
+  #news-header .owl-item img {
+    width: 100%; }
+
+/* line 70, scss/module/_news.scss */
+.block-title h3 {
+  font-size: 1.714em;
+  max-width: 79%;
+  font-style: italic;
+  float: left; }
+  @media only screen and (max-width: 1024px) {
+    /* line 70, scss/module/_news.scss */
+    .block-title h3 {
+      width: 100%;
+      max-width: none; } }
+  /* line 80, scss/module/_news.scss */
+  .block-title h3 span {
+    color: #e2328c; }
+/* line 84, scss/module/_news.scss */
+.block-title a {
+  font-size: 1.143em;
+  max-width: 21%;
+  float: right;
+  padding-left: 30px;
+  padding-top: 3px;
+  color: #e64a9a;
+  background: url("http://thammydiamond.vn/") no-repeat left center;
+  line-height: 20px; }
+  @media only screen and (max-width: 1024px) {
+    /* line 84, scss/module/_news.scss */
+    .block-title a {
+      width: 100%;
+      max-width: none;
+      margin-top: 5px; } }
+
+/* line 101, scss/module/_news.scss */
+#about-project {
+  padding-bottom: 40px; }
+
+/* line 104, scss/module/_news.scss */
+#social-project {
+  width: 50.96491%;
+  border-right: 1px solid #dddddd;
+  margin-top: 50px;
+  padding-right: 23px;
+  float: left; }
+  @media only screen and (max-width: 768px) {
+    /* line 104, scss/module/_news.scss */
+    #social-project {
+      width: 100%;
+      border-right: 0; } }
+  /* line 114, scss/module/_news.scss */
+  #social-project .block-title {
+    margin-bottom: 35px; }
+  /* line 117, scss/module/_news.scss */
+  #social-project .project-list {
+    max-width: 526px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 19px; }
+    /* line 131, scss/module/_mixin.scss */
+    #social-project .project-list:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 123, scss/module/_news.scss */
+    #social-project .project-list:first-child {
+      margin-top: 0; }
+    /* line 126, scss/module/_news.scss */
+    #social-project .project-list:last-child {
+      border-bottom: 0;
+      margin-bottom: 0; }
+    /* line 130, scss/module/_news.scss */
+    #social-project .project-list .image-wrapper {
+      width: 150px;
+      float: left; }
+      @media only screen and (max-width: 480px) {
+        /* line 130, scss/module/_news.scss */
+        #social-project .project-list .image-wrapper {
+          width: 115px; }
+          /* line 135, scss/module/_news.scss */
+          #social-project .project-list .image-wrapper img {
+            max-width: 100%; } }
+    /* line 140, scss/module/_news.scss */
+    #social-project .project-list .title-wrapper {
+      width: -moz-calc(100% - 150px);
+      width: -webkit-calc(100% - 150px);
+      width: calc(100% - 150px);
+      padding-left: 24px;
+      float: left; }
+      /* line 145, scss/module/_news.scss */
+      #social-project .project-list .title-wrapper a {
+        color: #333;
+        font-size: 1.429em;
+        line-height: 1.2em;
+        display: block;
+        margin-bottom: 13px; }
+        @media only screen and (max-width: 480px) {
+          /* line 145, scss/module/_news.scss */
+          #social-project .project-list .title-wrapper a {
+            font-size: 11px;
+            margin-bottom: 10px; } }
+      /* line 157, scss/module/_news.scss */
+      #social-project .project-list .title-wrapper .view-count {
+        padding-left: 30px;
+        background: url("http://thammydiamond.vn/") no-repeat left center;
+        margin-right: 30px;
+        display: inline-block;
+        min-height: 20px;
+        padding-top: 3px;
+        color: #e2438c;
+        text-decoration: underline; }
+        @media only screen and (max-width: 480px) {
+          /* line 157, scss/module/_news.scss */
+          #social-project .project-list .title-wrapper .view-count {
+            font-size: 8px;
+            background-size: 12px 10px;
+            padding-left: 15px;
+            min-height: none;
+            line-height: 14px;
+            margin-right: 10px; } }
+      /* line 175, scss/module/_news.scss */
+      #social-project .project-list .title-wrapper .comment-count {
+        padding-left: 27px;
+        background: url("http://thammydiamond.vn/") no-repeat left center;
+        display: inline-block;
+        min-height: 20px;
+        padding-top: 3px;
+        color: #e2438c;
+        text-decoration: underline; }
+        @media only screen and (max-width: 480px) {
+          /* line 175, scss/module/_news.scss */
+          #social-project .project-list .title-wrapper .comment-count {
+            font-size: 8px;
+            background-size: 10px 11px;
+            padding-left: 15px;
+            min-height: none;
+            line-height: 14px; } }
+      @media only screen and (max-width: 480px) {
+        /* line 140, scss/module/_news.scss */
+        #social-project .project-list .title-wrapper {
+          width: -moz-calc(100% - 150px);
+          width: -webkit-calc(100% - 150px);
+          width: calc(100% - 150px);
+          padding-left: 15px; } }
+
+/* line 200, scss/module/_news.scss */
+#comic-project {
+  width: 48.94737%;
+  padding-left: 9px;
+  float: left;
+  margin-top: 50px; }
+  @media only screen and (max-width: 768px) {
+    /* line 200, scss/module/_news.scss */
+    #comic-project {
+      width: 100%; }
+      /* line 207, scss/module/_news.scss */
+      #comic-project .comic-carousel-wrapper {
+        margin-left: 0; }
+        /* line 211, scss/module/_news.scss */
+        #comic-project .comic-carousel-wrapper .customNavigation a.comic-next {
+          right: 0; }
+        /* line 214, scss/module/_news.scss */
+        #comic-project .comic-carousel-wrapper .customNavigation a.comic-prev {
+          left: 0; } }
+
+/* line 223, scss/module/_news.scss */
+.comic-carousel-wrapper {
+  position: relative;
+  margin-top: 28px;
+  margin-left: 20px; }
+  /* line 227, scss/module/_news.scss */
+  .comic-carousel-wrapper .owl-wrapper-outer {
+    -webkit-box-shadow: 0 0 38px rgba(251, 128, 186, 0.2);
+    -moz-box-shadow: 0 0 38px rgba(251, 128, 186, 0.2);
+    box-shadow: 0 0 38px rgba(251, 128, 186, 0.2); }
+  /* line 231, scss/module/_news.scss */
+  .comic-carousel-wrapper #comic-carousel a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  /* line 241, scss/module/_news.scss */
+  .comic-carousel-wrapper .customNavigation a {
+    width: 45px;
+    height: 45px;
+    line-height: 35px; }
+    /* line 245, scss/module/_news.scss */
+    .comic-carousel-wrapper .customNavigation a.comic-next {
+      right: -20px; }
+      /* line 247, scss/module/_news.scss */
+      .comic-carousel-wrapper .customNavigation a.comic-next i {
+        margin-left: 4px !important; }
+    /* line 251, scss/module/_news.scss */
+    .comic-carousel-wrapper .customNavigation a.comic-prev {
+      left: -20px; }
+  /* line 256, scss/module/_news.scss */
+  .comic-carousel-wrapper .owl-pagination {
+    text-align: center;
+    margin-top: 23px; }
+    /* line 259, scss/module/_news.scss */
+    .comic-carousel-wrapper .owl-pagination .owl-page {
+      display: inline-block;
+      background: #fff;
+      margin-left: 5px;
+      margin-right: 5px;
+      border: 2px solid #e3448d;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      width: 11px;
+      height: 11px; }
+      /* line 267, scss/module/_news.scss */
+      .comic-carousel-wrapper .owl-pagination .owl-page.active {
+        background: #e3448d; }
+
+/* line 273, scss/module/_news.scss */
+.carousel-title {
+  position: absolute;
+  width: -moz-calc(100% - 12px);
+  width: -webkit-calc(100% - 12px);
+  width: calc(100% - 12px);
+  bottom: 6px;
+  left: 6px;
+  background: #b498f4;
+  padding: 22px 15px 22px 17px;
+  color: #fff; }
+  /* line 281, scss/module/_news.scss */
+  .carousel-title .comic-title {
+    font-size: 1.429em;
+    line-height: 1.2em; }
+  /* line 286, scss/module/_news.scss */
+  .carousel-title span {
+    font-size: 1.143em; }
+
+/* line 291, scss/module/_news.scss */
+#video-project {
+  padding: 35px 18px 52px;
+  background: #fff7fb; }
+  /* line 294, scss/module/_news.scss */
+  #video-project .block-title {
+    padding-left: 15px; }
+
+/* line 298, scss/module/_news.scss */
+.video-lists {
+  margin: 15px 0px 0;
+  padding: 0 15px; }
+  /* line 305, scss/module/_news.scss */
+  .video-lists .video-block {
+    float: left;
+    width: 48.5%;
+    margin-right: 3%;
+    margin-top: 20px;
+    position: relative;
+    color: #fff; }
+    /* line 312, scss/module/_news.scss */
+    .video-lists .video-block:nth-child(2n+2) {
+      margin-right: 0%; }
+    /* line 315, scss/module/_news.scss */
+    .video-lists .video-block .video-inner {
+      overflow: hidden;
+      position: relative;
+      -webkit-box-shadow: 6px 0 18px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 6px 0 18px rgba(0, 0, 0, 0.4);
+      box-shadow: 6px 0 18px rgba(0, 0, 0, 0.4); }
+      /* line 320, scss/module/_news.scss */
+      .video-lists .video-block .video-inner img {
+        display: block;
+        width: 100%; }
+    /* line 326, scss/module/_news.scss */
+    .video-lists .video-block:hover .video-inner {
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px; }
+    /* line 329, scss/module/_news.scss */
+    .video-lists .video-block:hover .video-play-icon {
+      background: rgba(227, 68, 141, 0.9);
+      color: #fff; }
+    /* line 334, scss/module/_news.scss */
+    .video-lists .video-block a {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      -o-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      top: 0;
+      left: 0; }
+      /* line 341, scss/module/_news.scss */
+      .video-lists .video-block a:hover {
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border: 4px solid #e8539f; }
+    /* line 346, scss/module/_news.scss */
+    .video-lists .video-block .video-info {
+      padding: 15px 10px 10px 10px;
+      background: #e64a9a; }
+      /* line 350, scss/module/_news.scss */
+      .video-lists .video-block .video-info h4 {
+        font-size: 1.357em;
+        margin-top: -1px;
+        margin-bottom: 4px; }
+      /* line 356, scss/module/_news.scss */
+      .video-lists .video-block .video-info span {
+        font-size: 15.4px;
+        display: inline-block;
+        max-width: 50%; }
+    /* line 362, scss/module/_news.scss */
+    .video-lists .video-block .play-count {
+      display: inline-block;
+      float: right;
+      max-width: 50%;
+      text-decoration: underline; }
+      /* line 367, scss/module/_news.scss */
+      .video-lists .video-block .play-count i {
+        margin-right: 10px; }
+    /* line 371, scss/module/_news.scss */
+    .video-lists .video-block .video-play-icon {
+      position: absolute;
+      color: #e3448d;
+      font-size: 2em;
+      top: 50%;
+      left: 50%;
+      margin-top: -55px;
+      margin-left: -30px;
+      background: rgba(255, 255, 255, 0.4);
+      line-height: 60px;
+      z-index: 1;
+      -o-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%; }
+      /* line 386, scss/module/_news.scss */
+      .video-lists .video-block .video-play-icon i {
+        margin-left: 7px; }
+
+/* line 399, scss/module/_news.scss */
+#share-block {
+  background: #fff;
+  padding-bottom: 44px; }
+
+@media (max-width: 1140px) {
+  /* line 408, scss/module/_news.scss */
+  .container {
+    width: 100%;
+    padding: 0; }
+
+  /* line 412, scss/module/_news.scss */
+  .video-lists {
+    padding: 0; }
+
+  /* line 415, scss/module/_news.scss */
+  #video-project .block-title {
+    padding-left: 0; }
+
+  /* line 416, scss/module/_news.scss */
+  #social-project {
+    padding-right: 0; } }
+@media (max-width: 767px) {
+  /* line 420, scss/module/_news.scss */
+  #news-header .carousel-wrap {
+    margin-top: 24px; }
+
+  /* line 421, scss/module/_news.scss */
+  .carousel-title {
+    padding: 7px 8px 3px; }
+
+  /* line 422, scss/module/_news.scss */
+  .carousel-title .comic-title {
+    font-size: 10px; }
+
+  /* line 423, scss/module/_news.scss */
+  .carousel-title span {
+    font-size: 8px; }
+
+  /* line 424, scss/module/_news.scss */
+  .video-lists .video-block .video-info h4 {
+    font-size: 10px; }
+
+  /* line 425, scss/module/_news.scss */
+  .video-lists .video-block .video-info span,
+  .video-lists .video-block .play-count {
+    font-size: 8px; }
+
+  /* line 427, scss/module/_news.scss */
+  .video-lists .video-block .video-info {
+    padding: 7px 8px 3px; } }
+/* line 1, scss/module/_news-detail.scss */
+#news-detail-wrap {
+  background: #fff url(http://thammydiamond.vn/) no-repeat top center;
+  padding-top: 90px; }
+
+/* line 5, scss/module/_news-detail.scss */
+.news-breadcrumb {
+  padding-left: 52px;
+  padding-bottom: 6px; }
+  /* line 9, scss/module/_news-detail.scss */
+  .news-breadcrumb ul li {
+    display: inline-block; }
+    /* line 12, scss/module/_news-detail.scss */
+    .news-breadcrumb ul li:last-child::after {
+      display: none; }
+    /* line 16, scss/module/_news-detail.scss */
+    .news-breadcrumb ul li::after {
+      content: ">";
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px; }
+    /* line 23, scss/module/_news-detail.scss */
+    .news-breadcrumb ul li.active a {
+      color: #e2328c; }
+    /* line 27, scss/module/_news-detail.scss */
+    .news-breadcrumb ul li a {
+      color: #333; }
+  @media only screen and (max-width: 1024px) {
+    /* line 5, scss/module/_news-detail.scss */
+    .news-breadcrumb {
+      padding-left: 0; } }
+
+/* line 36, scss/module/_news-detail.scss */
+.news-body {
+  padding-left: 52px;
+  position: relative; }
+  @media only screen and (max-width: 1024px) {
+    /* line 36, scss/module/_news-detail.scss */
+    .news-body {
+      padding-left: 0; } }
+  /* line 42, scss/module/_news-detail.scss */
+  .news-body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1088px;
+    height: 1px;
+    background: #ddd; }
+
+/* line 54, scss/module/_news-detail.scss */
+#news-detail {
+  width: 71.04779%;
+  float: right;
+  padding-left: 60px;
+  padding-top: 36px;
+  border-left: 1px solid #ddd; }
+  /* line 60, scss/module/_news-detail.scss */
+  #news-detail .post-title {
+    font-size: 2em;
+    color: #e2328c;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.15em;
+    margin-bottom: 30px; }
+  /* line 70, scss/module/_news-detail.scss */
+  #news-detail #news-post p {
+    margin-bottom: 30px;
+    font-size: 1.143em;
+    line-height: 1.375em; }
+    /* line 75, scss/module/_news-detail.scss */
+    #news-detail #news-post p.post-excerpt {
+      font-style: italic; }
+  /* line 79, scss/module/_news-detail.scss */
+  #news-detail #news-post img {
+    max-width: 100%;
+    margin-bottom: 30px; }
+  @media only screen and (max-width: 1000px) {
+    /* line 54, scss/module/_news-detail.scss */
+    #news-detail {
+      width: 100%;
+      border-left: 0;
+      padding-left: 0; } }
+
+/* line 90, scss/module/_news-detail.scss */
+#news-sidebar {
+  width: 28.95221%;
+  float: right;
+  padding-right: 50px;
+  padding-top: 49px; }
+  /* line 95, scss/module/_news-detail.scss */
+  #news-sidebar h3 {
+    font-size: 1.714em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 43px; }
+    /* line 101, scss/module/_news-detail.scss */
+    #news-sidebar h3 span {
+      color: #e44094; }
+  @media only screen and (max-width: 1024px) {
+    /* line 90, scss/module/_news-detail.scss */
+    #news-sidebar {
+      padding-right: 16px; } }
+  @media only screen and (max-width: 1000px) {
+    /* line 90, scss/module/_news-detail.scss */
+    #news-sidebar {
+      width: 100%; } }
+
+/* line 112, scss/module/_news-detail.scss */
+.news-related {
+  width: 262px;
+  margin-bottom: 59px; }
+  /* line 115, scss/module/_news-detail.scss */
+  .news-related img {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    max-width: 100%; }
+  /* line 119, scss/module/_news-detail.scss */
+  .news-related h4 {
+    font-size: 1.143em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #000; }
+  /* line 126, scss/module/_news-detail.scss */
+  .news-related a {
+    color: #e44094;
+    text-decoration: underline;
+    position: relative;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    /* line 131, scss/module/_news-detail.scss */
+    .news-related a i {
+      display: inline-block;
+      position: absolute;
+      right: -15px;
+      top: 2px;
+      -o-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    /* line 138, scss/module/_news-detail.scss */
+    .news-related a:hover {
+      text-decoration: none; }
+      /* line 140, scss/module/_news-detail.scss */
+      .news-related a:hover i {
+        right: -20px; }
+
+@media only screen and (max-width: 1000px) {
+  /* line 147, scss/module/_news-detail.scss */
+  .news-related-wrap {
+    margin-left: -15px;
+    margin-right: -15px; }
+
+  /* line 151, scss/module/_news-detail.scss */
+  .news-related {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px; } }
+@media only screen and (max-width: 768px) {
+  /* line 158, scss/module/_news-detail.scss */
+  .news-breadcrumb {
+    display: none; }
+
+  /* line 161, scss/module/_news-detail.scss */
+  .news-related-wrap {
+    text-align: center; }
+
+  /* line 164, scss/module/_news-detail.scss */
+  #news-detail-wrap {
+    padding-top: 31px; }
+
+  /* line 167, scss/module/_news-detail.scss */
+  .news-body::before {
+    display: none; } }
+/* line 1, scss/module/_gallery.scss */
+#gallery {
+  width: 100%;
+  background: url("http://thammydiamond.vn/") no-repeat center top/100% auto; }
+  @media only screen and (max-width: 1180px) {
+    /* line 1, scss/module/_gallery.scss */
+    #gallery {
+      padding: 0 18px;
+      overflow-x: hidden; } }
+  /* line 10, scss/module/_gallery.scss */
+  #gallery .page-title {
+    padding: 60px 0px 26px 0px;
+    font-size: 1.714em;
+    color: #e2328c;
+    font-style: italic; }
+    @media only screen and (max-width: 850px) {
+      /* line 10, scss/module/_gallery.scss */
+      #gallery .page-title {
+        display: none; } }
+  /* line 21, scss/module/_gallery.scss */
+  #gallery .page-title-mb {
+    padding: 34px 0px 28px 0px;
+    font-size: 15px;
+    color: #e2328c;
+    font-style: italic;
+    display: none;
+    line-height: 17px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 850px) {
+      /* line 21, scss/module/_gallery.scss */
+      #gallery .page-title-mb {
+        display: block; } }
+  /* line 42, scss/module/_gallery.scss */
+  #gallery .filter {
+    width: 100%;
+    max-width: 1147px;
+    height: 87px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: url("http://thammydiamond.vn/") no-repeat center center/cover;
+    margin: 0px auto 29px auto;
+    padding: 22px 27px 0px 31px; }
+    @media only screen and (max-width: 850px) {
+      /* line 42, scss/module/_gallery.scss */
+      #gallery .filter {
+        height: auto;
+        padding-bottom: 13px; } }
+    /* line 55, scss/module/_gallery.scss */
+    #gallery .filter .search {
+      width: 253px;
+      height: 42px;
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border: 1px solid #dddddd;
+      background: #fff;
+      float: left;
+      outline: none; }
+      @media only screen and (max-width: 850px) {
+        /* line 55, scss/module/_gallery.scss */
+        #gallery .filter .search {
+          width: 100%;
+          float: none;
+          margin-bottom: 10px; } }
+      /* line 68, scss/module/_gallery.scss */
+      #gallery .filter .search input {
+        width: calc(100% - 46px);
+        height: 40px;
+        border: none;
+        background: none;
+        font-size: 1.143em;
+        color: #e2328c;
+        padding: 0px 17px 0px 17px;
+        float: left;
+        outline: none; }
+        /* line 156, scss/module/_mixin.scss */
+        #gallery .filter .search input::-webkit-input-placeholder {
+          color: #999 !important;
+          opacity: 1; }
+        /* line 157, scss/module/_mixin.scss */
+        #gallery .filter .search input:-moz-placeholder {
+          color: #999 !important;
+          opacity: 1; }
+        /* line 158, scss/module/_mixin.scss */
+        #gallery .filter .search input::-moz-placeholder {
+          color: #999 !important;
+          opacity: 1; }
+        /* line 159, scss/module/_mixin.scss */
+        #gallery .filter .search input:-ms-input-placeholder {
+          color: #999 !important;
+          opacity: 1; }
+        /* line 160, scss/module/_mixin.scss */
+        #gallery .filter .search input:focus::-webkit-input-placeholder {
+          color: transparent !important; }
+        /* line 161, scss/module/_mixin.scss */
+        #gallery .filter .search input:focus:-moz-placeholder {
+          color: transparent !important; }
+        /* line 162, scss/module/_mixin.scss */
+        #gallery .filter .search input:focus::-moz-placeholder {
+          color: transparent !important; }
+        /* line 163, scss/module/_mixin.scss */
+        #gallery .filter .search input:focus:-ms-input-placeholder {
+          color: transparent !important; }
+      /* line 85, scss/module/_gallery.scss */
+      #gallery .filter .search .btn {
+        width: 46px;
+        height: 40px;
+        background: url("http://thammydiamond.vn/") no-repeat left top; }
+        /* line 89, scss/module/_gallery.scss */
+        #gallery .filter .search .btn:hover {
+          background-position: left bottom; }
+    /* line 96, scss/module/_gallery.scss */
+    #gallery .filter .select-wrp {
+      float: right; }
+      @media only screen and (max-width: 850px) {
+        /* line 96, scss/module/_gallery.scss */
+        #gallery .filter .select-wrp {
+          float: none; } }
+      /* line 102, scss/module/_gallery.scss */
+      #gallery .filter .select-wrp .selector:first-child {
+        width: 183px; }
+      /* line 106, scss/module/_gallery.scss */
+      #gallery .filter .select-wrp .selector:last-child {
+        width: 253px; }
+      /* line 110, scss/module/_gallery.scss */
+      #gallery .filter .select-wrp .selector {
+        height: 42px;
+        background: url("http://thammydiamond.vn/") no-repeat right center;
+        background-color: #fff;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border: 1px solid #dddddd;
+        margin: 0px 7px 10px 7px;
+        padding: 0;
+        float: left;
+        line-height: 42px;
+        font-size: 16px;
+        color: #999; }
+        @media only screen and (max-width: 850px) {
+          /* line 110, scss/module/_gallery.scss */
+          #gallery .filter .select-wrp .selector {
+            width: 100% !important;
+            float: none;
+            margin-left: 0;
+            margin-right: 0; } }
+        /* line 130, scss/module/_gallery.scss */
+        #gallery .filter .select-wrp .selector span {
+          width: 100%;
+          height: 40px;
+          background: url("http://thammydiamond.vn/") no-repeat right center;
+          line-height: 40px;
+          text-align: left;
+          font-size: 16px;
+          color: #999;
+          padding: 0px 17px 0px 17px; }
+        /* line 143, scss/module/_gallery.scss */
+        #gallery .filter .select-wrp .selector option {
+          padding: 10px 10px 10px 17px !important; }
+      /* line 149, scss/module/_gallery.scss */
+      #gallery .filter .select-wrp .week-filter {
+        width: 183px;
+        height: 40px;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border: 1px solid #dddddd;
+        background: #fff;
+        font-size: 16px;
+        color: #999;
+        outline: none;
+        margin-top: -3px;
+        width: 100%; }
+      /* line 170, scss/module/_gallery.scss */
+      #gallery .filter .select-wrp .date-filter {
+        width: 253px;
+        height: 40px;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border: 1px solid #dddddd;
+        background: #fff;
+        font-size: 16px;
+        color: #999;
+        outline: none;
+        margin-top: -3px;
+        width: 100%; }
+        /* line 188, scss/module/_gallery.scss */
+        #gallery .filter .select-wrp .date-filter option {
+          padding-left: 17px !important; }
+  @media only screen and (max-width: 850px) {
+    /* line 200, scss/module/_gallery.scss */
+    #gallery .slide-wrp {
+      margin: 80px -35px 0 -35px;
+      background: url("http://thammydiamond.vn/") no-repeat center top/100% auto; } }
+  @media only screen and (max-width: 850px) and (max-width: 850px) {
+    /* line 200, scss/module/_gallery.scss */
+    #gallery .slide-wrp {
+      margin-bottom: -18px; } }
+
+  /* line 209, scss/module/_gallery.scss */
+  #gallery .slide-wrp .desc {
+    font-family: "latolight";
+    font-size: 1.714em;
+    color: #000;
+    line-height: 32px;
+    padding: 75px 0px 17px 0px; }
+    @media only screen and (max-width: 850px) {
+      /* line 209, scss/module/_gallery.scss */
+      #gallery .slide-wrp .desc {
+        font-family: "latoblack";
+        padding-left: 35px;
+        padding-right: 35px; } }
+    /* line 221, scss/module/_gallery.scss */
+    #gallery .slide-wrp .desc span {
+      font-family: "latoblack"; }
+      @media only screen and (max-width: 850px) {
+        /* line 221, scss/module/_gallery.scss */
+        #gallery .slide-wrp .desc span {
+          font-family: "latolight"; } }
+  /* line 230, scss/module/_gallery.scss */
+  #gallery .slide-wrp .chiase-btn {
+    margin-bottom: 24px; }
+
+/* line 245, scss/module/_gallery.scss */
+.grid {
+  width: 100%;
+  max-width: 1141px;
+  margin: 0 auto; }
+  /* line 250, scss/module/_gallery.scss */
+  .grid a {
+    width: 100%; }
+  /* line 254, scss/module/_gallery.scss */
+  .grid .colr1 {
+    background: #b498f4; }
+  /* line 258, scss/module/_gallery.scss */
+  .grid .colr2 {
+    background: #d0f8f1; }
+  /* line 262, scss/module/_gallery.scss */
+  .grid .colr3 {
+    background: #d6c1fb; }
+  /* line 266, scss/module/_gallery.scss */
+  .grid .colr4 {
+    background: #ffa7bc; }
+  /* line 270, scss/module/_gallery.scss */
+  .grid .colr5 {
+    background: #c8ebc8; }
+  /* line 274, scss/module/_gallery.scss */
+  .grid .colr6 {
+    background: #c7ef80; }
+  /* line 278, scss/module/_gallery.scss */
+  .grid .colrx1 {
+    background: url("http://thammydiamond.vn/") no-repeat center center/cover; }
+  /* line 282, scss/module/_gallery.scss */
+  .grid .colrx2 {
+    background: url("http://thammydiamond.vn/") no-repeat center center/cover; }
+  /* line 286, scss/module/_gallery.scss */
+  .grid .grid-sizer {
+    width: calc(25% - 8.25px); }
+    @media only screen and (max-width: 1040px) {
+      /* line 286, scss/module/_gallery.scss */
+      .grid .grid-sizer {
+        width: calc(33.333% - 8.25px); } }
+    @media only screen and (max-width: 850px) {
+      /* line 286, scss/module/_gallery.scss */
+      .grid .grid-sizer {
+        width: calc(50% - 8.25px); } }
+  /* line 296, scss/module/_gallery.scss */
+  .grid .grid-item {
+    width: calc(25% - 8.25px);
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 5px 20px rgba(251, 128, 186, 0.3);
+    -moz-box-shadow: 0px 5px 20px rgba(251, 128, 186, 0.3);
+    box-shadow: 0px 5px 20px rgba(251, 128, 186, 0.3); }
+    @media only screen and (max-width: 1040px) {
+      /* line 296, scss/module/_gallery.scss */
+      .grid .grid-item {
+        width: calc(33.333% - 8.25px); } }
+    @media only screen and (max-width: 850px) {
+      /* line 296, scss/module/_gallery.scss */
+      .grid .grid-item {
+        width: calc(50% - 8.25px); } }
+    /* line 308, scss/module/_gallery.scss */
+    .grid .grid-item img {
+      width: 100%;
+      display: block; }
+    /* line 314, scss/module/_gallery.scss */
+    .grid .grid-item.ola {
+      opacity: 0;
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5); }
+  /* line 323, scss/module/_gallery.scss */
+  .grid .grid-item.width2 {
+    width: calc(50% - 8.25px); }
+    @media only screen and (max-width: 1040px) {
+      /* line 323, scss/module/_gallery.scss */
+      .grid .grid-item.width2 {
+        width: calc(66.666% - 8.25px); } }
+    @media only screen and (max-width: 850px) {
+      /* line 323, scss/module/_gallery.scss */
+      .grid .grid-item.width2 {
+        width: calc(100% - 8.25px); } }
+
+/* line 342, scss/module/_gallery.scss */
+.pagi {
+  margin: 0 auto;
+  text-align: center; }
+  /* line 346, scss/module/_gallery.scss */
+  .pagi .pagi-ele {
+    width: 45px;
+    padding: 7px 0px 5px;
+    margin-right: 5px;
+    font-size: 1em; }
+    /* line 352, scss/module/_gallery.scss */
+    .pagi .pagi-ele.ne, .pagi .pagi-ele.pr {
+      width: 30px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: transparent;
+      border-radius: 25px;
+      background-color: transparent;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center;
+      font-size: 1.571em; }
+      /* line 358, scss/module/_gallery.scss */
+      .pagi .pagi-ele.ne:hover, .pagi .pagi-ele.pr:hover {
+        background-color: #e2328c;
+        background-image: url("../images/index.html");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center; }
+    /* line 363, scss/module/_gallery.scss */
+    .pagi .pagi-ele.etc {
+      border-width: 2px;
+      border-style: solid;
+      border-color: transparent;
+      border-radius: 25px; }
+      /* line 365, scss/module/_gallery.scss */
+      .pagi .pagi-ele.etc:hover {
+        color: #e2328c;
+        background-color: transparent;
+        background-image: url("../images/index.html");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center; }
+    /* line 371, scss/module/_gallery.scss */
+    .pagi .pagi-ele.active {
+      color: #fff;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #e2328c;
+      border-radius: 25px;
+      background-color: #e2328c;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+    /* line 377, scss/module/_gallery.scss */
+    .pagi .pagi-ele.active, .pagi .pagi-ele.off {
+      cursor: default; }
+    /* line 382, scss/module/_gallery.scss */
+    .pagi .pagi-ele:first-child, .pagi .pagi-ele:last-child {
+      width: 70px; }
+    /* line 387, scss/module/_gallery.scss */
+    .pagi .pagi-ele:last-child {
+      margin-right: 0px; }
+
+/* line 2, scss/module/_story.scss */
+#appintro-header {
+  width: 100%;
+  min-height: 607px;
+  background: url(http://thammydiamond.vn/) center 0 no-repeat;
+  position: relative; }
+  /* line 7, scss/module/_story.scss */
+  #appintro-header .text-banner {
+    position: absolute;
+    top: 0;
+    max-width: 370px;
+    left: 50%;
+    margin-left: 130px;
+    text-align: center; }
+    /* line 14, scss/module/_story.scss */
+    #appintro-header .text-banner h1 {
+      font-family: "latoregular";
+      font-size: 1.571em;
+      color: #e2328c;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-style: italic; }
+    /* line 23, scss/module/_story.scss */
+    #appintro-header .text-banner h2 {
+      font-family: "latoregular";
+      font-size: 2.286em;
+      color: #e2328c;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 30px; }
+    /* line 32, scss/module/_story.scss */
+    #appintro-header .text-banner p {
+      font-size: 1.143em;
+      color: #000;
+      line-height: 20px; }
+      /* line 36, scss/module/_story.scss */
+      #appintro-header .text-banner p.last {
+        margin-top: 13px; }
+      /* line 39, scss/module/_story.scss */
+      #appintro-header .text-banner p span {
+        font-style: italic; }
+    /* line 43, scss/module/_story.scss */
+    #appintro-header .text-banner .pink {
+      color: #df4092; }
+    /* line 46, scss/module/_story.scss */
+    #appintro-header .text-banner .gr-button {
+      margin-top: 16px; }
+    /* line 49, scss/module/_story.scss */
+    #appintro-header .text-banner .boder-tbn {
+      height: 607px;
+      width: 100%; }
+      /* line 52, scss/module/_story.scss */
+      #appintro-header .text-banner .boder-tbn .table {
+        display: table-cell;
+        vertical-align: middle;
+        height: 607px; }
+        /* line 56, scss/module/_story.scss */
+        #appintro-header .text-banner .boder-tbn .table strong {
+          font-style: italic; }
+
+/* line 63, scss/module/_story.scss */
+#intro-body.introapp {
+  padding-bottom: 50px; }
+  /* line 65, scss/module/_story.scss */
+  #intro-body.introapp .chiase-slogan {
+    margin-top: 40px; }
+
+/* line 69, scss/module/_story.scss */
+.img-app {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -450px; }
+  /* line 74, scss/module/_story.scss */
+  .img-app li {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    /* line 78, scss/module/_story.scss */
+    .img-app li:nth-child(1) {
+      z-index: 1; }
+      /* line 80, scss/module/_story.scss */
+      .img-app li:nth-child(1) img {
+        width: 420px;
+        border: 6px solid #fff;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+    /* line 86, scss/module/_story.scss */
+    .img-app li:nth-child(2) {
+      z-index: 0; }
+      /* line 88, scss/module/_story.scss */
+      .img-app li:nth-child(2) img {
+        width: 348px;
+        -webkit-transform: rotate(-9deg);
+        -moz-transform: rotate(-9deg);
+        -ms-transform: rotate(-9deg);
+        transform: rotate(-9deg);
+        z-index: 2;
+        border: 6px solid #fff;
+        margin-top: 82px;
+        margin-left: -44px; }
+    /* line 100, scss/module/_story.scss */
+    .img-app li:nth-child(3) {
+      z-index: 0; }
+      /* line 102, scss/module/_story.scss */
+      .img-app li:nth-child(3) img {
+        width: 282px;
+        -webkit-transform: rotate(9deg);
+        -moz-transform: rotate(9deg);
+        -ms-transform: rotate(9deg);
+        transform: rotate(9deg);
+        z-index: 3;
+        border: 6px solid #fff;
+        margin-top: 0;
+        margin-left: 175px; }
+
+@media (max-width: 1200px) {
+  /* line 118, scss/module/_story.scss */
+  #appintro-header .text-banner {
+    padding-right: 10px;
+    margin-left: 110px; } }
+@media (max-width: 1040px) {
+  /* line 125, scss/module/_story.scss */
+  #appintro-header {
+    background: none; }
+    /* line 126, scss/module/_story.scss */
+    #appintro-header .text-banner {
+      padding-right: 10px;
+      margin-left: 0;
+      left: 0;
+      max-width: 100%;
+      position: relative;
+      padding: 515px 20px 0; }
+      /* line 133, scss/module/_story.scss */
+      #appintro-header .text-banner .boder-tbn {
+        height: auto; }
+        /* line 135, scss/module/_story.scss */
+        #appintro-header .text-banner .boder-tbn .table {
+          height: auto;
+          display: block; }
+
+  /* line 143, scss/module/_story.scss */
+  .img-app {
+    margin-left: -195px; } }
+@media (max-width: 960px) {
+  /* line 148, scss/module/_story.scss */
+  .img-app {
+    transform: scale(0.8);
+    margin-left: -165px; }
+
+  /* line 152, scss/module/_story.scss */
+  #intro-body.introapp .chiase-slogan {
+    margin-top: 50px; } }
+@media (max-width: 560px) {
+  /* line 159, scss/module/_story.scss */
+  #appintro-header .text-banner {
+    padding-top: 465px; }
+    /* line 161, scss/module/_story.scss */
+    #appintro-header .text-banner p {
+      font-size: 1em; }
+      /* line 163, scss/module/_story.scss */
+      #appintro-header .text-banner p br {
+        display: none; }
+
+  /* line 167, scss/module/_story.scss */
+  #intro-body.introapp .chiase-slogan {
+    padding: 0 15px; }
+    /* line 175, scss/module/_story.scss */
+    #intro-body.introapp .chiase-slogan .chiase-btn {
+      height: 40px;
+      line-height: 44px; } }
+@media (max-width: 470px) {
+  /* line 181, scss/module/_story.scss */
+  .img-app {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    margin-left: -100px;
+    top: 45px; }
+
+  /* line 189, scss/module/_story.scss */
+  #appintro-header .text-banner {
+    padding: 320px 15px 0; }
+    /* line 191, scss/module/_story.scss */
+    #appintro-header .text-banner h1 {
+      font-size: 1.286em; }
+    /* line 192, scss/module/_story.scss */
+    #appintro-header .text-banner h2 {
+      font-size: 1.857em; } }
+/* line 199, scss/module/_story.scss */
+.game .wr-step-1 .step-1 .info .declare-info .name input[type='text'], .game .wr-step-1 .step-1 .info .declare-info .story textarea, .game .wr-step-3 .step-3 .design .share .social .your-link {
+  padding: 0 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 6px;
+  font-size: 1.429em;
+  font-family: "latoregular", arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333; }
+
+/* line 204, scss/module/_story.scss */
+.flow-nav ul li span.wait-to-turn, .game .wr-step-1 .step-1, .game .wr-step-2 .step-2, .game .wr-step-3 .step-3, .game .wr-step-4 .step-4, .game .wr-step-4 .step-4 .choose-gift .help ul li {
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3);
+  -moz-box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3);
+  box-shadow: 0px 6px 10px 0px rgba(251, 128, 186, 0.3); }
+
+/* line 209, scss/module/_story.scss */
+.game .wr-step-4 .step-4 .gift .introduction p.p1, .game .wr-step-4 .step-4 .choose-gift .help ul li {
+  font-size: 1.143em;
+  font-family: "latoregular", arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  line-height: 20px; }
+
+/* line 215, scss/module/_story.scss */
+.wr-story {
+  width: 100%;
+  height: 791px;
+  background-color: transparent;
+  background-image: url("http://thammydiamond.vn/");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center; }
+
+/* line 222, scss/module/_story.scss */
+.flow-nav {
+  position: absolute;
+  left: 0px;
+  top: 180px;
+  z-index: 11;
+  width: 20.17543859649123%; }
+  /* line 226, scss/module/_story.scss */
+  .flow-nav ul li {
+    position: relative;
+    height: 63px;
+    margin-bottom: 3px; }
+    /* line 231, scss/module/_story.scss */
+    .flow-nav ul li span {
+      display: table;
+      height: 100%; }
+      /* line 235, scss/module/_story.scss */
+      .flow-nav ul li span a {
+        cursor: auto;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 80px;
+        height: 40px;
+        width: 100%;
+        font-size: 1.429em;
+        font-family: "latoblack", arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+        letter-spacing: -0.4px; }
+    /* line 245, scss/module/_story.scss */
+    .flow-nav ul li span.wait-to-turn {
+      width: 80px;
+      background-color: #fff;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+    /* line 252, scss/module/_story.scss */
+    .flow-nav ul li.st1 span.your-turn {
+      display: none;
+      width: 226px;
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 center; }
+    /* line 260, scss/module/_story.scss */
+    .flow-nav ul li.st1 span.wait-to-turn a {
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+    /* line 265, scss/module/_story.scss */
+    .flow-nav ul li.st1.active span.your-turn {
+      display: table; }
+    /* line 266, scss/module/_story.scss */
+    .flow-nav ul li.st1.active span.wait-to-turn {
+      display: none; }
+    /* line 271, scss/module/_story.scss */
+    .flow-nav ul li.st2 span.your-turn {
+      display: none;
+      width: 226px;
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 center; }
+    /* line 279, scss/module/_story.scss */
+    .flow-nav ul li.st2 span.wait-to-turn a {
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+    /* line 284, scss/module/_story.scss */
+    .flow-nav ul li.st2.active span.your-turn {
+      display: table; }
+    /* line 285, scss/module/_story.scss */
+    .flow-nav ul li.st2.active span.wait-to-turn {
+      display: none; }
+    /* line 290, scss/module/_story.scss */
+    .flow-nav ul li.st3 span.your-turn {
+      display: none;
+      width: 246px;
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 center; }
+    /* line 298, scss/module/_story.scss */
+    .flow-nav ul li.st3 span.wait-to-turn a {
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+    /* line 303, scss/module/_story.scss */
+    .flow-nav ul li.st3.active span.your-turn {
+      display: table; }
+    /* line 304, scss/module/_story.scss */
+    .flow-nav ul li.st3.active span.wait-to-turn {
+      display: none; }
+    /* line 309, scss/module/_story.scss */
+    .flow-nav ul li.st4 span.your-turn {
+      display: none;
+      width: 226px;
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: 0 center; }
+    /* line 317, scss/module/_story.scss */
+    .flow-nav ul li.st4 span.wait-to-turn a {
+      background-color: transparent;
+      background-image: url("http://thammydiamond.vn/");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+    /* line 322, scss/module/_story.scss */
+    .flow-nav ul li.st4.active span.your-turn {
+      display: table; }
+    /* line 323, scss/module/_story.scss */
+    .flow-nav ul li.st4.active span.wait-to-turn {
+      display: none; }
+    /* line 328, scss/module/_story.scss */
+    .flow-nav ul li.active span.your-turn {
+      position: relative;
+      top: -3px;
+      left: -9px;
+      height: 81px;
+      font-size: 0; }
+
+/* line 338, scss/module/_story.scss */
+.flow-nav-mb {
+  display: none; }
+  /* line 339, scss/module/_story.scss */
+  .flow-nav-mb ul {
+    height: 55px;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-position: 0 0; }
+  /* line 343, scss/module/_story.scss */
+  .flow-nav-mb ul li {
+    position: relative;
+    width: 100%;
+    float: left; }
+    /* line 348, scss/module/_story.scss */
+    .flow-nav-mb ul li span {
+      text-align: center; }
+      /* line 350, scss/module/_story.scss */
+      .flow-nav-mb ul li span img {
+        display: block;
+        margin: 0 auto; }
+
+/* line 360, scss/module/_story.scss */
+.opening {
+  padding: 39px 0 32px;
+  text-align: center; }
+  /* line 364, scss/module/_story.scss */
+  .opening h3 {
+    margin-bottom: 11px;
+    font-size: 1.714em;
+    font-family: "latoregular", arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e2328c;
+    text-transform: uppercase; }
+    /* line 369, scss/module/_story.scss */
+    .opening h3 br {
+      display: none; }
+  /* line 371, scss/module/_story.scss */
+  .opening p {
+    font-size: 1.143em;
+    font-family: "latoregular", arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    line-height: 20px; }
+
+/* line 376, scss/module/_story.scss */
+.opening-mb {
+  display: none; }
+  /* line 378, scss/module/_story.scss */
+  .opening-mb .op {
+    display: table;
+    width: 100%;
+    text-align: center; }
+    /* line 382, scss/module/_story.scss */
+    .opening-mb .op > div {
+      display: table-cell;
+      vertical-align: middle; }
+    /* line 385, scss/module/_story.scss */
+    .opening-mb .op h3 {
+      font-size: 1.429em;
+      font-family: "Georgia", arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #e2328c;
+      text-transform: uppercase;
+      line-height: 23px; }
+    /* line 390, scss/module/_story.scss */
+    .opening-mb .op p {
+      font-size: 1em;
+      font-family: "latoregular", arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #333;
+      line-height: 18px;
+      margin-top: 11px; }
+    /* line 395, scss/module/_story.scss */
+    .opening-mb .op.opst1 {
+      display: none;
+      height: 176px; }
+      /* line 398, scss/module/_story.scss */
+      .opening-mb .op.opst1.active {
+        display: table; }
+    /* line 402, scss/module/_story.scss */
+    .opening-mb .op.opst2-3 {
+      display: none;
+      height: 77px; }
+      /* line 405, scss/module/_story.scss */
+      .opening-mb .op.opst2-3.active {
+        display: table; }
+    /* line 409, scss/module/_story.scss */
+    .opening-mb .op.opst4 {
+      display: none;
+      height: 102px; }
+      /* line 412, scss/module/_story.scss */
+      .opening-mb .op.opst4.active {
+        display: table; }
+
+/* line 420, scss/module/_story.scss */
+.game {
+  position: relative;
+  width: 100%; }
+  /* line 424, scss/module/_story.scss */
+  .game > .wr-page {
+    position: relative; }
+  /* line 429, scss/module/_story.scss */
+  .game .wr-step-1 {
+    display: none; }
+    /* line 436, scss/module/_story.scss */
+    .game .wr-step-1 .step-1 .info {
+      float: right;
+      position: relative;
+      width: 65.35087719298246%;
+      padding-bottom: 55px;
+      margin: 55px 13.42281879194631% 0 0; }
+      /* line 442, scss/module/_story.scss */
+      .game .wr-step-1 .step-1 .info .select-img {
+        position: absolute;
+        top: 0;
+        right: 5px; }
+        /* line 445, scss/module/_story.scss */
+        .game .wr-step-1 .step-1 .info .select-img img {
+          display: block; }
+      /* line 450, scss/module/_story.scss */
+      .game .wr-step-1 .step-1 .info .declare-info {
+        padding-top: 23px; }
+        /* line 453, scss/module/_story.scss */
+        .game .wr-step-1 .step-1 .info .declare-info .name {
+          margin-bottom: 25px; }
+        /* line 457, scss/module/_story.scss */
+        .game .wr-step-1 .step-1 .info .declare-info .name span,
+        .game .wr-step-1 .step-1 .info .declare-info .story span {
+          display: block;
+          margin-bottom: 9px;
+          font-size: 1.429em;
+          font-family: "latoregular", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: #333; }
+        /* line 464, scss/module/_story.scss */
+        .game .wr-step-1 .step-1 .info .declare-info .name input[type='text'] {
+          outline: none;
+          width: 58.79194630872483%;
+          height: 42px; }
+        /* line 469, scss/module/_story.scss */
+        .game .wr-step-1 .step-1 .info .declare-info .story textarea {
+          width: 100%;
+          height: 167px;
+          padding-top: 10px;
+          resize: none; }
+      /* line 478, scss/module/_story.scss */
+      .game .wr-step-1 .step-1 .info .btn-next a {
+        float: right; }
+    /* line 482, scss/module/_story.scss */
+    .game .wr-step-1.active {
+      display: block; }
+  /* line 487, scss/module/_story.scss */
+  .game #export-canvas {
+    display: inline-block;
+    position: relative;
+    width: 548px;
+    height: 548px; }
+  /* line 493, scss/module/_story.scss */
+  .game .wr-step-2 {
+    display: none; }
+    /* line 497, scss/module/_story.scss */
+    .game .wr-step-2 .step-2 .design {
+      float: right;
+      width: 81.31578947368421%;
+      padding-top: 49px; }
+      /* line 502, scss/module/_story.scss */
+      .game .wr-step-2 .step-2 .design .ur-design {
+        float: left;
+        width: 59.11542610571737%; }
+        /* line 505, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .ur-design img {
+          display: block; }
+        /* line 510, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .ur-design .logo {
+          width: 95px;
+          position: absolute;
+          bottom: 9px;
+          right: 9px;
+          z-index: 12; }
+          /* line 513, scss/module/_story.scss */
+          .game .wr-step-2 .step-2 .design .ur-design .logo img {
+            display: block;
+            width: 100%; }
+        /* line 518, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .ur-design .temp {
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center;
+          background-size: cover; }
+          /* line 523, scss/module/_story.scss */
+          .game .wr-step-2 .step-2 .design .ur-design .temp img {
+            display: block;
+            width: 100%; }
+        /* line 528, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .ur-design .your-badge {
+          width: 100%;
+          position: absolute;
+          top: 44%;
+          z-index: 11; }
+          /* line 531, scss/module/_story.scss */
+          .game .wr-step-2 .step-2 .design .ur-design .your-badge img {
+            display: block;
+            width: 100%; }
+        /* line 536, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .ur-design .slogan {
+          width: 100%;
+          height: 15%;
+          position: absolute;
+          top: 62.95620437956204%;
+          z-index: 12;
+          text-align: center; }
+          /* line 540, scss/module/_story.scss */
+          .game .wr-step-2 .step-2 .design .ur-design .slogan textarea {
+            height: 100%;
+            font-size: 1.429em;
+            font-family: "vnfbelleregular", arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #e2328c;
+            outline: none; }
+      /* line 548, scss/module/_story.scss */
+      .game .wr-step-2 .step-2 .design .suggest {
+        width: 36.13807982740022%;
+        float: right; }
+        /* line 552, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .suggest h3 {
+          margin-bottom: 5px;
+          padding-bottom: 8px;
+          border-width: 0 0 1px 0;
+          border-style: solid;
+          border-color: #e2328c;
+          border-radius: 0;
+          font-size: 1.714em;
+          font-family: "latoregular", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: #333; }
+        /* line 558, scss/module/_story.scss */
+        .game .wr-step-2 .step-2 .design .suggest .choose .square {
+          float: left;
+          width: 49.25373134328358%;
+          margin: 5px 1.492537313432836% 0 0; }
+          /* line 563, scss/module/_story.scss */
+          .game .wr-step-2 .step-2 .design .suggest .choose .square img {
+            display: block;
+            width: 100%; }
+          /* line 568, scss/module/_story.scss */
+          .game .wr-step-2 .step-2 .design .suggest .choose .square:nth-child(2n+2) {
+            margin-right: 0; }
+    /* line 576, scss/module/_story.scss */
+    .game .wr-step-2 .step-2 .opening {
+      padding: 42px 0 19px; }
+      /* line 579, scss/module/_story.scss */
+      .game .wr-step-2 .step-2 .opening h3.mb {
+        display: none; }
+    /* line 583, scss/module/_story.scss */
+    .game .wr-step-2 .step-2 .btn-next {
+      padding: 19px 0 14px;
+      margin: 0 41px 0 0; }
+      /* line 588, scss/module/_story.scss */
+      .game .wr-step-2 .step-2 .btn-next a {
+        float: right; }
+    /* line 593, scss/module/_story.scss */
+    .game .wr-step-2.active {
+      display: block; }
+  /* line 598, scss/module/_story.scss */
+  .game .wr-step-3 {
+    display: none; }
+    /* line 601, scss/module/_story.scss */
+    .game .wr-step-3 .step-3 .design {
+      float: right;
+      width: 81.31578947368421%;
+      padding-top: 59px;
+      padding-bottom: 87px; }
+      /* line 606, scss/module/_story.scss */
+      .game .wr-step-3 .step-3 .design .ur-design {
+        float: left;
+        width: 59.11542610571737%;
+        background-color: #fed2db;
+        background-image: url("../images/index.html");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center; }
+        /* line 610, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .ur-design img {
+          display: block;
+          width: 100%; }
+        /* line 615, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .ur-design canvas {
+          display: block; }
+      /* line 618, scss/module/_story.scss */
+      .game .wr-step-3 .step-3 .design .share {
+        float: right;
+        position: relative;
+        width: 38.83495145631068%; }
+        /* line 623, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .share-friend {
+          margin-bottom: 14px;
+          padding-bottom: 6px;
+          border-width: 0 0 1px 0;
+          border-style: solid;
+          border-color: #e2328c;
+          border-radius: 0; }
+          /* line 627, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .share-friend h3 {
+            margin-bottom: 6px;
+            font-size: 1.429em;
+            font-family: "latoregular", arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #333;
+            line-height: 18px; }
+          /* line 632, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .share-friend p {
+            font-size: 1em;
+            font-family: "latoregular", arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #999;
+            line-height: 18px; }
+        /* line 639, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb {
+          display: inline-block;
+          margin-top: 0;
+          padding: 10px 0px 11px;
+          font-size: 1.143em;
+          line-height: 0; }
+        /* line 648, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb {
+          position: relative;
+          padding-left: 29px;
+          padding-right: 27px; }
+          /* line 652, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .mail span, .game .wr-step-3 .step-3 .design .share .social .down span, .game .wr-step-3 .step-3 .design .share .social .fb span {
+            display: inline-block;
+            position: relative;
+            top: 1px;
+            width: 22px;
+            height: 17px;
+            margin-right: 11px;
+            background-color: transparent;
+            background-image: url("http://thammydiamond.vn/");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center; }
+          /* line 659, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .mail:hover span, .game .wr-step-3 .step-3 .design .share .social .down:hover span, .game .wr-step-3 .step-3 .design .share .social .fb:hover span {
+            background-color: transparent;
+            background-image: url("http://thammydiamond.vn/");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center; }
+        /* line 663, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .social .down {
+          width: 100%;
+          padding-left: 17px;
+          padding-top: 0px;
+          margin-left: 0px;
+          text-align: center; }
+          /* line 669, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .down span {
+            display: inline-block;
+            position: relative;
+            top: 7px;
+            right: 10px;
+            width: 31px;
+            height: 25px;
+            margin-right: 0px;
+            background-color: transparent;
+            background-image: url("http://thammydiamond.vn/");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center; }
+          /* line 676, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .down:hover span {
+            background-color: transparent;
+            background-image: url("http://thammydiamond.vn/");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center; }
+        /* line 680, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .social .fb {
+          width: 100%;
+          margin-top: 11px;
+          padding: 16px 0 16px;
+          background-color: #2858ab;
+          border: 2px solid #2858ab;
+          color: #fff;
+          text-align: center; }
+          /* line 684, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .fb:before {
+            display: none; }
+          /* line 691, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .fb:hover {
+            background-color: #fff;
+            border: 2px solid #2858ab;
+            color: #2858ab; }
+          /* line 699, scss/module/_story.scss */
+          .game .wr-step-3 .step-3 .design .share .social .fb i {
+            position: relative;
+            top: 2px;
+            margin-right: 17px;
+            font-size: 23px;
+            line-height: 0; }
+        /* line 707, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .social > p {
+          margin: 21px 0 11px;
+          font-size: 1.143em;
+          font-family: "latoregular", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: #e2328c; }
+        /* line 712, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .social .your-link {
+          width: 100%;
+          height: 47px;
+          font-size: 1.143em;
+          font-family: "latoregular", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: #333; }
+        /* line 719, scss/module/_story.scss */
+        .game .wr-step-3 .step-3 .design .share .btn-next {
+          position: absolute;
+          bottom: -281px;
+          left: 0;
+          margin: 0;
+          padding: 0; }
+    /* line 732, scss/module/_story.scss */
+    .game .wr-step-3 .step-3 .opening {
+      padding: 41px 0 21px; }
+      /* line 734, scss/module/_story.scss */
+      .game .wr-step-3 .step-3 .opening h3.mb {
+        display: none; }
+    /* line 739, scss/module/_story.scss */
+    .game .wr-step-3.active {
+      display: block; }
+  /* line 744, scss/module/_story.scss */
+  .game .wr-step-4 {
+    display: none; }
+    /* line 747, scss/module/_story.scss */
+    .game .wr-step-4 .step-4 .opening {
+      padding: 22px 0px 4px; }
+      /* line 749, scss/module/_story.scss */
+      .game .wr-step-4 .step-4 .opening h3 {
+        line-height: 30px; }
+    /* line 754, scss/module/_story.scss */
+    .game .wr-step-4 .step-4 .gift {
+      width: 61%;
+      margin: 0 auto;
+      padding-bottom: 126px; }
+      /* line 758, scss/module/_story.scss */
+      .game .wr-step-4 .step-4 .gift .introduction {
+        padding: 26px 0 24px;
+        text-align: center;
+        border-bottom: 1px solid #fea9bb; }
+        /* line 766, scss/module/_story.scss */
+        .game .wr-step-4 .step-4 .gift .introduction p.p2 {
+          margin-top: 13px;
+          font-size: 0.857em;
+          font-family: "latolight", arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: #5F5959;
+          line-height: 14px; }
+    /* line 774, scss/module/_story.scss */
+    .game .wr-step-4 .step-4 .choose-gift {
+      width: 100%; }
+      /* line 777, scss/module/_story.scss */
+      .game .wr-step-4 .step-4 .choose-gift h3 {
+        margin: 20px 0px;
+        font-size: 1.429em;
+        font-family: "latobold", arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #333; }
+        /* line 781, scss/module/_story.scss */
+        .game .wr-step-4 .step-4 .choose-gift h3 br {
+          display: none; }
+      /* line 784, scss/module/_story.scss */
+      .game .wr-step-4 .step-4 .choose-gift .help {
+        float: left;
+        width: 57.89473684210526%; }
+        /* line 788, scss/module/_story.scss */
+        .game .wr-step-4 .step-4 .choose-gift .help ul li {
+          margin-top: 8px;
+          padding: 11px 15px 8px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #dddddd;
+          border-radius: 7px;
+          line-height: 0; }
+          /* line 795, scss/module/_story.scss */
+          .game .wr-step-4 .step-4 .choose-gift .help ul li div.radio {
+            width: 21px;
+            height: 21px;
+            margin-right: 13px;
+            position: relative;
+            top: -2px; }
+            /* line 800, scss/module/_story.scss */
+            .game .wr-step-4 .step-4 .choose-gift .help ul li div.radio span {
+              width: 21px;
+              height: 21px;
+              background-color: transparent;
+              background-image: url("http://thammydiamond.vn/");
+              background-repeat: no-repeat;
+              background-attachment: scroll;
+              background-position: center center; }
+              /* line 804, scss/module/_story.scss */
+              .game .wr-step-4 .step-4 .choose-gift .help ul li div.radio span.checked {
+                background-color: transparent;
+                background-image: url("http://thammydiamond.vn/");
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center center; }
+          /* line 810, scss/module/_story.scss */
+          .game .wr-step-4 .step-4 .choose-gift .help ul li label {
+            width: 100%; }
+          /* line 814, scss/module/_story.scss */
+          .game .wr-step-4 .step-4 .choose-gift .help ul li:first-child {
+            margin-top: 0; }
+      /* line 820, scss/module/_story.scss */
+      .game .wr-step-4 .step-4 .choose-gift .img-gift {
+        float: right;
+        width: 28.94736842105263; }
+        /* line 824, scss/module/_story.scss */
+        .game .wr-step-4 .step-4 .choose-gift .img-gift img {
+          display: block;
+          width: 100%;
+          margin: 32px 0 8px; }
+      /* line 830, scss/module/_story.scss */
+      .game .wr-step-4 .step-4 .choose-gift .btn-next {
+        float: right;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-right: 20px; }
+        /* line 836, scss/module/_story.scss */
+        .game .wr-step-4 .step-4 .choose-gift .btn-next a {
+          padding: 0px 45px 10px 25px; }
+    /* line 842, scss/module/_story.scss */
+    .game .wr-step-4.active {
+      display: block; }
+  /* line 848, scss/module/_story.scss */
+  .game .btn-next {
+    margin-top: 15px; }
+    /* line 851, scss/module/_story.scss */
+    .game .btn-next a {
+      margin-top: 0;
+      padding: 0px 64px 10px 36px;
+      font-size: 1.429em; }
+      /* line 857, scss/module/_story.scss */
+      .game .btn-next a .fa {
+        position: relative;
+        top: 4px;
+        left: 20px;
+        font-size: 36px; }
+  /* line 866, scss/module/_story.scss */
+  .game .step-1-bg {
+    width: 100%;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center; }
+  /* line 870, scss/module/_story.scss */
+  .game .step-2-bg {
+    width: 100%;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center; }
+  /* line 874, scss/module/_story.scss */
+  .game .step-3-bg {
+    width: 100%;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center; }
+  /* line 878, scss/module/_story.scss */
+  .game .step-4-bg {
+    width: 100%;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center; }
+
+/* line 885, scss/module/_story.scss */
+.view-more-btn i {
+  position: relative;
+  left: 10px; }
+
+@media (max-width: 1140px) {
+  /* line 4, scss/module/_mobile.scss */
+  .header {
+    height: 45px; }
+    /* line 7, scss/module/_mobile.scss */
+    .header .wr-page {
+      padding: 0 10px;
+      position: relative; }
+    /* line 13, scss/module/_mobile.scss */
+    .header .logo img {
+      top: 0px; }
+    /* line 18, scss/module/_mobile.scss */
+    .header .head-nav,
+    .header .log-regis,
+    .header .log-regis-mb {
+      display: none; }
+    /* line 23, scss/module/_mobile.scss */
+    .header .mb-menu-button {
+      display: block; }
+    /* line 27, scss/module/_mobile.scss */
+    .header .log-regis-mb {
+      display: table; }
+
+  /* line 31, scss/module/_mobile.scss */
+  .loged {
+    float: none;
+    padding-bottom: 20px; }
+    /* line 34, scss/module/_mobile.scss */
+    .loged.pc {
+      display: none; }
+    /* line 37, scss/module/_mobile.scss */
+    .loged a.user-name {
+      display: block;
+      height: 33px;
+      float: none; }
+    /* line 42, scss/module/_mobile.scss */
+    .loged a.logout {
+      margin-top: 10px;
+      margin-left: 0; }
+
+  /* line 49, scss/module/_mobile.scss */
+  .present {
+    width: 345px;
+    right: 70px;
+    bottom: 65px; }
+
+  /* line 54, scss/module/_mobile.scss */
+  .content .wr-page {
+    padding: 0 18px; }
+
+  /* line 60, scss/module/_mobile.scss */
+  .coddle-incredible .story {
+    margin-top: 12px;
+    line-height: 30px; }
+    /* line 64, scss/module/_mobile.scss */
+    .coddle-incredible .story br {
+      display: block; }
+
+  /* line 71, scss/module/_mobile.scss */
+  .all-step-wr {
+    padding: 0 0px; } }
+@media (max-width: 1064px) {
+  /* line 80, scss/module/_mobile.scss */
+  .footer .wr-page {
+    padding: 0 24px; }
+
+  /* line 86, scss/module/_mobile.scss */
+  .banner-pc {
+    display: none; }
+
+  /* line 89, scss/module/_mobile.scss */
+  .banner-tl {
+    display: block;
+    background-size: cover; }
+    /* line 93, scss/module/_mobile.scss */
+    .banner-tl .present {
+      bottom: 30px; }
+
+  /* line 98, scss/module/_mobile.scss */
+  .content {
+    padding-top: 68px; }
+
+  /* line 101, scss/module/_mobile.scss */
+  .coddle-incredible {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0.6+100 */
+    background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.6) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0.6)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.6) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.6) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.6) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.6) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#99ffffff',GradientType=0 );
+    /* IE6-9 */ }
+
+  /* line 115, scss/module/_mobile.scss */
+  .square-img .block .item {
+    width: 32.67716535433071%;
+    margin-right: 0.984251968503937%; }
+  /* line 120, scss/module/_mobile.scss */
+  .square-img .block .item:nth-child(3),
+  .square-img .block .item:nth-child(7) {
+    margin-right: 0.984251968503937%; }
+  /* line 125, scss/module/_mobile.scss */
+  .square-img .block .item:nth-child(2),
+  .square-img .block .item:nth-child(6),
+  .square-img .block .item:nth-child(9),
+  .square-img .block .item:last-child {
+    margin-right: 0px; }
+  /* line 136, scss/module/_mobile.scss */
+  .square-img .block .item.x2 {
+    width: 66.33858267716536%; }
+    /* line 140, scss/module/_mobile.scss */
+    .square-img .block .item.x2 .ur-status p.status {
+      font-size: 1em; }
+    /* line 143, scss/module/_mobile.scss */
+    .square-img .block .item.x2 .ur-status p.ur {
+      font-size: 1.286em; }
+    /* line 146, scss/module/_mobile.scss */
+    .square-img .block .item.x2 .ur-status span {
+      margin: 20px 0px 15px; }
+  /* line 152, scss/module/_mobile.scss */
+  .square-img .block .item.hiden {
+    display: none; }
+
+  /* line 158, scss/module/_mobile.scss */
+  .thousand-girl {
+    margin-top: 34px;
+    padding-bottom: 33px; }
+    /* line 161, scss/module/_mobile.scss */
+    .thousand-girl p, .thousand-girl span {
+      font-size: 1.429em; }
+    /* line 164, scss/module/_mobile.scss */
+    .thousand-girl a.share, .thousand-girl .btn-pink, .thousand-girl .chiase-slogan .chiase-btn, .chiase-slogan .thousand-girl .chiase-btn, .thousand-girl #gallery .slide-wrp .chiase-btn, #gallery .slide-wrp .thousand-girl .chiase-btn, .thousand-girl .pagi .pagi-ele, .pagi .thousand-girl .pagi-ele, .thousand-girl .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .thousand-girl .mail, .thousand-girl .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .thousand-girl .down, .thousand-girl .game .wr-step-3 .step-3 .design .share .social .fb, .game .wr-step-3 .step-3 .design .share .social .thousand-girl .fb, .thousand-girl .game .btn-next a, .game .btn-next .thousand-girl a, .thousand-girl .view-more-btn {
+      font-size: 19.56px; } }
+@media (max-width: 1024px) {
+  /* line 172, scss/module/_mobile.scss */
+  .wr-story {
+    height: auto;
+    background: transparent; }
+
+  /* line 177, scss/module/_mobile.scss */
+  .all-step-wr {
+    padding-bottom: 144px; }
+
+  /* line 181, scss/module/_mobile.scss */
+  .opening {
+    display: none; }
+
+  /* line 184, scss/module/_mobile.scss */
+  .opening-mb {
+    display: block;
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top; }
+
+  /* line 189, scss/module/_mobile.scss */
+  .flow-nav {
+    display: none; }
+
+  /* line 192, scss/module/_mobile.scss */
+  .flow-nav-mb {
+    display: block;
+    margin: 0 auto; }
+    /* line 195, scss/module/_mobile.scss */
+    .flow-nav-mb ul {
+      position: relative; }
+    /* line 198, scss/module/_mobile.scss */
+    .flow-nav-mb ul li {
+      position: absolute;
+      display: none; }
+      /* line 202, scss/module/_mobile.scss */
+      .flow-nav-mb ul li.st1.active {
+        display: block; }
+      /* line 205, scss/module/_mobile.scss */
+      .flow-nav-mb ul li.st2.active {
+        display: block; }
+      /* line 208, scss/module/_mobile.scss */
+      .flow-nav-mb ul li.st3.active {
+        display: block; }
+      /* line 211, scss/module/_mobile.scss */
+      .flow-nav-mb ul li.st4.active {
+        display: block; }
+
+  /* line 220, scss/module/_mobile.scss */
+  .game .wr-step-1 .step-1 .info {
+    float: none;
+    margin: 55px auto 0; }
+  /* line 227, scss/module/_mobile.scss */
+  .game .wr-step-2 .wr-page {
+    padding: 0 20px; }
+  /* line 232, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design {
+    float: none;
+    width: 100%; }
+    /* line 236, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .design .ur-design {
+      float: none;
+      width: 548px;
+      margin: 0 auto 50px; }
+    /* line 241, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .design .suggest {
+      float: none;
+      width: 100%; }
+      /* line 245, scss/module/_mobile.scss */
+      .game .wr-step-2 .step-2 .design .suggest h3 {
+        font-size: 1.429em;
+        margin-bottom: 15px; }
+      /* line 247, scss/module/_mobile.scss */
+      .game .wr-step-2 .step-2 .design .suggest .choose .square {
+        width: 32.52032520325203%;
+        margin: 0 1.219512195121951% 12px 0; }
+        /* line 250, scss/module/_mobile.scss */
+        .game .wr-step-2 .step-2 .design .suggest .choose .square:nth-child(2n+2) {
+          margin-right: 1.219512195121951%; }
+        /* line 251, scss/module/_mobile.scss */
+        .game .wr-step-2 .step-2 .design .suggest .choose .square:nth-child(3n+3) {
+          margin-right: 0; }
+        /* line 252, scss/module/_mobile.scss */
+        .game .wr-step-2 .step-2 .design .suggest .choose .square:last-child {
+          margin-right: 0; }
+  /* line 256, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .btn-next {
+    float: none;
+    margin: 0; }
+  /* line 263, scss/module/_mobile.scss */
+  .game .wr-step-3 .wr-page {
+    padding: 0 20px; }
+  /* line 266, scss/module/_mobile.scss */
+  .game .wr-step-3 .step-3 .design {
+    float: none;
+    width: 100%; }
+    /* line 270, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .social .down {
+      margin-top: 11px;
+      margin-left: 0; }
+    /* line 274, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .social .fb {
+      padding-left: 22px;
+      padding-right: 22px; }
+    /* line 278, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .social > p,
+    .game .wr-step-3 .step-3 .design .share .social .your-link {
+      font-size: 1em; }
+    /* line 282, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .btn-next {
+      bottom: -306px; }
+  /* line 288, scss/module/_mobile.scss */
+  .game .wr-step-4 .wr-page {
+    padding: 0 20px; }
+  /* line 291, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .gift {
+    width: 100%; }
+
+  /* line 296, scss/module/_mobile.scss */
+  .game .wr-step-1 {
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left bottom; }
+    /* line 298, scss/module/_mobile.scss */
+    .game .wr-step-1 .step-1-bg {
+      background-color: transparent;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+  /* line 302, scss/module/_mobile.scss */
+  .game .wr-step-2 {
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left bottom; }
+    /* line 304, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2-bg {
+      background-color: transparent;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+      /* line 306, scss/module/_mobile.scss */
+      .game .wr-step-2 .step-2-bg .wr-page:nth-child(1) {
+        padding-bottom: 15px;
+        background-color: transparent;
+        background-image: url("../images/index.html");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center; }
+  /* line 312, scss/module/_mobile.scss */
+  .game .wr-step-3 {
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left bottom; }
+    /* line 314, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3-bg {
+      background-color: transparent;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+  /* line 319, scss/module/_mobile.scss */
+  .game .wr-step-4 {
+    background-color: transparent;
+    background-image: url("http://thammydiamond.vn/");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left bottom; }
+    /* line 321, scss/module/_mobile.scss */
+    .game .wr-step-4 .step-4-bg {
+      background-color: transparent;
+      background-image: url("../images/index.html");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center; }
+
+  /* line 328, scss/module/_mobile.scss */
+  .pagi {
+    margin: 0 auto;
+    text-align: center; }
+    /* line 332, scss/module/_mobile.scss */
+    .pagi .pagi-ele {
+      width: 120px; }
+      /* line 334, scss/module/_mobile.scss */
+      .pagi .pagi-ele.ne, .pagi .pagi-ele.pr {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #e2328c;
+        border-radius: 25px;
+        background-color: transparent;
+        background-image: url("../images/index.html");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center; }
+      /* line 339, scss/module/_mobile.scss */
+      .pagi .pagi-ele.pr {
+        margin-right: 20px; }
+      /* line 343, scss/module/_mobile.scss */
+      .pagi .pagi-ele:first-child, .pagi .pagi-ele:last-child {
+        width: 120px;
+        font-size: 1em; } }
+@media (max-width: 980px) {
+  /* line 353, scss/module/_mobile.scss */
+  .wrapper {
+    position: relative; } }
+@media (max-width: 940px) {
+  /* line 363, scss/module/_mobile.scss */
+  .fancybox-skin.popup-close a.fancybox-close {
+    width: 32px;
+    height: 32px;
+    background: transparent url("http://thammydiamond.vn/") no-repeat scroll 0% 0%;
+    right: 0; }
+
+  /* line 371, scss/module/_mobile.scss */
+  .po-view-img {
+    padding: 32px 32px 0; }
+
+  /* line 377, scss/module/_mobile.scss */
+  .wr-step-3 .step-3 .design .share .btn-next {
+    bottom: -138px; } }
+@media (max-width: 767px) {
+  /* line 386, scss/module/_mobile.scss */
+  .header .logo {
+    width: 118px; }
+    /* line 388, scss/module/_mobile.scss */
+    .header .logo img {
+      top: 6px; }
+
+  /* line 395, scss/module/_mobile.scss */
+  .footer {
+    height: auto;
+    padding-top: 15px;
+    text-align: center; }
+    /* line 400, scss/module/_mobile.scss */
+    .footer a, .footer p {
+      font-size: 0.857em; }
+    /* line 404, scss/module/_mobile.scss */
+    .footer .copyright,
+    .footer .rules-fb {
+      float: none; }
+    /* line 409, scss/module/_mobile.scss */
+    .footer .copyright {
+      padding-top: 0;
+      padding-bottom: 11px; }
+    /* line 415, scss/module/_mobile.scss */
+    .footer .rules-fb .fb,
+    .footer .rules-fb .rules {
+      display: block; }
+    /* line 420, scss/module/_mobile.scss */
+    .footer .rules-fb .fb {
+      display: inline-block;
+      margin-right: 0;
+      padding: 5px 21px 5px 40px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e43e93;
+      border-radius: 4px; }
+      /* line 425, scss/module/_mobile.scss */
+      .footer .rules-fb .fb i {
+        left: -19px;
+        font-size: 17px; }
+    /* line 430, scss/module/_mobile.scss */
+    .footer .rules-fb .rules {
+      margin: 11px 0 10px; }
+
+  /* line 439, scss/module/_mobile.scss */
+  .banner-tl {
+    display: none; }
+
+  /* line 442, scss/module/_mobile.scss */
+  .banner-mb {
+    display: block; }
+
+  /* line 446, scss/module/_mobile.scss */
+  .present {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    left: 0;
+    margin: 0 auto;
+    text-align: center; }
+    /* line 452, scss/module/_mobile.scss */
+    .present p {
+      line-height: 17px;
+      letter-spacing: 0.4px;
+      font-family: "latoitalic";
+      font-size: 0.857em; }
+    /* line 456, scss/module/_mobile.scss */
+    .present > span {
+      font-size: 0.857em;
+      font-weight: 700; }
+
+  /* line 462, scss/module/_mobile.scss */
+  .discovery {
+    height: auto;
+    margin: 6px auto 0px; }
+    /* line 466, scss/module/_mobile.scss */
+    .discovery a {
+      padding: 10px 12px 9px;
+      font-size: 0.857em; }
+      /* line 470, scss/module/_mobile.scss */
+      .discovery a span i {
+        font-size: 16px; }
+
+  /* line 477, scss/module/_mobile.scss */
+  .content {
+    padding-top: 45px; }
+    /* line 480, scss/module/_mobile.scss */
+    .content .wr-page {
+      padding: 0 15px; }
+
+  /* line 485, scss/module/_mobile.scss */
+  .coddle-incredible {
+    padding: 0 13px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0.25+95 */
+    background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0.25) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(95%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(255, 255, 255, 0.25)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0.25) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0.25) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0.25) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.25) 95%, rgba(255, 255, 255, 0.25) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#40ffffff',GradientType=0 );
+    /* IE6-9 */ }
+    /* line 496, scss/module/_mobile.scss */
+    .coddle-incredible .story {
+      width: 100%;
+      text-align: center;
+      font-size: 1.143em;
+      line-height: 20px; }
+      /* line 502, scss/module/_mobile.scss */
+      .coddle-incredible .story br {
+        display: none; }
+    /* line 506, scss/module/_mobile.scss */
+    .coddle-incredible .quantity {
+      float: left;
+      font-size: 1em; }
+      /* line 510, scss/module/_mobile.scss */
+      .coddle-incredible .quantity span {
+        font-size: 34px; }
+    /* line 514, scss/module/_mobile.scss */
+    .coddle-incredible .champion {
+      font-size: 0.857em; }
+      /* line 517, scss/module/_mobile.scss */
+      .coddle-incredible .champion span {
+        font-size: 1.143em; }
+
+  /* line 525, scss/module/_mobile.scss */
+  .square-img .block .item {
+    width: 48.96551724137931%;
+    margin-right: 2.068965517241379%; }
+  /* line 529, scss/module/_mobile.scss */
+  .square-img .block .item:nth-child(2),
+  .square-img .block .item:nth-child(6) {
+    margin-right: 2.068965517241379%; }
+  /* line 534, scss/module/_mobile.scss */
+  .square-img .block .item:nth-child(3),
+  .square-img .block .item:nth-child(5),
+  .square-img .block .item:nth-child(8),
+  .square-img .block .item:last-child {
+    margin-right: 0px; }
+  /* line 541, scss/module/_mobile.scss */
+  .square-img .block .item.x2 {
+    width: 100%; }
+    /* line 545, scss/module/_mobile.scss */
+    .square-img .block .item.x2 .ur-status p.status {
+      font-size: 9px;
+      line-height: 11px; }
+    /* line 549, scss/module/_mobile.scss */
+    .square-img .block .item.x2 .ur-status p.ur {
+      font-size: 0.857em; }
+    /* line 552, scss/module/_mobile.scss */
+    .square-img .block .item.x2 .ur-status span {
+      margin: 13px 0px 6px; }
+  /* line 558, scss/module/_mobile.scss */
+  .square-img .block .item.shown {
+    display: block; }
+
+  /* line 564, scss/module/_mobile.scss */
+  .thousand-girl {
+    margin-top: 6px;
+    padding-bottom: 20px; }
+    /* line 567, scss/module/_mobile.scss */
+    .thousand-girl p, .thousand-girl span {
+      font-size: 1.143em; }
+    /* line 570, scss/module/_mobile.scss */
+    .thousand-girl p {
+      margin: 0 0 3px;
+      line-height: 22px; }
+      /* line 573, scss/module/_mobile.scss */
+      .thousand-girl p br {
+        display: block; }
+
+  /* line 579, scss/module/_mobile.scss */
+  a.share, .btn-pink, .chiase-slogan .chiase-btn, #gallery .slide-wrp .chiase-btn, .pagi .pagi-ele, .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb, .game .btn-next a, .view-more-btn {
+    margin-top: 19px;
+    padding: 12px 0px 10px;
+    font-size: 16.5px;
+    width: 100%; }
+
+  /* line 587, scss/module/_mobile.scss */
+  .game .opening h3 {
+    font-size: 1.286em; }
+    /* line 589, scss/module/_mobile.scss */
+    .game .opening h3 br {
+      display: block; }
+  /* line 593, scss/module/_mobile.scss */
+  .game .opening p {
+    margin-bottom: 13px;
+    font-size: 0.857em; }
+    /* line 596, scss/module/_mobile.scss */
+    .game .opening p br {
+      display: none; }
+  /* line 601, scss/module/_mobile.scss */
+  .game .btn-next {
+    text-align: center; }
+    /* line 604, scss/module/_mobile.scss */
+    .game .btn-next a {
+      float: none !important;
+      padding: 7px 63px 14px 54px;
+      font-size: 1.286em;
+      font-family: "latoblack", arial, Helvetica, sans-serif;
+      font-weight: 400; }
+      /* line 609, scss/module/_mobile.scss */
+      .game .btn-next a i.fa {
+        font-size: 25px;
+        top: 2px;
+        left: 14px; }
+  /* line 618, scss/module/_mobile.scss */
+  .game .wr-step-1 .wr-page {
+    padding: 0px; }
+  /* line 621, scss/module/_mobile.scss */
+  .game .wr-step-1 .opening {
+    padding-top: 35px; }
+  /* line 624, scss/module/_mobile.scss */
+  .game .wr-step-1 .step-1 .info {
+    float: none;
+    width: 100%;
+    margin: 0px auto 0;
+    padding-bottom: 30px; }
+    /* line 629, scss/module/_mobile.scss */
+    .game .wr-step-1 .step-1 .info .declare-info {
+      padding-top: 19px; }
+      /* line 632, scss/module/_mobile.scss */
+      .game .wr-step-1 .step-1 .info .declare-info .name {
+        margin-bottom: 12px; }
+      /* line 633, scss/module/_mobile.scss */
+      .game .wr-step-1 .step-1 .info .declare-info .name input[type="text"] {
+        width: 100%;
+        font-size: 1.143em; }
+      /* line 634, scss/module/_mobile.scss */
+      .game .wr-step-1 .step-1 .info .declare-info .name span,
+      .game .wr-step-1 .step-1 .info .declare-info .story span {
+        font-size: 1.143em;
+        margin-bottom: 11px; }
+      /* line 636, scss/module/_mobile.scss */
+      .game .wr-step-1 .step-1 .info .declare-info .story textarea {
+        height: 205px;
+        font-size: 1.143em; }
+    /* line 639, scss/module/_mobile.scss */
+    .game .wr-step-1 .step-1 .info .select-img {
+      position: static;
+      margin-top: 22px; }
+      /* line 642, scss/module/_mobile.scss */
+      .game .wr-step-1 .step-1 .info .select-img img {
+        margin: 0 auto; }
+    /* line 647, scss/module/_mobile.scss */
+    .game .wr-step-1 .step-1 .info .btn-next {
+      margin-top: 16px; }
+  /* line 654, scss/module/_mobile.scss */
+  .game .wr-step-2 .wr-page {
+    padding: 0px; }
+  /* line 657, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 {
+    box-shadow: none; }
+    /* line 660, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .opening h3 {
+      display: none; }
+    /* line 661, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .opening h3.mb {
+      display: block; }
+    /* line 663, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .design {
+      padding-top: 10px; }
+      /* line 666, scss/module/_mobile.scss */
+      .game .wr-step-2 .step-2 .design .ur-design {
+        width: 548px; }
+      /* line 669, scss/module/_mobile.scss */
+      .game .wr-step-2 .step-2 .design .suggest {
+        width: 100%; }
+        /* line 672, scss/module/_mobile.scss */
+        .game .wr-step-2 .step-2 .design .suggest h3 {
+          text-align: center;
+          padding-bottom: 16px; }
+  /* line 681, scss/module/_mobile.scss */
+  .game .wr-step-3 .wr-page {
+    padding: 0; }
+  /* line 687, scss/module/_mobile.scss */
+  .game .wr-step-3 .step-3 .opening h3 {
+    display: none; }
+  /* line 688, scss/module/_mobile.scss */
+  .game .wr-step-3 .step-3 .opening h3.mb {
+    display: block; }
+  /* line 690, scss/module/_mobile.scss */
+  .game .wr-step-3 .step-3 .design {
+    padding-top: 10px; }
+    /* line 693, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .ur-design {
+      float: none;
+      width: 100%; }
+    /* line 697, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share {
+      float: none;
+      width: 100%;
+      margin-top: 13px; }
+      /* line 702, scss/module/_mobile.scss */
+      .game .wr-step-3 .step-3 .design .share .share-friend {
+        text-align: center; }
+        /* line 705, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .share-friend h3 {
+          font-size: 1.429em; }
+        /* line 708, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .share-friend p {
+          font-size: 0.857em; }
+      /* line 714, scss/module/_mobile.scss */
+      .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb {
+        padding: 7px 0px 12px;
+        font-size: 1em;
+        text-align: center; }
+      /* line 719, scss/module/_mobile.scss */
+      .game .wr-step-3 .step-3 .design .share .social .mail, .game .wr-step-3 .step-3 .design .share .social .down, .game .wr-step-3 .step-3 .design .share .social .fb {
+        width: 49%;
+        margin-right: 2px; }
+        /* line 722, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .social .mail span, .game .wr-step-3 .step-3 .design .share .social .down span, .game .wr-step-3 .step-3 .design .share .social .fb span {
+          width: 19px;
+          height: 15px;
+          top: 3px;
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center; }
+        /* line 727, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .social .mail:hover span, .game .wr-step-3 .step-3 .design .share .social .down:hover span, .game .wr-step-3 .step-3 .design .share .social .fb:hover span {
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center; }
+      /* line 732, scss/module/_mobile.scss */
+      .game .wr-step-3 .step-3 .design .share .social .down {
+        width: 100%;
+        margin-right: 0%;
+        padding: 5px 0px 12px; }
+        /* line 735, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .social .down span {
+          top: 4px;
+          width: 21px;
+          height: 17px;
+          margin-left: 3px;
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center; }
+        /* line 741, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .social .down:hover span {
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center; }
+      /* line 745, scss/module/_mobile.scss */
+      .game .wr-step-3 .step-3 .design .share .social .fb {
+        width: 100%;
+        padding: 15px 0 16px; }
+        /* line 748, scss/module/_mobile.scss */
+        .game .wr-step-3 .step-3 .design .share .social .fb i {
+          font-size: 18px; }
+    /* line 754, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .social .down {
+      margin-top: 11px;
+      margin-left: 0; }
+    /* line 758, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .social .fb {
+      padding-left: 22px;
+      padding-right: 22px; }
+    /* line 762, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .social > p,
+    .game .wr-step-3 .step-3 .design .share .social .your-link {
+      font-size: 1.143em; }
+    /* line 766, scss/module/_mobile.scss */
+    .game .wr-step-3 .step-3 .design .share .btn-next {
+      position: static;
+      padding-top: 19px; }
+  /* line 774, scss/module/_mobile.scss */
+  .game .wr-step-4 .wr-page {
+    padding: 0; }
+  /* line 778, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .gift .introduction p.p1 {
+    font-size: 0.857em; }
+    /* line 780, scss/module/_mobile.scss */
+    .game .wr-step-4 .step-4 .gift .introduction p.p1 br {
+      display: none; }
+  /* line 785, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .choose-gift h3 {
+    font-size: 1.286em;
+    font-family: "latoregular", arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center; }
+    /* line 788, scss/module/_mobile.scss */
+    .game .wr-step-4 .step-4 .choose-gift h3 br {
+      display: block; }
+  /* line 791, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .choose-gift .img-gift,
+  .game .wr-step-4 .step-4 .choose-gift .help {
+    float: none;
+    width: 100%; }
+  /* line 797, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .choose-gift .img-gift {
+    width: 50%;
+    margin: 0 auto; }
+  /* line 801, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .choose-gift .help ul li {
+    padding: 11px 10px 8px;
+    font-size: 1em; }
+    /* line 804, scss/module/_mobile.scss */
+    .game .wr-step-4 .step-4 .choose-gift .help ul li div.radio {
+      margin-right: 8px;
+      width: 14px;
+      height: 14px; }
+      /* line 807, scss/module/_mobile.scss */
+      .game .wr-step-4 .step-4 .choose-gift .help ul li div.radio span {
+        width: 14px;
+        height: 14px;
+        background-color: transparent;
+        background-image: url("http://thammydiamond.vn/");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center; }
+        /* line 811, scss/module/_mobile.scss */
+        .game .wr-step-4 .step-4 .choose-gift .help ul li div.radio span.checked {
+          background-color: transparent;
+          background-image: url("http://thammydiamond.vn/");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: center center; }
+  /* line 817, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .choose-gift .help ul li label {
+    font-size: 0.857em; }
+  /* line 818, scss/module/_mobile.scss */
+  .game .wr-step-4 .step-4 .choose-gift .btn-next {
+    float: none;
+    margin: 26px 0 0 0;
+    padding: 0;
+    text-align: center; }
+  /* line 827, scss/module/_mobile.scss */
+  .game .wr-step-1,
+  .game .wr-step-2,
+  .game .wr-step-3,
+  .game .wr-step-4 {
+    padding: 0 12px; }
+  /* line 834, scss/module/_mobile.scss */
+  .game .wr-step-1 .step-1,
+  .game .wr-step-2 .step-2,
+  .game .wr-step-3 .step-3,
+  .game .wr-step-4 .step-4 {
+    box-shadow: none; }
+
+  /* line 846, scss/module/_mobile.scss */
+  .po-view-img .po-img,
+  .po-view-img .po-content {
+    width: 100%; }
+  /* line 850, scss/module/_mobile.scss */
+  .po-view-img .po-content {
+    padding-top: 20px; }
+
+  /* line 854, scss/module/_mobile.scss */
+  .po-view-img .po-img .customNavigation .home-po-next,
+  .po-view-img .po-img .customNavigation .home-po-prev {
+    width: 30px;
+    height: 30px; }
+    /* line 858, scss/module/_mobile.scss */
+    .po-view-img .po-img .customNavigation .home-po-next .fa,
+    .po-view-img .po-img .customNavigation .home-po-prev .fa {
+      font-size: 20px;
+      position: relative;
+      top: 5px; }
+
+  /* line 866, scss/module/_mobile.scss */
+  #intro-header p {
+    font-size: 1em; }
+
+  /* line 869, scss/module/_mobile.scss */
+  .chiase-slogan {
+    padding: 0 20px; }
+    /* line 872, scss/module/_mobile.scss */
+    .chiase-slogan h3 {
+      font-size: 16px; }
+    /* line 875, scss/module/_mobile.scss */
+    .chiase-slogan p {
+      font-size: 14px; }
+
+  /* line 880, scss/module/_mobile.scss */
+  #video-section .video-wrap h3 {
+    font-size: 1.143em;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: #e2328c; }
+
+  /* line 889, scss/module/_mobile.scss */
+  #gallery .filter {
+    margin-top: 0;
+    margin-bottom: 7px; }
+  /* line 893, scss/module/_mobile.scss */
+  #gallery .slide-wrp {
+    margin-top: 45px; }
+  /* line 896, scss/module/_mobile.scss */
+  #gallery .slide-wrp .desc {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 35px; }
+    /* line 901, scss/module/_mobile.scss */
+    #gallery .slide-wrp .desc span {
+      display: block;
+      margin-top: 10px;
+      font-style: italic; }
+
+  /* line 909, scss/module/_mobile.scss */
+  .view-more-btn,
+  #gallery .slide-wrp .chiase-btn {
+    width: auto;
+    font-size: 17px;
+    height: auto;
+    line-height: 19px;
+    padding: 13px 55px 10px 55px; }
+
+  /* line 917, scss/module/_mobile.scss */
+  #gallery .slide-wrp .chiase-btn {
+    padding-top: 16px; }
+
+  /* line 922, scss/module/_mobile.scss */
+  .pagi .pagi-ele {
+    width: auto;
+    padding: 7px 5px 5px;
+    font-size: 0.857em; } }
+@media (max-width: 640px) {
+  /* line 934, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design {
+    position: relative; }
+    /* line 942, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .design .ur-design .logo {
+      width: 17.02508960573477%; }
+    /* line 951, scss/module/_mobile.scss */
+    .game .wr-step-2 .step-2 .design .suggest {
+      width: 100%; }
+      /* line 954, scss/module/_mobile.scss */
+      .game .wr-step-2 .step-2 .design .suggest .choose .square {
+        width: 49.2537%;
+        margin: 5px 1.49254% 0px 0px; }
+        /* line 957, scss/module/_mobile.scss */
+        .game .wr-step-2 .step-2 .design .suggest .choose .square:nth-child(3n+3) {
+          margin-right: 1.49254%; }
+        /* line 958, scss/module/_mobile.scss */
+        .game .wr-step-2 .step-2 .design .suggest .choose .square:nth-child(2n+2) {
+          margin-right: 0; } }
+@media (max-width: 414px) {
+  /* line 968, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .ur-design {
+    position: absolute;
+    transform: scale(0.71168);
+    left: -50%;
+    top: -50%;
+    margin-left: 76.5px;
+    margin-top: 460px; }
+
+  /* line 976, scss/module/_mobile.scss */
+  #export-canvas {
+    position: absolute; }
+
+  /* line 979, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .suggest {
+    padding-top: 415px; } }
+@media (max-width: 375px) {
+  /* line 985, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .ur-design {
+    position: absolute;
+    transform: scale(0.64051);
+    left: -50%;
+    top: -50%;
+    margin-left: 76.5px;
+    margin-top: 390px; }
+
+  /* line 993, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .suggest {
+    padding-top: 380px; } }
+@media (max-width: 360px) {
+  /* line 999, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .ur-design {
+    position: absolute;
+    transform: scale(0.61314);
+    left: -50%;
+    top: -50%;
+    margin-left: 62px;
+    margin-top: 360px; }
+
+  /* line 1007, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .suggest {
+    padding-top: 360px; }
+
+  /* line 1013, scss/module/_mobile.scss */
+  .footer .copyright br {
+    display: block;
+    line-height: 20px; }
+
+  /* line 1020, scss/module/_mobile.scss */
+  .present {
+    top: 67.7%; } }
+@media (max-width: 320px) {
+  /* line 1025, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .ur-design {
+    position: absolute;
+    transform: scale(0.54015);
+    -webkit-transform: scale(0.54015);
+    -moz-transform: scale(0.54015);
+    -ms-transform: scale(0.54015);
+    -o-transform: scale(0.54015);
+    left: -50%;
+    top: -50%;
+    margin-left: 22px;
+    margin-top: 294px; }
+
+  /* line 1038, scss/module/_mobile.scss */
+  .game .wr-step-2 .step-2 .design .suggest {
+    padding-top: 320px; } }
+/* line 17, scss/style.scss */
+#demoCanvas {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

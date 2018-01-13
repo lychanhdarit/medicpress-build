@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="peter_hung_main" %>
+
+<%@ Register Src="~/Controller/FacebookScript.ascx" TagPrefix="uc1" TagName="FacebookScript" %>
+<%@ Register Src="~/peter-hung/FooterController.ascx" TagPrefix="uc1" TagName="FooterController" %>
+<%@ Register Src="~/peter-hung/MenuController.ascx" TagPrefix="uc1" TagName="MenuController" %>
+<%@ Register Src="~/peter-hung/HotlineFooterController.ascx" TagPrefix="uc1" TagName="HotlineFooterController" %>
+<%@ Register Src="~/Controller/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="~/Controller/Phone.ascx" TagPrefix="uc1" TagName="Phone" %>
+<%@ Register Src="~/Controller/Tawk_to.ascx" TagPrefix="uc1" TagName="Tawk_to" %>
+<%@ Register Src="~/Controller/NoteTM.ascx" TagPrefix="uc1" TagName="NoteTM" %>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+     <title><%: Page.Title %></title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Quicksand|Lobster|Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans" />
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../peter-hung/css/modern-business.css" rel="stylesheet" />
+    <link href="../peter-hung/css/site.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <link href="//daneden.github.io/animate.css/animate.min.css" rel="stylesheet" />
+    <uc1:Header runat="server" ID="Header" />
+    <script>
+        new WOW().init();
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <uc1:Phone runat="server" ID="Phone" />
+    <uc1:Tawk_to runat="server" ID="Tawk_to" />
+    <uc1:FacebookScript runat="server" ID="FacebookScript" />
+    <uc1:MenuController runat="server" ID="MenuController" />
+    <!-- Page Content -->
+    <form id="form1" runat="server">
+
+        <asp:ContentPlaceHolder ID="contentPage" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+        <uc1:HotlineFooterController runat="server" ID="HotlineFooterController" />
+        <!-- Footer -->
+        <uc1:FooterController runat="server" ID="FooterController" />
+        <uc1:NoteTM runat="server" ID="NoteTM" />
+    </form>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+   <script>
+        $(function () {
+
+            $('.three-item-home').hide();
+
+            var bar = $('.fixed-top');
+            var top = bar.css('top');
+            var drop = $('.dropdown-menu-right');
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+
+                    bar.stop().animate({ 'top': '0px' }, 50);
+
+                    drop.stop().animate({ 'top': '40px' }, 50);
+
+                    if ($(this).scrollTop() > 150) {
+                        $('.three-item-home').show();
+                        //$('.three-item-home').slideUp();
+                    }
+
+                } else {
+                    bar.stop().animate({ 'top': '72px' }, 50);
+                    drop.stop().animate({ 'top': '114px' }, 50);
+                    //$('.three-item-home').slideDown('slow');
+                    //$('.three-item-home').hide();
+
+                }
+
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*Intro*/
+
+/*#intro-header{*/
+	/*height: auto;*/
+	/*min-height: 525px;*/
+	/*padding-top: 0;*/
+/*}*/
+
+/*#intro-header .container{*/
+	/*height: 525px;*/
+/*}*/
+
+#intro-header table,
+#intro-header table tr,
+#intro-header table tr td{
+	width: 100%;
+	height: 100%;
+}
+
+#intro-header table tr td{
+	vertical-align: middle;
+}
+
+#intro-header .copy-text p{
+	font-family: "latoregular";
+	padding: 0;
+}
+
+.pink-color{
+	color: #e2328c;
+}
+/*End Intro*/
+
+@media(max-width: 1210px){
+
+    /*#intro-header{*/
+        /*background-position: -380px center;*/
+    /*}*/
+
+    /*#intro-header .container{*/
+    	/*width: 100%;*/
+		/*padding: 0;*/
+		/*margin: 0;*/
+    /*}*/
+
+}

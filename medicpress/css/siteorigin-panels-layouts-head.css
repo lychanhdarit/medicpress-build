@@ -1,0 +1,208 @@
+﻿
+
+        /* Layout 9 */ #pgc-9-0-0, #pgc-9-0-1, #pgc-9-0-2 {
+            width: 33.3333%;
+            width: calc(33.3333% - ( 0.66666666666667 * 0px ) );
+        }
+
+        #pg-9-0, #pg-9-4, #pl-9 .so-panel:last-child {
+            margin-bottom: 0px;
+        }
+
+        #pgc-9-1-0, #pgc-9-4-0, #pgc-9-7-0, #pgc-9-8-0, #pgc-9-10-0 {
+            width: 100%;
+            width: calc(100% - ( 0 * 30px ) );
+        }
+
+        #pg-9-1 {
+            margin-bottom: 87px;
+        }
+
+        #pgc-9-2-0 {
+            width: 33%;
+            width: calc(33% - ( 0.67 * 30px ) );
+        }
+
+        #pgc-9-2-1 {
+            width: 67%;
+            width: calc(67% - ( 0.33 * 30px ) );
+        }
+
+        #pg-9-2, #pl-9 .so-panel {
+            margin-bottom: 30px;
+        }
+
+        #pgc-9-3-0, #pgc-9-3-1, #pgc-9-3-2, #pgc-9-9-0, #pgc-9-9-1, #pgc-9-9-2 {
+            width: 33.3333%;
+            width: calc(33.3333% - ( 0.66666666666667 * 30px ) );
+        }
+
+        #pg-9-3 {
+            margin-bottom: 83px;
+        }
+
+        #pgc-9-5-0, #pgc-9-5-1, #pgc-9-5-2, #pgc-9-5-3 {
+            width: 25%;
+            width: calc(25% - ( 0.75 * 30px ) );
+        }
+
+        #pg-9-5, #pg-9-7 {
+            margin-bottom: 85px;
+        }
+
+        #pgc-9-6-0, #pgc-9-6-1 {
+            width: 50%;
+            width: calc(50% - ( 0.5 * 45px ) );
+        }
+
+        #pg-9-6 {
+            margin-bottom: 62px;
+        }
+
+        #pg-9-8 {
+            margin-bottom: 32px;
+        }
+
+        #pg-9-9 {
+            margin-bottom: 90px;
+        }
+
+        #pg-9-10 {
+            margin-bottom: 94px;
+        }
+
+        #pgc-9-11-0, #pgc-9-11-1 {
+            width: 50%;
+            width: calc(50% - ( 0.5 * 30px ) );
+        }
+
+        #pg-9-11 {
+            margin-bottom: 20px;
+        }
+
+        #pg-9-0 > .panel-row-style, #pg-9-1 > .panel-row-style {
+            background-color: #e9edf0;
+        }
+
+        #pg-9-0.panel-no-style, #pg-9-0.panel-has-style > .panel-row-style {
+            -webkit-align-items: stretch;
+            align-items: stretch;
+        }
+
+        #panel-9-0-0-0 > .panel-widget-style {
+            background-color: #ffffff;
+            padding: 30px 40px 15px 40px;
+        }
+
+        #panel-9-0-1-0 > .panel-widget-style {
+            background-color: #079bbb;
+            padding: 30px 40px 15px 40px;
+        }
+
+        #panel-9-0-2-0 > .panel-widget-style {
+            background-color: #66d0cc;
+            padding: 33px 40px 15px 40px;
+        }
+
+        #panel-9-1-0-0 > .panel-widget-style {
+            padding: 0px 0px 30px 0px;
+        }
+
+        #pg-9-4 > .panel-row-style {
+            background-color: #e9edf0;
+            padding: 86px 0px 0px 0px;
+        }
+
+        #pg-9-5 > .panel-row-style {
+            background-color: #e9edf0;
+            padding: 40px 0px 64px 0px;
+        }
+
+        #panel-9-5-3-0 > .panel-widget-style {
+            margin-bottom: -15px;
+        }
+
+        #panel-9-6-0-0 > .panel-widget-style {
+            margin-bottom: -10px;
+        }
+
+        #pg-9-7 > .panel-row-style {
+            background-image: url(../medicpress/wp-content/uploads/sites/48/2017/02/background6.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        #panel-9-7-0-0 > .panel-widget-style {
+            padding: 55px 0px 55px 0px;
+        }
+
+        #pg-9-10 > .panel-row-style {
+            background-image: url(https://demo.proteusthemes.com/medicpress/../medicpress/wp-content/uploads/sites/48/2017/02/background8.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        #panel-9-10-0-0 > .panel-widget-style {
+            padding: 88px 0px 100px 0px;
+        }
+
+        #pg-9-11 > .panel-row-style {
+            margin-bottom: -3rem;
+        }
+
+        #pg-9-11.panel-no-style, #pg-9-11.panel-has-style > .panel-row-style {
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+        }
+
+        @media (max-width:991px) {
+            #pg-9-0.panel-no-style, #pg-9-0.panel-has-style > .panel-row-style, #pg-9-1.panel-no-style, #pg-9-1.panel-has-style > .panel-row-style, #pg-9-2.panel-no-style, #pg-9-2.panel-has-style > .panel-row-style, #pg-9-3.panel-no-style, #pg-9-3.panel-has-style > .panel-row-style, #pg-9-4.panel-no-style, #pg-9-4.panel-has-style > .panel-row-style, #pg-9-5.panel-no-style, #pg-9-5.panel-has-style > .panel-row-style, #pg-9-6.panel-no-style, #pg-9-6.panel-has-style > .panel-row-style, #pg-9-7.panel-no-style, #pg-9-7.panel-has-style > .panel-row-style, #pg-9-8.panel-no-style, #pg-9-8.panel-has-style > .panel-row-style, #pg-9-9.panel-no-style, #pg-9-9.panel-has-style > .panel-row-style, #pg-9-10.panel-no-style, #pg-9-10.panel-has-style > .panel-row-style, #pg-9-11.panel-no-style, #pg-9-11.panel-has-style > .panel-row-style {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            #pg-9-0 .panel-grid-cell, #pg-9-1 .panel-grid-cell, #pg-9-2 .panel-grid-cell, #pg-9-3 .panel-grid-cell, #pg-9-4 .panel-grid-cell, #pg-9-5 .panel-grid-cell, #pg-9-6 .panel-grid-cell, #pg-9-7 .panel-grid-cell, #pg-9-8 .panel-grid-cell, #pg-9-9 .panel-grid-cell, #pg-9-10 .panel-grid-cell, #pg-9-11 .panel-grid-cell {
+                margin-right: 0;
+            }
+
+            #pg-9-0 .panel-grid-cell, #pg-9-1 .panel-grid-cell, #pg-9-2 .panel-grid-cell, #pg-9-3 .panel-grid-cell, #pg-9-4 .panel-grid-cell, #pg-9-5 .panel-grid-cell, #pg-9-6 .panel-grid-cell, #pg-9-7 .panel-grid-cell, #pg-9-8 .panel-grid-cell, #pg-9-9 .panel-grid-cell, #pg-9-10 .panel-grid-cell, #pg-9-11 .panel-grid-cell {
+                width: 100%;
+            }
+
+            #pgc-9-0-0, #pgc-9-0-1, #pgc-9-2-0, #pgc-9-3-0, #pgc-9-3-1, #pgc-9-5-0, #pgc-9-5-1, #pgc-9-5-2, #pgc-9-6-0, #pgc-9-9-0, #pgc-9-9-1, #pgc-9-11-0 {
+                margin-bottom: 30px;
+            }
+
+            #pl-9 .panel-grid-cell {
+                padding: 0;
+            }
+
+            #pl-9 .panel-grid .panel-grid-cell-empty {
+                display: none;
+            }
+
+            #pl-9 .panel-grid .panel-grid-cell-mobile-last {
+                margin-bottom: 0px;
+            }
+
+            #panel-9-0-2-0 > .panel-widget-style {
+                padding: 30px 35px 30px 35px;
+            }
+
+            #pg-9-10 > .panel-row-style {
+                background-attachment: scroll;
+            }
+          
+        }
+          @media (min-width: 600px){
+                .pt-pb-loaded .pt-sticky-menu__container{
+                top:0px;
+            }
+                .boxed-container{
+                    margin-top: -55px;
+                }
+            }
+            
+

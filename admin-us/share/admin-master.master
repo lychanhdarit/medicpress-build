@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin-master.master.cs" Inherits="admin_us_share_admin_master" %>
+
+<%@ Register Src="~/admin-us/share/layout/_Style.ascx" TagPrefix="uc1" TagName="_Style" %>
+<%@ Register Src="~/admin-us/share/layout/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="~/admin-us/share/layout/SlideBarMenu.ascx" TagPrefix="uc1" TagName="SlideBarMenu" %>
+<%@ Register Src="~/admin-us/share/layout/ControlSideBar.ascx" TagPrefix="uc1" TagName="ControlSideBar" %>
+<%@ Register Src="~/admin-us/share/layout/_JsFoot.ascx" TagPrefix="uc1" TagName="_JsFoot" %>
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quản Lý Hệ Thống - Bảng Điều Khiển</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!-- Bootstrap 3.3.5 -->
+    <uc1:_Style runat="server" ID="_Style" />
+    <style>
+        .btn-b {
+            padding: 7px 30px;
+            background: #105e98;
+            color: #fff;
+            text-align: center;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-h {
+            background: #808080;
+            padding: 7px 30px;
+            color: #fff;
+            text-align: center;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-y {
+            background: #ff6a00;
+            padding: 7px 30px;
+            color: #fff;
+            text-align: center;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn-blue {
+             margin-right:5px;
+              margin-left:5px;
+        }
+        .btn-orange {
+             margin-right:5px;
+              margin-left:5px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <uc1:Header runat="server" ID="Header" />
+
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <asp:Image ID="imgUser" runat="server" ImageUrl="~/admin-us/share/themes/dist/img/user2-160x160.jpg" CssClass="img-circle" />
+                        </div>
+                        <div class="pull-left info">
+                            <p>
+                                <asp:Literal ID="ltNameLeft" runat="server"></asp:Literal>
+                            </p>
+                            <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                  
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <uc1:SlideBarMenu runat="server" ID="SlideBarMenu" />
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 2.3.0
+       
+                </div>
+                <strong>Copyright &copy; 2015 <a href="#"></a>.</strong>
+
+            </footer>
+
+            <!-- Control Sidebar -->
+           <%-- <uc1:ControlSideBar runat="server" ID="ControlSideBar" />--%>
+            <!-- /.control-sidebar -->
+            <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+            <div class="control-sidebar-bg"></div>
+
+        </div>
+        <!-- ./wrapper -->
+
+        <uc1:_JsFoot runat="server" ID="_JsFoot" />
+    </form>
+</body>
+</html>

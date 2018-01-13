@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/peter-hung/main.master" AutoEventWireup="true" CodeFile="main-details.master.cs" Inherits="peter_hung_main_details" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="ctHead" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contentPage" runat="Server">
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ctContentHead" runat="server"></asp:ContentPlaceHolder>
+        <div class="row">
+            <div class="col-md-9">
+                <asp:ContentPlaceHolder ID="ctContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="col-md-3">
+                <div class="auto-container">
+                    <div class="row clearfix">
+
+                        <!--Content Side-->
+
+                        <!--Content Side-->
+
+                        <!--Sidebar-->
+                        <div class="" style="width: 100%;">
+                            <aside class="sidebar">
+
+                                <!-- Search Form -->
+
+
+                                <!-- Popular Categories -->
+                                <div class="widget popular-categories wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="sidebar-title">
+                                        <h3>Danh mục</h3>
+                                    </div>
+
+                                    <ul class="list">
+                                        <asp:Repeater ID="rpCat" runat="server">
+                                            <ItemTemplate>
+                                                <li>
+                                                    <span class="icon fa fa-angle-right"></span><a href='<%# "../"+Eval("code")+".html" %>'><%# Eval("name") %> </a>
+                                                </li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+
+                                    </ul>
+
+                                </div>
+
+                                <!-- Recent Posts -->
+                                <div class="widget recent-posts wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="sidebar-title">
+                                        <h3>Bài mới</h3>
+                                    </div>
+                                    <asp:Repeater ID="rpBai" runat="server">
+                                        <ItemTemplate>
+                                            <div class="post">
+
+                                                <div class="post-thumb">
+                                                    <a href='<%# "../"+Eval("url") %>' title='<%# Eval("tieude") %>'>
+                                                        <img alt='<%# Eval("tieude") %>' width='94' height='73' src='<%# Eval("hinhanh").ToString().IndexOf("http")==-1? "../uploadfile/postimages/" +Eval("hinhanh").ToString() : Eval("hinhanh").ToString() %>'>
+                                                    </a>
+                                                </div>
+                                                <h4>
+                                                    <asp:HyperLink ID="HyperLink1" CssClass="title" runat="server" NavigateUrl='<%# "~/" + Eval("url")  %>'> <%# Eval("Title") %></asp:HyperLink></h4>
+                                                <div class="post-info text-right"><%# BaseView.getThang(ToSQL.SQLToDateTime(Eval("ngaydang")))  +" " +ToSQL.SQLToDateTime(Eval("ngaydang")).Day +" ,"+ ToSQL.SQLToDateTime(Eval("ngaydang")).Year %> </div>
+                                            </div>
+
+
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </div>
+
+                                <!-- Recent From Gallery -->
+                               
+                            </aside>
+
+
+                        </div>
+                        <!--Sidebar-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</asp:Content>
+

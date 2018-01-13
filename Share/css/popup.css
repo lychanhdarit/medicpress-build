@@ -1,0 +1,49 @@
+﻿ .modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 999;
+  display: none;
+  top: 0;
+  left: 0;
+  } 
+ .modalx {
+  visibility: hidden;
+  text-align:center;
+  top: -0px; 
+  left: 40%;
+  margin-left: -250px;
+  width: 690px;
+  background: url(../modal-gloss.png) no-repeat -200px -80px;
+  position: absolute;
+  z-index: 9999;
+  padding: 30px 40px 34px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+  -box-shadow: 0 0 10px rgba(0,0,0,.4);
+  }
+  
+ .modalx.small   { width: 200px; margin-left: -140px;}
+ .modalx.medium   { width: 400px; margin-left: -240px;}
+ .modalx.large   { width: 600px; margin-left: -340px;}
+ .modalx.xlarge   { width: 800px; margin-left: -440px;}
+ 
+ .modalx .close-modal {
+  font-size: 10px;
+  line-height: .5;
+  position: absolute;
+  top: 24px;
+  right: 33px;
+  color: red;
+  text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid red;
+    padding: 5px;
+    border-radius: 10px;
+  }
+ .big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }

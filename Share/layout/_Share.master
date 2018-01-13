@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="_Share.master.cs" Inherits="Share_layout_Share" %>
+
+<%@ Register Src="~/Share/layout/GoogleAnalytics.ascx" TagPrefix="uc1" TagName="GoogleAnalytics" %>
+<%@ Register Src="~/Share/layout/ChatLive.ascx" TagPrefix="uc1" TagName="ChatLive" %>
+<%@ Register Src="~/Share/layout/_Header.ascx" TagPrefix="uc1" TagName="_Header" %>
+<%@ Register Src="~/Share/layout/_Footer.ascx" TagPrefix="uc1" TagName="_Footer" %>
+<%@ Register Src="~/Share/layout/Header_Menu.ascx" TagPrefix="uc1" TagName="Header_Menu" %>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %></title>
+    <meta content="<%: Page.MetaDescription  %>" name="description" />
+    <meta content="<%: Page.MetaKeywords  %>" name="keywords" />
+    
+    <asp:Literal ID="ltCanonical" runat="server"></asp:Literal>
+    <%--<meta property='og:image' content='<%: Page.Title %>' />--%>
+
+    <asp:Literal ID="ltHeader" runat="server"></asp:Literal>
+
+    <uc1:_Header runat="server" ID="_Header" />
+    <uc1:GoogleAnalytics runat="server" ID="GoogleAnalytics" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div style="width: 200px; position: fixed; bottom: 1%; left: 1%; z-index: 9999; padding: 0px; border-radius: 10px; border: 1px solid #DC1629" class="window">
+        <img src="../Share/Images/Icon/hot-line.png" alt="hotline diamond" style="width: 100%" />
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55e41f61c0442239" async="async"></script>
+
+    <form id="form1" runat="server">
+        <uc1:Header_Menu runat="server" ID="Header_Menu" />
+        <div class="window" style="height: 82px"></div>
+        <div>
+            <asp:ContentPlaceHolder ID="contentPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="m-head" style="padding-left: 3px; padding-bottom: 5px; padding-top: 5px">
+            <div class="m-item">
+                <a href="../post/chuong-trinh-vi-su-can-bang-cuoc-song.html">
+                    <img src="../Share/Images/mobile/chuong-trinh-su-kien.jpg" alt="san-khoa" style="width: 100%" />
+                </a>
+            </div>
+            <div class="m-item">
+                <a href="../clips/">
+                    <img src="../Share/Images/mobile/tu-lieu-video.jpg" alt="san-khoa" style="width: 100%" />
+                </a>
+            </div>
+            <div class="m-item-2">
+                <a href="../kham-suc-khoe-co-ban/kham-suc-khoe-dinh-ky.hxml">
+                    <img src="../Share/Images/mobile/tu-lieu-hoi-thao.jpg" alt="san-khoa" style="width: 100%" />
+                </a>
+            </div>
+            <div class="m-item-2">
+                <a href="../tu-lieu-hinh-anh-hoi-thao/">
+                    <img src="../Share/Images/mobile/dia-diem.jpg" alt="san-khoa" style="width: 100%" />
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="page-footer  window">
+            <a href="#" id="top-link" class="top-link"><i class="fa fa-angle-double-up"></i></a>
+
+            <div class="grid-row">
+                <div class="grid-col grid-col-3" style="text-align: center">
+                    <!-- location -->
+                    <div class="widget-alt location" style="text-align: left">
+                        <div class="logo-f">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Share/images/logo-ykhoa.png" Width="100%" />
+                        </div>
+
+                        <b>Y KHOA CHẤT LƯỢNG CAO DIAMOND</b>
+                        <br />
+                        <br />
+                        <address>Số 9, Trần Quốc Thảo, P.6, Q3, TP.HCM</address>
+                        <span class="fa fa-phone">&nbsp;&nbsp;</span><a href="tel:+84839307575">(08) 3930 75 75</a> - 		
+							<span class="fa fa-mobile">&nbsp;&nbsp;</span><a href="tel:+84904720672">(+84) 904 72 06 72</a>
+                    </div>
+                    <!--/ location -->
+
+                </div>
+
+                <div class="grid-col grid-col-3">
+                    <!-- last news -->
+                    <div class="widget-alt recent-posts">
+                        <asp:Label ID="lbBaiVietMoi" runat="server" Text=""></asp:Label>
+                    </div>
+                    <!--/ last news -->
+                </div>
+
+                <div class="grid-col grid-col-6">
+                    <!-- work time -->
+                    <div class="widget-alt work-time" style='overflow: hidden'>
+
+                        <div class="map">
+                            <div id="map" class="google-map"></div>
+                        </div>
+                    </div>
+                    <!--/ work time -->
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="fixed-function w-icon">
+        <div>
+            <%--<a id="A1" href="../ban-do-diamond/">
+                    <img src="../Share/Images/Icon/ban-do.png" style="height: 35px; width: 35px; margin-top: 3px; margin-right: -0px; border-radius: 35%; border: 1px solid #E59341; background: #fff" alt="bản đồ" title="bản đồ" />
+                </a>--%>
+            <a id="mkappointment" href="../listDoctor/">
+                <img src="../Share/Images/Icon/dat-hen.png" style="height: 35px; width: 35px; margin-top: 3px; margin-right: -0px; border-radius: 35%; border: 1px solid #E59341; background: #fff" alt="Đặt hẹn" title="Đặt hẹn" />
+            </a>
+            <a id="A2" href="../khuyen-mai.hxml">
+                <img src="../Share/Images/Icon/khuyen-mai.png" style="height: 35px; width: 35px; margin-top: 3px; margin-right: -0px; border-radius: 35%; border: 1px solid #E59341; background: #fff" alt="khuyến mãi" title="khuyến mãi" />
+            </a>
+            <a id="A3" href="../listDoctor/">
+                <img src="../Share/Images/Icon/lich-bac-si.png" style="height: 35px; width: 35px; margin-top: 3px; margin-right: -0px; border-radius: 35%; border: 1px solid #E59341; background: #fff" alt="lịch bác sĩ" title="lịch bác sĩ" />
+            </a>
+            <a id="A4" href="https://www.facebook.com/phongkhamdakhoadiamond">
+                <img src="../Share/Images/Icon/face.png" style="height: 35px; width: 35px; margin-top: 3px; margin-right: -0px; border-radius: 35%; border: 1px solid #E59341; background: #fff" alt="Fanpage diamond" />
+            </a>
+        </div>
+    </div>
+    <uc1:_Footer runat="server" ID="_Footer" />
+    <uc1:ChatLive runat="server" ID="ChatLive" />
+</body>
+</html>

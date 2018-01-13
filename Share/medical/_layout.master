@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="_layout.master.cs" Inherits="Share_medical_layout" %>
+
+<%@ Register Src="~/Share/medical/PluginFooter.ascx" TagPrefix="uc1" TagName="PluginFooter" %>
+<%@ Register Src="~/Share/medical/pluginHeader.ascx" TagPrefix="uc1" TagName="pluginHeader" %>
+
+<%@ Register Src="~/Share/medical/googleAnalytics.ascx" TagPrefix="uc1" TagName="googleAnalytics" %>
+<%@ Register Src="~/Share/medical/headerMenu.ascx" TagPrefix="uc1" TagName="headerMenu" %>
+<%@ Register Src="~/Share/medical/footer.ascx" TagPrefix="uc1" TagName="footer" %>
+<%@ Register Src="~/Share/medical/FacebookManager.ascx" TagPrefix="uc1" TagName="FacebookManager" %>
+<%@ Register Src="~/Share/medical/chatLive.ascx" TagPrefix="uc1" TagName="chatLive" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><%: Page.Title %></title>
+    <meta content="<%: Page.MetaDescription  %>" name="description" />
+    <meta content="<%: Page.MetaKeywords  %>" name="keywords" />
+    
+    <asp:Literal ID="ltCanonical" runat="server"></asp:Literal>
+
+    <asp:Literal ID="ltHeader" runat="server"></asp:Literal>
+
+  <%--  <uc1:metaGeoTags runat="server" ID="metaGeoTags" />--%>
+
+    <link rel="stylesheet" type="text/css" href='../css/default.css' />
+	<link rel="stylesheet" type="text/css" href='../css/component.css' />
+		
+    <script src='<%= ResolveUrl("~/js/modernizr.custom.js") %>'></script>
+
+    <uc1:pluginHeader runat="server" ID="pluginHeader" />
+   <%-- <uc1:googleAnalytics runat="server" ID="googleAnalytics" />--%>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58057d0420c42dab"></script> 
+    <form id="form1" runat="server">
+        <!-- Begin Main Wrapper -->
+        <uc1:FacebookManager runat="server" ID="FacebookManager" />
+        <uc1:headerMenu runat="server" ID="headerMenu" />
+
+        <asp:ContentPlaceHolder id="contentWrapper" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <uc1:footer runat="server" ID="footer" />
+        <uc1:PluginFooter runat="server" ID="PluginFooter" />
+        <uc1:chatLive runat="server" ID="chatLive" />
+
+       <%-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>--%>
+       
+    </form>
+</body>
+</html>

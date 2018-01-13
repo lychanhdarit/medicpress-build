@@ -1,0 +1,255 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Share/san-khoa/Main.master" AutoEventWireup="true" CodeFile="Right_layout.master.cs" Inherits="Share_san_khoa_Right_layout" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="header" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Banner" runat="Server">
+    <asp:ContentPlaceHolder ID="contentbanner" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="Server">
+    <%-- <section class="sub-page-banner text-center" data-stellar-background-ratio="0.3">
+
+        <div class="overlay"></div>
+
+        <div class="container">
+            <h1 class="entry-title">Blog Detail</h1>
+            <p>Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+        </div>
+
+    </section>--%>
+
+
+
+
+    <!-- Sub Page Content
+			============================================= -->
+    <div id="sub-page-content" class="clearfix">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-8 blog-wrapper clearfix">
+
+                    <asp:ContentPlaceHolder ID="contentPost" runat="server">
+                    </asp:ContentPlaceHolder>
+
+
+                    <div class="comment-respond" style="border-radius: 20px;box-shadow: 5px 5px 5px #f5f4f4;border: 1px solid #fbfafa;margin-top:20px;background:#fafafa">
+
+                        <h2 class="bordered light">  <i class="fa fa-table" aria-hidden="true"></i> <span>Đăng ký đặt hẹn</span></h2>
+
+                        <div class="col-md-12" style="padding:20px;">
+                            <asp:TextBox ID="txtFullname" runat="server" placeholder="Họ & tên"></asp:TextBox>
+                            <asp:TextBox ID="txtSDT" runat="server" placeholder="Số điện thoại"></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" runat="server" placeholder="Địa chỉ email"></asp:TextBox>
+                            <asp:TextBox ID="txtNgay" runat="server" class="datepicker" placeholder="Chọn ngày đặt hẹn"></asp:TextBox>
+                            <asp:TextBox ID="txtMsg" runat="server" TextMode="MultiLine" Rows="15" Columns="10" placeholder="Nội dung tin nhắn"></asp:TextBox>
+                            <asp:Button ID="btnDH" runat="server" CssClass="btn btn-default" Text="Gửi đặt hẹn" OnClick="btnDH_Click" />
+
+                            <div class="clear"></div>
+
+                        </div>
+
+                    </div>
+                    </div>
+
+                    <aside class="col-md-4">
+
+                        <!-- Recent posts
+							============================================= -->
+                        <div class="sidebar-widget light windows">
+
+                            <h2 class="bordered light">Bài <span>mới nhất</span></h2>
+                            <asp:Repeater ID="rpPost" runat="server">
+                                <ItemTemplate>
+
+                                    <article class="popular-post">
+                                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/" + Eval("id_tt") %>' AlternateText='<%# Eval("Title") %>' ImageUrl='<%# "~/UploadFile/postImages/"+Eval("HinhAnh") %>'> <%# Eval("Title") %></asp:HyperLink>
+                                       
+                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/" + Eval("id_tt")  %>'> <%# Eval("Title") %></asp:HyperLink>
+											<p style="color:#d6d5d5">-------------------------------------------------</p>
+											<p><%# Eval("Desc").ToString().Length > 75? Eval("Desc").ToString().Substring(0,75) : Eval("Desc") %> ...</p>
+                                    </article>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                        </div>
+
+
+                        <!-- Archives
+							============================================= -->
+                      
+
+                        <div class="sidebar-widget clearfix">
+
+
+                            <!-- Medicom Tour
+								============================================= -->
+                           <h2 class="light bordered"> <span style="font-size:14px">Tại Sao Chọn</span> Y Khoa Diamond</h2>
+
+            <div class="panel-group accordian-style2" id="accordion2">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title active">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                <i class="fa fa-medkit"></i>Sứ mệnh<i class="fa pull-right fa-angle-up"></i>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            - Chăm sóc sức khỏe một cách toàn diện cho bà mẹ và bé.<br />
+
+                            - Cung cấp những dịch vụ khám & chữa bệnh uy tín – chất lượng giúp chị em triệt tiêu những lo âu về sức khỏe, đặc biệt là những căn bệnh phụ khoa.<br />
+
+                            - Đóng góp cho cộng đồng những giá trị thiết thực thông qua các hoạt động mang tính xã hội.<br />
+
+                            - Dịch vụ nhanh chóng – chi phí hợp lý – chăm sóc tận tâm.<br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                <i class="fa fa-heart"></i>Tại sao chọn chúng tôi.<i class="fa fa-angle-down pull-right"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+
+                            <p>- Đội ngũ y bác sĩ giàu kinh nghiệm đến từ các bệnh viện lớn như: bệnh viện Từ Dũ, bệnh viện Đại học Y dược, bệnh viện 115… </p>
+
+                            <p>- Trang thiết bị, cơ sở vật chất được đầu tư chuẩn mực nhằm mang đến những tiện ích tốt nhất cho khách hàng trong quá trình khám và điều trị tại Phòng khám Sản phụ khoa Diamond. </p>
+
+                            <p>- Đồng hành cùng khách hàng trong suốt quá trình khám – điều trị - chăm sóc sau điều trị với mong muốn mang đến sự yên tâm cũng như cam kết một kết quả điều trị tốt nhất. </p>
+
+                            <p>- Khi khách hàng lựa chọn Phòng khám Sản phụ khoa Diamond trong việc chăm sóc sức khỏe đồng nghĩa với việc khách hàng đã “bảo hiểm” niềm tin của chính mình đến trọn đời. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                <i class="fa fa-user"></i>Cam kết<i class="fa fa-angle-down pull-right"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            - Đội ngũ y tá, điều dưỡng và nhân viên luôn thân thiện và nhiệt tình với khách hàng.<br />
+
+                            - Thủ tục được tiến hành nhanh gọn giúp bệnh nhân tiết kiệm được thời gian và tạo tâm lý thoải mái khi đi khám.<br />
+
+                            - Chi phí điều trị luôn được cập nhật và công bố rõ ràng đến khách hàng.<br />
+
+                            - Phục vụ khách hàng bận rộn với linh hoạt khung giờ khám linh hoạt tất cả các ngày trong tuần, kể cả thứ 7, chủ nhật.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                                <i class="fa fa-eye"></i>Tầm nhìn<i class="fa fa-angle-down pull-right"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            - Trở thành trung tâm y khoa với chất lượng dịch vụ y tế hàng đầu trong việc khám, chữa bệnh cho bà mẹ - trẻ em và chăm sóc sức khỏe cho phụ nữ.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="contentJS" runat="Server">
+     <script src='<%= ResolveUrl("~/Share/san-khoa/js/jquery.themepunch.plugins.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/Share/san-khoa/js/jquery.themepunch.revolution.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/Share/san-khoa/js/color-switcher.js") %>'></script>
+
+    <script>
+
+        (function () {
+
+            // Revolution slider
+            var revapi;
+            revapi = jQuery('.tp-banner').revolution(
+            {
+                delay: 9000,
+                startwidth: 1170,
+                startheight: 576,
+                hideThumbs: 200,
+                fullWidth: "on",
+                forceFullWidth: "on"
+            });
+
+
+            /* ------------------------------------------------------------------------ 
+               SMALL HEADER 
+            ------------------------------------------------------------------------ */
+            function checkWidth() {
+                var windowSize = $(window).width();
+
+                if (windowSize >= 767) {
+                    jQuery(window).scroll(function () {
+                        var scroll = jQuery(window).scrollTop();
+                        if (scroll >= 1) {
+                            jQuery(".fixed-header").addClass("small-header");
+                            jQuery(".navbar-brand img").attr("src", "../Share/san-khoa/images/logo.png");
+                        }
+                        else {
+                            jQuery(".fixed-header").removeClass("small-header");
+                            jQuery(".navbar-brand img").attr("src", "../Share/san-khoa/images/logo2.png");
+                        }
+                    });
+                }
+            }
+
+            // Execute on load
+            checkWidth();
+            // Bind event listener
+            $(window).resize(checkWidth);
+			
+			 jQuery(".read-more").click(function(){        
+					var $elem = jQuery(this).parent().parent().find(".blog-content");
+					if($elem.hasClass("short"))
+					{
+					    $elem.removeClass("short").addClass("full");
+					    jQuery(".read-more").attr("src", "../Share/images/thu-gon-bai-viet.png");
+					}
+					else
+					{
+					    $elem.removeClass("full").addClass("short");
+					    jQuery(".read-more").attr("src", "../Share/images/xem-them-1.jpg");
+					}       
+				});
+        })(jQuery);
+
+    </script>
+
+</asp:Content>
+

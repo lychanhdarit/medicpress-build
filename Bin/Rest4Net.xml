@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rest4Net</name>
+    </assembly>
+    <members>
+        <member name="T:Rest4Net.Utils.xBrainLab.HMACMD5">
+            <summary>
+            Computes a Hash-based Message Authentication Code (HMAC) using the <see cref="T:xBrainLab.Security.Cryptography.MD5" /> hash function
+            </summary>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rest4Net.Utils.xBrainLab.HMACMD5"/> class using the supplied key with UT8 encoding.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rest4Net.Utils.xBrainLab.HMACMD5"/> class using the supplied key with supplied encoding.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="encoding">The encoding used to read the key.</param>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rest4Net.Utils.xBrainLab.HMACMD5"/> class the supplied key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.ComputeHash(System.String)">
+            <summary>
+            Computes the hash value for the specified string (UTF8 default encoding).
+            </summary>
+            <param name="buffer">The input to compute the hash code for. </param>
+            <returns>The computed hash code</returns>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.ComputeHash(System.String,System.Text.Encoding)">
+            <summary>
+            Computes the hash value for the specified string.
+            </summary>
+            <param name="buffer">The input to compute the hash code for.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>
+            The computed hash code
+            </returns>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.ComputeHash(System.Byte[])">
+            <summary>
+            Computes the hash value for the specified byte array.
+            </summary>
+            <param name="buffer">The input to compute the hash code for.</param>
+            <returns>
+            The computed hash code
+            </returns>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.ComputeHashToBase64String(System.String)">
+            <summary>
+            Computes the hash for the specified string (UTF8 default encoding) to base64 string.
+            </summary>
+            <param name="buffer">The input to compute the hash code for.</param>
+            <returns>The computed hash code in base64 string</returns>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.ComputeHashToBase64String(System.String,System.Text.Encoding)">
+            <summary>
+            Computes the hash for the specified string to base64 string.
+            </summary>
+            <param name="buffer">The input to compute the hash code for.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>
+            The computed hash code in base64 string
+            </returns>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.InitializeKey(System.Byte[])">
+            <summary>
+            Initializes the key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.UpdateIOPadBuffers">
+            <summary>
+            Updates the IO pad buffers.
+            </summary>
+        </member>
+        <member name="M:Rest4Net.Utils.xBrainLab.HMACMD5.Combine(System.Byte[],System.Byte[])">
+            <summary>
+            Combines two array (a1 and a2).
+            </summary>
+            <param name="a1">The Array 1.</param>
+            <param name="a2">The Array 2.</param>
+            <returns>Combinaison of a1 and a2</returns>
+        </member>
+        <member name="P:Rest4Net.Utils.xBrainLab.HMACMD5.Key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+            <value>
+            The key.
+            </value>
+        </member>
+        <member name="T:Rest4Net.Utils.xBrainLab.ABCDStruct">
+            <summary>
+            Simple struct for the (a,b,c,d) which is used to compute the mesage digest.    
+            </summary>
+        </member>
+        <member name="T:Rest4Net.Utils.xBrainLab.Md5">
+            <summary>
+            Raw implementation of the MD5 hash algorithm rom RFC 1321.
+            </summary>
+        </member>
+    </members>
+</doc>
